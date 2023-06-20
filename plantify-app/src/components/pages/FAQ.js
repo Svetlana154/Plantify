@@ -1,10 +1,10 @@
-function AboutUs() {
+function FAQ() {
   return (
     <div>
       <h1>Hello, world</h1>
-      <p>AboutUs</p>
+      <p>FAQ</p>
     </div>
   );
 }
 
-export default AboutUs;
+export default FAQ;
