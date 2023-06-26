@@ -1,6 +1,16 @@
 .top-navbar {
   color: white;
   background-color: black;
+  font-size: 10pt;
+  text-align: end;
+}
+
+.top-navbar-item {
+  margin: 0px 10px;
+}
+
+.top-navbar-item-icon {
+  margin: 0px 7px;
 }
 
 .main-navbar {
