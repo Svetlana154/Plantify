@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import MainNavbar from './components/MainNavbar';
+import Footer from './components/Footer'
 import Home from './components/pages/Home';
 import AboutUs from './components/pages/AboutUs';
-import MainNavbar from './components/MainNavbar';
 import GardenCenter from './components/pages/GardenCenter';
 import FAQ from './components/pages/FAQ';
 
@@ -21,6 +22,7 @@ function App() {
             <Route path='/FAQ' element = {<FAQ />} />
 
           </Routes>
+          <Footer />
         </div>
       </Router>
     </div>
