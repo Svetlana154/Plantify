@@ -1,0 +1,13 @@
+.step-card {
+    width: 300px;
+    float: left;
+    margin: 20px;
+}
+
+.icon-number {
+    margin: 10px;
+}
+
+.step-card-text {
+    padding: 0 10px;
+}
