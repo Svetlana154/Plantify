@@ -5,7 +5,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEarthAmericas, faShoppingCart, faSearch, faLocation, faLocationPin, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faCircleUser, faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import "../styles/Navbar.css";
+import "../styles/MainNavbar.css";
+import logoClean from "../images/logo_clean.png";
 
 function MainNavbar() {
   return (
@@ -30,26 +31,27 @@ function MainNavbar() {
           </span>
         </span>
       </div>
-      <Navbar expand="lg" className="bg-body-tertiary">
-        <Container>
-          <Navbar.Brand className="navbar-brand" href="/">Plantify</Navbar.Brand>
+      <Navbar expand="lg" className="bg-body-tertiary bottom-navbar">
+          <Navbar.Brand className="navbar-brand" href="/">
+            <img src={logoClean} alt="Plantify" width="100px"/>
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/AboutUs">About Us</Nav.Link>
-              <NavDropdown id="basic-nav-dropdown" title="Garden Center">
-                <NavDropdown.Item href="/GardenCenter">Seeds</NavDropdown.Item>
-                <NavDropdown.Item href="/GardenCenter">Succulents</NavDropdown.Item>
-                <NavDropdown.Item href="/GardenCenter">Ferns & Shrubs</NavDropdown.Item>
-                <NavDropdown.Item href="/GardenCenter">Crops</NavDropdown.Item>
-                <NavDropdown.Item href="/GardenCenter">Flowers</NavDropdown.Item>
-                <NavDropdown.Item href="/GardenCenter">Trees</NavDropdown.Item>
-                <NavDropdown.Item href="/GardenCenter">
+              <NavDropdown id="basic-nav-dropdown" title="Our Products">
+                <NavDropdown.Item href="/OurProducts">Seeds</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Succulents</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Ferns & Shrubs</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Crops</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Flowers</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Trees</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">
                   Tools & Accessories
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/GardenCenter">
+                <NavDropdown.Item href="/OurProducts">
                   View All
                 </NavDropdown.Item>
               </NavDropdown>
@@ -77,7 +79,6 @@ function MainNavbar() {
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>
-        </Container>
       </Navbar>
     </div>
     

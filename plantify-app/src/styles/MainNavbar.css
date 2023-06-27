@@ -1,6 +1,6 @@
 .top-navbar {
   color: white;
-  background-color: black;
+  background-color: #050a07;
   font-size: 10pt;
   text-align: end;
 }
@@ -13,11 +13,12 @@
   margin: 0px 7px;
 }
 
-.main-navbar {
-  width: 100%;
-}
-
 .navbar-brand {
   font-family: Caveat;
+  font-size: 20pt !important;
 }
 
+.bottom-navbar {
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+}

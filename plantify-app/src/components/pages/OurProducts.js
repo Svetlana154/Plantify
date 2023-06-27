@@ -1,4 +1,4 @@
-function GardenCenter() {
+function OurProducts() {
   return (
     <div>
       <h1>Hello, world</h1>
@@ -7,4 +7,4 @@ function GardenCenter() {
   );
 }
 
-export default GardenCenter;
+export default OurProducts;
