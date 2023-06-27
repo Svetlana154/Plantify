@@ -1,6 +1,7 @@
 import DescriptorBlock from "../DescriptorBlock";
 import Hero from "../Hero";
 import ProductLinkSection from "../ProductLinkSection";
+import TeamPreview from "../TeamPreview";
 
 function Home() {
   return (
@@ -8,9 +9,7 @@ function Home() {
       <Hero />
       <DescriptorBlock />
       <ProductLinkSection />
-      <h1>Hello, world</h1>
-      <p>Homepage</p>
-      <h6> A title that could be used</h6>
+      <TeamPreview />
       <div id="contactUs">
         <p>This is a contact us section</p>
       </div>

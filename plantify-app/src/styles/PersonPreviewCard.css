@@ -1,0 +1,26 @@
+.person-preview-card {
+  height: 300px;
+  width: 200px;
+  padding: 10px 10px;
+  justify-content: top center;
+  text-align: center;
+  border: none !important;
+}
+
+.person-preview-card img{
+  border: 5px solid white;
+  box-shadow: 0px 0px 4px #000;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  margin: 0px auto;
+}
+
+.person-preview-card-name {
+  font-size: 1.5em;
+}
+
+.person-preview-card-content {
+  font-family: Caveat;
+}

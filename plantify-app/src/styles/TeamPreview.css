@@ -1,0 +1,22 @@
+.team-preview {
+  text-align: start;
+  margin: 50px 0px;
+}
+
+.team-preview-img {
+  margin: 0px auto;
+  width: 100%;
+  text-align: center;
+}
+
+.team-preview-content {
+  width: 100;
+  justify-content: center;
+}
+
+.team-learn-more {
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
