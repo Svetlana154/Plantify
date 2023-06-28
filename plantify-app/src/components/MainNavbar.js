@@ -54,14 +54,7 @@ function MainNavbar() {
                   View All
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown id="basic-nav-dropdown" title="Contact Us">
-                <NavDropdown.Item href="/FAQ">FAQ</NavDropdown.Item>
-                <NavDropdown.Item href="/FAQ">Leave a Review</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="/#ContactUs">
-                  Contact Us
-                </NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="/FAQ">FAQ</Nav.Link>
             </Nav>
             <Nav className='ms-auto'>
                 <Nav.Link href="/">
