@@ -2,7 +2,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEarthAmericas, faShoppingCart, faSearch, faLocation, faLocationPin, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEarthAmericas, faShoppingCart, faSearch, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faCircleUser, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import "../styles/MainNavbar.css";
 import logoClean from "../images/logo_clean.png";
@@ -58,7 +58,7 @@ function MainNavbar() {
                 <NavDropdown.Item href="/FAQ">FAQ</NavDropdown.Item>
                 <NavDropdown.Item href="/FAQ">Leave a Review</NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">
+                <NavDropdown.Item href="/#ContactUs">
                   Contact Us
                 </NavDropdown.Item>
               </NavDropdown>

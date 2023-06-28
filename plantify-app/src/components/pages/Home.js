@@ -1,3 +1,4 @@
+import ContactUs from "../ContactUs";
 import DescriptorBlock from "../DescriptorBlock";
 import Hero from "../Hero";
 import ProductLinkSection from "../ProductLinkSection";
@@ -12,9 +13,7 @@ function Home() {
       <ProductLinkSection />
       <TeamPreview />
       <Tutorial />
-      <div id="contactUs">
-        <p>This is a contact us section</p>
-      </div>
+      <ContactUs />
     </div>
   );
 }
