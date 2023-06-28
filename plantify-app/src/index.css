@@ -17,3 +17,8 @@ code {
 .cto {
   margin: 25px 0px;
 }
+
+.title-white-with-shadow {
+  color: white;
+  text-shadow: 2px 2px 4px #000;
+}

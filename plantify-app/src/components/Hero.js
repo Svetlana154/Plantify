@@ -1,10 +1,9 @@
 import "../styles/Hero.css";
 
-
 function Hero() {
   return (
     <div className="hero">
-      <div className="hero-title">
+      <div className="hero-title title-white-with-shadow">
         <h1>Lorem ipsum dolor sit amet.</h1>
       </div>
       <div className="hero-description">

@@ -1,0 +1,14 @@
+.goal-block {
+    margin: 50px auto;
+    background-image: linear-gradient(#00000075, #00000075), url("../images/plant-drawer-cropped.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.goal-title {
+    padding-top: 100px;
+    font-family: Caveat;
+    font-size: 4em;
+}
