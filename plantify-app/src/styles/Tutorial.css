@@ -1,0 +1,27 @@
+.tutorial {
+  background-color: rgb(48, 58, 36);
+  height: fit-content;
+  color: white;
+  padding: 50px;
+  text-align: start;
+}
+
+.tutorial-row {
+  margin-bottom: 50px;
+}
+
+.tutorial-information-col {
+  margin: auto 0px !important;
+  text-align: center;
+}
+
+.tutorial-content h4{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tutorial-btn {
+  width: 100%;
+  text-align: center;
+}
