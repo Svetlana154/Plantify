@@ -41,7 +41,7 @@ function Tutorial() {
             </Container>
           </Col>
           <Col>
-            <img src={greenhouse} width="90%" alt="other" />
+            <img src={greenhouse} width="80%" alt="other" />
           </Col>
         </Row>
         <Row className="tutorial-row">
@@ -54,6 +54,9 @@ function Tutorial() {
                 <button className="btn btn-outline-light">Buy your first plant</button>
               </div>
           </Container>
+        </Row>
+        <Row>
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/LZhnCxG5c6s" title="HOUSEPLANT CARE TIPS FOR BEGINNERS » + printable guide" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </Row>
       </Container>
     </div>

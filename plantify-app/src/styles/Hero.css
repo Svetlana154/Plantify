@@ -1,15 +1,15 @@
 .hero {
-  background-image: linear-gradient(#00000075, #00000056), url("../images/table-cropped.jpg");
+  background-image: linear-gradient(#00000098, #00000075), url("../images/table-cropped-widescreen.jpg");
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat; 
-  height: 1000px;
+  height: 700px;
   margin: 0px !important;
 }
 
 .hero-title{
   margin: 0px;
-  padding: 100px 20%;
+  padding: 10px 20%;
   padding-bottom: 20px;
   text-align: center;
 }
@@ -21,7 +21,11 @@
 }
 
 .hero-description {
-  margin: 20px 20%;
+  margin: 10px 20%;
   color: white;
   text-shadow: 1px 1px 4px #000;
+}
+
+.hero-cto {
+  margin: 20% auto;
 }

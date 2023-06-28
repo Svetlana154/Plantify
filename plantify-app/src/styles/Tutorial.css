@@ -2,7 +2,7 @@
   background-color: rgb(48, 58, 36);
   height: fit-content;
   color: white;
-  padding: 50px;
+  padding: 70px 50px;
   text-align: start;
 }
 
@@ -18,7 +18,9 @@
 .tutorial-content h4{
   width: 100%;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
+  font-family: Caveat;
+  font-size: 3em;
 }
 
 .tutorial-btn {

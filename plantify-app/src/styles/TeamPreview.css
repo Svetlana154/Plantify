@@ -7,11 +7,16 @@
   margin: 0px auto;
   width: 100%;
   text-align: center;
+  align-items: center;
+}
+
+.team-preview-img img {
+  width: 80%;
 }
 
 .team-preview-content {
+  margin-top: 30px;
   width: 100;
-  justify-content: center;
 }
 
 .team-learn-more {

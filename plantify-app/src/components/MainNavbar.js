@@ -64,19 +64,19 @@ function MainNavbar() {
               </NavDropdown>
             </Nav>
             <Nav className='ms-auto'>
-              <Nav.Link href="/">
-                <FontAwesomeIcon icon={faLocationDot} size='xl'/>
-              </Nav.Link>
-              <Nav.Link href="/">
-                <FontAwesomeIcon icon={faShoppingCart} size='xl'/>
-              </Nav.Link>
-              <Nav.Link href="/">
-                <FontAwesomeIcon icon={faCircleUser} size='xl'/>
-              </Nav.Link>
-              <Nav.Link href="/">
-                <FontAwesomeIcon icon={faSearch} size='xl'/>
-              </Nav.Link>
-            </Nav>
+                <Nav.Link href="/">
+                  <FontAwesomeIcon icon={faLocationDot} size='xl'/>
+                </Nav.Link>
+                <Nav.Link href="/">
+                  <FontAwesomeIcon icon={faShoppingCart} size='xl'/>
+                </Nav.Link>
+                <Nav.Link href="/">
+                  <FontAwesomeIcon icon={faCircleUser} size='xl'/>
+                </Nav.Link>
+                <Nav.Link href="/">
+                  <FontAwesomeIcon icon={faSearch} size='xl'/>
+                </Nav.Link>
+              </Nav>
           </Navbar.Collapse>
       </Navbar>
     </div>

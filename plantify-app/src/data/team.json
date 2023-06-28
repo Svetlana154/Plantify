@@ -1,22 +1,22 @@
 [
   {
     "name": "Lorem Ipsum 1",
-    "profilePic": "../images/profile-placeholder.png",
+    "profilePic": "./team/profile-placeholder.png",
     "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla."
   },
   {
     "name": "Lorem Ipsum 2",
-    "profilePic": "../images/profile-placeholder.png",
+    "profilePic": "./team/profile-placeholder.png",
     "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla."
   },
   {
     "name": "Lorem Ipsum 3",
-    "profilePic": "../images/profile-placeholder.png",
+    "profilePic": "./team/profile-placeholder.png",
     "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla."
   },
   {
     "name": "Lorem Ipsum 4",
-    "profilePic": "../images/profile-placeholder.png",
+    "profilePic": "./team/profile-placeholder.png",
     "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla."
   }
 ]

@@ -16,7 +16,7 @@ function TeamPreview() {
     <Container className="team-preview">
       <h1>Who are we?</h1>
       <Container className="team-preview-img">
-        <img src={wordCloud} height="400px" alt="GARDENERS"/>
+        <img src={wordCloud} alt="GARDENERS"/>
       </Container>
       <CardGroup className="team-preview-content">
         {cardGroup}
