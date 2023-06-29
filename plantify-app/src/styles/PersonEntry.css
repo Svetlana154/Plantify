@@ -1,0 +1,12 @@
+.person-entry {
+  margin: 20px auto;
+}
+
+.person-entry-img {
+  width: 100%;
+}
+
+.person-entry-description {
+  color: rgb(182, 182, 182);
+  font-style: italic;
+}
