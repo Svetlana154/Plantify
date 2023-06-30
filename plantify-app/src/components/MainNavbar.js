@@ -66,7 +66,7 @@ function MainNavbar() {
                 <Nav.Link href="/">
                   <FontAwesomeIcon icon={faShoppingCart} size='xl'/>
                 </Nav.Link>
-                <Nav.Link href="/">
+                <Nav.Link href="/Profile">
                   <FontAwesomeIcon icon={faCircleUser} size='xl'/>
                 </Nav.Link>
                 <Nav.Link href="/">

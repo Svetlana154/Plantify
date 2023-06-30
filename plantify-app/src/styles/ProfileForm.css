@@ -1,0 +1,18 @@
+.profile-form {
+    text-align: start;
+    margin: 50px auto;
+}
+
+.form-edit-icon {
+    margin: 0px 10px;
+}
+
+.form-change-password {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 10px;
+}
+
+.profile-action-btn {
+    margin: 50px 10%;
+}
