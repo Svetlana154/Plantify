@@ -5,7 +5,7 @@ import Location from "../Location";
 
 function AboutUs() {
   return (
-    <div classname="goal-block">
+    <div>
       <GoalBlock />
       <Team />
       <ServicesCarousel />

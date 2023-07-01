@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -7,7 +9,7 @@ import { faCircleUser, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import "../styles/MainNavbar.css";
 import logoClean from "../images/logo_clean.png";
 
-function MainNavbar() {
+function MainNavbar({promptSignIn}) {
   return (
     <div className='main-navbar'>
       <div className='top-navbar'>
@@ -66,7 +68,7 @@ function MainNavbar() {
                 <Nav.Link href="/">
                   <FontAwesomeIcon icon={faShoppingCart} size='xl'/>
                 </Nav.Link>
-                <Nav.Link href="/Profile">
+                <Nav.Link href="" onClick={() => {promptSignIn(true);}}>
                   <FontAwesomeIcon icon={faCircleUser} size='xl'/>
                 </Nav.Link>
                 <Nav.Link href="/">

@@ -1,0 +1,18 @@
+.sign-up {
+    text-align: start;
+    margin: 50px auto;
+}
+
+.sign-up-content {
+    height: fit-content;
+    align-self: center;
+    margin-bottom: 10%;
+}
+
+.sign-up-img {
+    width: 100%;
+}
+
+.sign-up-action-btn-section {
+    text-align: center;
+}

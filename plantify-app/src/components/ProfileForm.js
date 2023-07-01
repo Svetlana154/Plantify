@@ -10,7 +10,7 @@ import { faPencil } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/ProfileForm.css";
 
-function ProfileForm ({readOnly}) {
+function ProfileForm () {
     return(
         <Form className="profile-form">
             <Row className="mb-5">

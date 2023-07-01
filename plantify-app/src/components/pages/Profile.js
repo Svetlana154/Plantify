@@ -6,7 +6,7 @@ function Profile() {
     return (
         <Container className="profile">
             <h1>Profile</h1>
-            <ProfileForm readOnly={true} />
+            <ProfileForm />
         </Container>
     );
 }
