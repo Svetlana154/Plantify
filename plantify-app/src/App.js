@@ -9,6 +9,7 @@ import OurProducts from './components/pages/OurProducts';
 import FAQ from './components/pages/FAQ';
 import Profile from './components/pages/Profile';
 import SignUp from './components/pages/SignUp';
+import ProductSelected from './components/pages/ProductSelected';
 
 import "./styles/SignInModal.css";
 import ModalManager from './components/ModalManager';
@@ -38,6 +39,7 @@ function App() {
             <Route path='/FAQ' element = {<FAQ />} />
             <Route path='/Profile' element = {<Profile />} />
             <Route path='/SignUp' element = {<SignUp />} />
+            <Route path='/ProductSelected' element = {<ProductSelected />} />
 
           </Routes>
           

@@ -4,8 +4,9 @@ import "../styles/ProductCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faStar as faStarFull} from '@fortawesome/free-solid-svg-icons';
 import {faStar as faStarOutline} from '@fortawesome/free-regular-svg-icons';
+import { useNavigate } from "react-router-dom";
 
-function ProductCard({product, handleProductSelected}) {
+function ProductCard({product}) {
     const starRating = [];
 
     for (let i=0; i<5; i++){
@@ -17,13 +18,24 @@ function ProductCard({product, handleProductSelected}) {
         }
     }
 
+    const navigate = useNavigate();
+
+    const handleProductSelected = () => {
+        console.log("hear click");
+        navigate('/ProductSelected', {
+        state: {
+            productRef: product.ref
+        }
+        });
+    }
+
     return (
-        <Card className="product-card" onClick={handleProductSelected(product)}>
+        <Card className="product-card" onClick={() => handleProductSelected()}>
             <Card.Img src={product.image} alt="image" className="product-card-image"/>
             <Card.Body>
                 <Card.Text className="product-card-top-text">
-                    <div className="product-card-price"> {product.price}</div>
-                    <div className="product-card-ref">{product.ref} </div>
+                    <div className="product-price"> {product.price}</div>
+                    <div className="product-ref">{product.ref} </div>
                 </Card.Text>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text className="product-card-description">

@@ -8,26 +8,15 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Accordion from "react-bootstrap/esm/Accordion";
 import { useState } from 'react';
-import {useNavigate} from 'react-router-dom';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
-
 
 import productData from "../../data/products.json";
 import "../../styles/OurProducts.css";
 import ProductCard from "../ProductCard";
 
 function OurProducts() {
-
-  const handleProductSelected = (productSelected) => {
-    // useNavigate('/ProductSelected', {
-    //   state: {
-    //     product: productSelected,
-    //   }
-    // });
-    console.log("handling on click");
-  }
   
   const [show, setFilterShow] = useState(false);
 
@@ -46,47 +35,7 @@ function OurProducts() {
   productData.forEach(product =>{
     generatedProductsList.push(
       <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product} handleProductSelected={handleProductSelected}/>
-      </Col>
-    );
-    generatedProductsList.push(
-      <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product} handleProductSelected={handleProductSelected}/>
-      </Col>
-    );
-    generatedProductsList.push(
-      <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product} handleProductSelected={handleProductSelected}/>
-      </Col>
-    );
-    generatedProductsList.push(
-      <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product} handleProductSelected={handleProductSelected}/>
-      </Col>
-    );
-    generatedProductsList.push(
-      <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product} handleProductSelected={handleProductSelected}/>
-      </Col>
-    );
-    generatedProductsList.push(
-      <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product} handleProductSelected={handleProductSelected}/>
-      </Col>
-    );
-    generatedProductsList.push(
-      <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product} handleProductSelected={handleProductSelected}/>
-      </Col>
-    );
-    generatedProductsList.push(
-      <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product} handleProductSelected={handleProductSelected}/>
-      </Col>
-    );
-    generatedProductsList.push(
-      <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product} handleProductSelected={handleProductSelected}/>
+        <ProductCard product={product}/>
       </Col>
     );
     numberOfResults += 1;

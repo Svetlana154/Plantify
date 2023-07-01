@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+
+
+.product-ref {
+  color: grey;
+  font-size: small;
+  margin: 0px;
+  text-align: start;
+}
+
+.product-ref::before {
+  content: "#"
+}
+
+
+.product-price {
+  font-size: larger;
+}
+
+.product-price::before {
+  content: "$"
+}
+
+.product-price::after {
+  content: " CAD";
+  font-size: smaller;
+}
