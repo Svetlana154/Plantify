@@ -13,7 +13,6 @@ function ModalManager({modalData}) {
 
     var signInState = (modalState === 1)? true : false;
     var recoveryPasswordState = (modalState === 2)? true : false;
-    console.log("modal manager: state = "+modalState);
 
     // Extract modal states
     const callbackCloseModal = () => {

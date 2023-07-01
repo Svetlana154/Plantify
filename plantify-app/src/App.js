@@ -23,7 +23,6 @@ function App() {
   const promptSignIn = () => {
     allModalData.modalState = 1;
     setModalData(allModalData);
-    console.log("=================\nApp received prompt for: " + modalData.modalState);
   };
 
   return (
