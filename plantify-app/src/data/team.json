@@ -1,25 +1,25 @@
 [
   {
     "name": "Lorem Ipsum 1",
-    "profilePic": "./team/profile-placeholder.png",
+    "profilePic": "./assets/team/profile-placeholder.png",
     "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla.",
     "extendedDescription": "Proin interdum sed sem a ullamcorper. Proin tempor, urna non scelerisque aliquam, diam dui vehicula augue, quis posuere quam lorem et ex. Fusce consequat a est posuere dapibus. Pellentesque commodo vehicula erat, vel varius dolor laoreet ac. Vivamus cursus laoreet eleifend. Nulla facilisi. Suspendisse potenti."
   },
   {
     "name": "Lorem Ipsum 2",
-    "profilePic": "./team/profile-placeholder.png",
+    "profilePic": "./assets/team/profile-placeholder.png",
     "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla.",
     "extendedDescription": "Proin interdum sed sem a ullamcorper. Proin tempor, urna non scelerisque aliquam, diam dui vehicula augue, quis posuere quam lorem et ex. Fusce consequat a est posuere dapibus. Pellentesque commodo vehicula erat, vel varius dolor laoreet ac. Vivamus cursus laoreet eleifend. Nulla facilisi. Suspendisse potenti."
   },
   {
     "name": "Lorem Ipsum 3",
-    "profilePic": "./team/profile-placeholder.png",
+    "profilePic": "./assets/team/profile-placeholder.png",
     "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla.",
     "extendedDescription": "Proin interdum sed sem a ullamcorper. Proin tempor, urna non scelerisque aliquam, diam dui vehicula augue, quis posuere quam lorem et ex. Fusce consequat a est posuere dapibus. Pellentesque commodo vehicula erat, vel varius dolor laoreet ac. Vivamus cursus laoreet eleifend. Nulla facilisi. Suspendisse potenti."
   },
   {
     "name": "Lorem Ipsum 4",
-    "profilePic": "./team/profile-placeholder.png",
+    "profilePic": "./assets/team/profile-placeholder.png",
     "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla.",
     "extendedDescription": "Proin interdum sed sem a ullamcorper. Proin tempor, urna non scelerisque aliquam, diam dui vehicula augue, quis posuere quam lorem et ex. Fusce consequat a est posuere dapibus. Pellentesque commodo vehicula erat, vel varius dolor laoreet ac. Vivamus cursus laoreet eleifend. Nulla facilisi. Suspendisse potenti."
   }

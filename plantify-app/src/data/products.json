@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Pink Cascading Orchid",
+        "image": "./assets/products/orchid.jpg",
+        "species": "Moth Orchid",
+        "price": 24.99,
+        "brand": "stuff",
+        "size": "stuff",
+        "colour": ["stuff","stuff"],
+        "rarity": "stuff",
+        "weight": "stuff",
+        "zone": "stuff",
+        "thorns/spikes": "stuff",
+        "producer": {
+            "location": "stuff"
+        },
+        "ref": "123A",
+        "lifetime": "annual",
+        "rootType": "Fiborous",
+        "rating": {
+                "star": 4,
+                "reviews": [
+                    {
+                        "name": "John Doe",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 5
+                    },
+                    {
+                        "name": "John Doe2",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 3
+                    }
+                ]
+            }
+    }
+]

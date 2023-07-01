@@ -1,0 +1,48 @@
+.product-card {
+    width: fit-content;
+    align-items: center;
+    /* box-shadow: 1px 1px 2px #000; */
+    padding: 10px;
+    border: none !important;
+}
+
+.product-card-top-text {
+    margin: 0px;
+}
+
+.product-card-image {
+    width: 200px !important;
+}
+
+.product-card-ref {
+    color: grey;
+    font-size: small;
+    margin: 0px;
+    text-align: start;
+}
+
+.product-card-ref::before {
+    content: "#"
+}
+
+.product-card-rating {
+    color: rgb(48, 58, 36);
+    text-align: start;
+}
+
+.product-card-price {
+    font-size: larger;
+}
+
+.product-card-price::before {
+    content: "$"
+}
+
+.product-card-price::after {
+    content: " CAD";
+    font-size: smaller;
+}
+
+.clickable:hover {
+    color: rgb(92, 92, 92);
+}

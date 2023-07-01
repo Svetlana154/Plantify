@@ -1,0 +1,45 @@
+.products {
+    margin: 50px auto;
+}
+
+.products hr {
+    width: 40%;
+    margin: 20px auto;
+}
+
+.products-control-row {
+    margin: 20px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-option {
+    border: none !important;
+}
+
+.filter-option h6 {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.filter-hardiness-zone-menu {
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+.filter-hardiness-zone-dropdown-container {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter-hardiness-zone-dropdown-container span {
+    padding: 0px 10px;
+}
+
+.filter-cto {
+    text-align: center;
+    margin: 20px auto;
+    margin-top: 50px;
+}
