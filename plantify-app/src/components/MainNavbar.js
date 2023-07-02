@@ -62,16 +62,16 @@ function MainNavbar({promptSignIn}) {
               </NavDropdown>
             </Nav>
             <Nav className='ms-auto'>
-                <Nav.Link href="/">
+                <Nav.Link href="/AboutUs#Location">
                   <FontAwesomeIcon icon={faLocationDot} size='xl'/>
                 </Nav.Link>
-                <Nav.Link href="/">
+                <Nav.Link href="/ShoppingCart">
                   <FontAwesomeIcon icon={faShoppingCart} size='xl'/>
                 </Nav.Link>
                 <Nav.Link href="" onClick={() => {promptSignIn(true);}}>
                   <FontAwesomeIcon icon={faCircleUser} size='xl'/>
                 </Nav.Link>
-                <Nav.Link href="/">
+                <Nav.Link href="/OurProducts">
                   <FontAwesomeIcon icon={faSearch} size='xl'/>
                 </Nav.Link>
               </Nav>

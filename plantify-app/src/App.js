@@ -10,9 +10,12 @@ import FAQ from './components/pages/FAQ';
 import Profile from './components/pages/Profile';
 import SignUp from './components/pages/SignUp';
 import ProductSelected from './components/pages/ProductSelected';
+import Checkout from './components/pages/Checkout';
+import ThankYou from './components/pages/ThankYou';
 
 import "./styles/SignInModal.css";
 import ModalManager from './components/ModalManager';
+import ShoppingCart from './components/pages/ShoppingCart';
 
 function App() {
   var allModalData = {
@@ -40,6 +43,9 @@ function App() {
             <Route path='/Profile' element = {<Profile />} />
             <Route path='/SignUp' element = {<SignUp />} />
             <Route path='/ProductSelected' element = {<ProductSelected />} />
+            <Route path='/ShoppingCart' element = {<ShoppingCart />} />
+            <Route path='/Checkout' element = {<Checkout />} />
+            <Route path='/ThankYou' element = {<ThankYou />} />
 
           </Routes>
           

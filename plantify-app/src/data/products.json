@@ -1,22 +1,55 @@
 [
     {
         "name": "Pink Cascading Orchid",
-        "image": "./assets/products/orchid.jpg",
+        "image": "./assets/products/Orchid.jpg",
         "species": "Moth Orchid",
         "price": 24.99,
-        "brand": "stuff",
-        "size": "stuff",
-        "colour": ["stuff","stuff"],
-        "rarity": "stuff",
-        "weight": "stuff",
-        "zone": "stuff",
-        "thorns/spikes": "stuff",
+        "brand": "Burley’s Gardens",
+        "size": 1,
+        "colour": ["pink"],
+        "rarity": 4.5,
+        "weight": 550,
+        "zone": [6, 7, 8, 9],
+        "thorns/spikes": false,
         "producer": {
-            "location": "stuff"
+            "location": "Canada"
         },
-        "ref": "123A",
-        "lifetime": "Annual",
-        "rootType": "Fiborous",
+        "ref": "790Q3",
+        "lifetime": "Perennial",
+        "rating": {
+                "star": 3.5,
+                "reviews": [
+                    {
+                        "name": "John Doe",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 5
+                    },
+                    {
+                        "name": "John Doe2",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 3
+                    }
+                ]
+            },
+	"rootType": "Aerial"
+    },
+    {
+        "name": "Pink Single-Stemmed Cascading Orchid",
+        "image": "./assets/products/PhalaenopsisOrchid.jpg",
+        "species": "Phalaenopsis cornu-cervi",
+        "price": 39.00,
+        "brand": "Cloud’s Orchids",
+        "size": 1.3,
+        "colour": ["pink", "white"],
+        "rarity": 4.5,
+        "weight": 750,
+        "zone": [6, 7, 8, 9],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Ukraine"
+        },
+        "ref": "VQ051",
+        "lifetime": "Perennial",
         "rating": {
                 "star": 4,
                 "reviews": [
@@ -31,6 +64,211 @@
                         "rating": 3
                     }
                 ]
-            }
+            },
+	"rootType": "Aerial"
+    },
+    {
+        "name": "Orange Tiger Lily",
+        "image": "./assets/products/TigerLily.jpg",
+        "species": "Tiger lily",
+        "price": 85.99,
+        "brand": "Canada Flowers",
+        "size": 5,
+        "colour": ["orange", "black"],
+        "rarity": 2,
+        "weight": 1050,
+        "zone": [3, 4, 5, 6, 7, 8, 9],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "E433W",
+        "lifetime": "Perennial",
+        "rating": {
+                "star": 4,
+                "reviews": [
+                    {
+                        "name": "John Doe",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 5
+                    },
+                    {
+                        "name": "John Doe2",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 3
+                    }
+                ]
+            },
+	"rootType": "Fibrous"
+    },
+    {
+        "name": "White Lily",
+        "image": "./assets/products/EasterLily.jpg",
+        "species": "Easter lily",
+        "price": 56.50,
+        "brand": "Canada Flowers",
+        "size": 3,
+        "colour": ["white"],
+        "rarity": 1,
+        "weight": 550,
+        "zone": [3, 4, 5, 6, 7, 8, 9],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "JUASV",
+        "lifetime": "Perennial",
+        "rating": {
+                "star": 3.5,
+                "reviews": [
+                    {
+                        "name": "John Doe",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 5
+                    },
+                    {
+                        "name": "John Doe2",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 3
+                    }
+                ]
+            },
+	"rootType": "Fibrous"
+    },
+    {
+        "name": "Autumn Damask Rose",
+        "image": "./assets/products/DamaskRose.jpg",
+        "species": "Damask rose",
+        "price": 21.50,
+        "brand": "High Country Roses",
+        "size": 6,
+        "colour": ["pink"],
+        "rarity": 3.5,
+        "weight": 900,
+        "zone": [5, 6, 7, 8],
+        "thorns/spikes": true,
+        "producer": {
+            "location": "US"
+        },
+        "ref": "CQF6G",
+        "lifetime": "Perennial",
+        "rating": {
+                "star": 4.5,
+                "reviews": [
+                    {
+                        "name": "John Doe",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 5
+                    },
+                    {
+                        "name": "John Doe2",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 3
+                    }
+                ]
+            },
+	"rootType": "Fibrous"
+    },
+    {
+        "name": "Hybrid Tea Double Delight Rose",
+        "image": "./assets/products/DoubleDelightRose.jpg",
+        "species": "Rosa 'Double Delight'",
+        "price": 21.90,
+        "brand": "High Country Roses",
+        "size": 3,
+        "colour": ["red"],
+        "rarity": 1,
+        "weight": 550,
+        "zone": [5, 6, 7, 8],
+        "thorns/spikes": true,
+        "producer": {
+            "location": "US"
+        },
+        "ref": "I1ARP",
+        "lifetime": "Perennial",
+        "rating": {
+                "star": 4.5,
+                "reviews": [
+                    {
+                        "name": "John Doe",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 5
+                    },
+                    {
+                        "name": "John Doe2",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 3
+                    }
+                ]
+            },
+	"rootType": "Fibrous"
+    },
+    {
+        "name": "Earth Angel Peony",
+        "image": "./assets/products/ChinesePeony.jpg",
+        "species": "Chinese Peony'",
+        "price": 21.90,
+        "brand": "High Country Roses",
+        "size": 2,
+        "colour": ["red", "pink"],
+        "rarity": 4.5,
+        "weight": 350,
+        "zone": [3, 4, 5, 6, 7, 8],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "US"
+        },
+        "ref": "7BARQ",
+        "lifetime": "Perennial",
+        "rating": {
+                "star": 5,
+                "reviews": [
+                    {
+                        "name": "John Doe",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 5
+                    },
+                    {
+                        "name": "John Doe2",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 3
+                    }
+                ]
+            },
+	"rootType": "Fibrous"
+    },
+    {
+        "name": "Bleeding Heart Peony",
+        "image": "./assets/products/MoutanPeony.jpg",
+        "species": "Moutan Peony",
+        "price": 25.99,
+        "brand": "High Country Roses",
+        "size": 2,
+        "colour": ["red", "white"],
+        "rarity": 4.5,
+        "weight": 355,
+        "zone": [3, 4, 5, 6, 7, 8],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "US"
+        },
+        "ref": "8FGB3",
+        "lifetime": "Perennial",
+        "rating": {
+                "star": 5,
+                "reviews": [
+                    {
+                        "name": "John Doe",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 5
+                    },
+                    {
+                        "name": "John Doe2",
+                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                        "rating": 3
+                    }
+                ]
+            },
+	"rootType": "Fibrous"
     }
 ]

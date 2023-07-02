@@ -1,0 +1,14 @@
+.checkout-form {
+    text-align: start;
+}
+
+.checkout-cost-calculator {
+    border: 1px solid #000;
+    margin: 50px 0px;
+    padding: 50px;
+    text-align: end;
+}
+
+.checkout-important-cost {
+    font-size: xx-large;
+}

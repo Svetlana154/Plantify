@@ -34,7 +34,7 @@ function ProductCard({product}) {
             <Card.Img src={product.image} alt="image" className="product-card-image"/>
             <Card.Body>
                 <Card.Text className="product-card-top-text">
-                    <div className="product-price"> {product.price}</div>
+                    <div className="product-price"> {Number(product.price).toFixed(2)}</div>
                     <div className="product-ref">{product.ref} </div>
                 </Card.Text>
                 <Card.Title>{product.name}</Card.Title>

@@ -41,7 +41,7 @@ function OurProducts() {
     numberOfResults += 1;
   });
 
-
+  
   return (
     <Container fluid className="products">
       <h1>Our Products</h1>
@@ -73,6 +73,8 @@ function OurProducts() {
                 <Dropdown.Item href="#">Relevance</Dropdown.Item>
                 <Dropdown.Item href="#">Price High to Low</Dropdown.Item>
                 <Dropdown.Item href="#">Price Low to High</Dropdown.Item>
+                <Dropdown.Item href="#">Rating High to Low</Dropdown.Item>
+                <Dropdown.Item href="#">Rating Low to High</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </span>

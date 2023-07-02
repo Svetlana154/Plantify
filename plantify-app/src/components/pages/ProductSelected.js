@@ -86,7 +86,7 @@ function ProductSelected () {
                         </div>
                         <Row>
                             <h1 className="product-price">
-                                {selectedProduct.price}
+                                {Number(selectedProduct.price).toFixed(2)}
                             </h1>
                         </Row>
                         <Row className="product-add-to-cart">
@@ -132,23 +132,27 @@ function ProductSelected () {
                         <Col>
                             <div>
                                 <b>Size: &nbsp;</b>
-                                {selectedProduct.size}
+                                {selectedProduct.size} feet
                             </div>
                             <div>
                                 <b>Weight: &nbsp;</b>
-                                {selectedProduct.weight}
+                                {selectedProduct.weight} grams
                             </div>
                             <div>
                                 <b>Color: &nbsp;</b>
-                                {selectedProduct.color}
+                                {selectedProduct.colour.join(", ")}
                             </div>
                             <div>
                                 <b>Hardiness Zone: &nbsp;</b>
-                                {selectedProduct.zone}
+                                {selectedProduct.zone.join(", ")}
                             </div>
                             <div>
                                 <b>Root type: &nbsp;</b>
                                 {selectedProduct.rootType}
+                            </div>
+                            <div>
+                                <b>Thorns/Spikes: &nbsp;</b>
+                                {(selectedProduct['thorns/spikes'])? "yes" : "no"}
                             </div>
                         </Col>
                     </Row>

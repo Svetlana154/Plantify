@@ -1,0 +1,30 @@
+.price-each::after{
+    content: " CAD/each";
+}
+
+.cart-item-row {
+    border-bottom: 1px solid #000;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cart-item {
+    display: flex;
+    text-align: start;
+    align-items: center;
+    justify-content: start;
+}
+
+.cart-item-close {
+    margin: 0px 20px;
+}
+
+.cart-cto-row {
+    text-align: end;
+    justify-content: end;
+}
+
+.cart-cto {
+    text-align: center;
+    width: fit-content !important;
+}
