@@ -73,7 +73,7 @@ function SignInModal({promptState, promptCloseCallback, promptSwitchToRecoveryMo
                 </Button>
                 <Container fluid className='log-in-prompt'>
                     <div>Don't have an account?</div>
-                    <a href='/SignUp' onClick={handleSignInModalClose}>Sign Up</a>
+                    <a href='#/SignUp' onClick={handleSignInModalClose}>Sign Up</a>
                 </Container>
             </Modal.Footer>
         </Modal>
