@@ -1,10 +1,11 @@
 import "../styles/ProductLinkSection.css";
+import Button from "react-bootstrap/esm/Button";
 
-function ProductLinkSection() {
+function ProductLinkSection({handleGoToProducts}) {
   return (
     <div className="product-link-section align-items-center">
       <div className="cto">
-        <button className="btn btn-outline-light">View All Products</button>
+        <Button variant="outline-light" onClick={handleGoToProducts}>View All Products</Button>
       </div>
     </div>
   );

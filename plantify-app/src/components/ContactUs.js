@@ -7,9 +7,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Button from "react-bootstrap/esm/Button";
+import { useState } from "react";
 
 
 function ContactUs () {
+    const [show, setShow] = useState(false);
+
     return (
         <Container className="contact-us" id="ContactUs">
             <Row>
@@ -35,10 +38,10 @@ function ContactUs () {
                         <textarea id="client-response" rows="8" cols="80"></textarea>
                     </Container>
                     <Container>
-                        <Alert variant="success">
+                        <Alert show={show} variant="success" onClose={() => setShow(false)} dismissible>
                             Message has been sent successfully!
                         </Alert>
-                        <Button variant="dark" className="float-end">
+                        <Button variant="dark" className="float-end" onClick={() => setShow(true)}>
                             Send
                         </Button>
                     </Container>

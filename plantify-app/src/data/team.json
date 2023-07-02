@@ -1,26 +1,26 @@
 [
   {
-    "name": "Lorem Ipsum 1",
-    "profilePic": "./assets/team/profile-placeholder.png",
-    "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla.",
+    "name": "Lula Morse",
+    "profilePic": "./assets/team/Lula.jpg",
+    "description": "A loving mom, a strict professor, and now a passionate horticulturist as well",
     "extendedDescription": "Proin interdum sed sem a ullamcorper. Proin tempor, urna non scelerisque aliquam, diam dui vehicula augue, quis posuere quam lorem et ex. Fusce consequat a est posuere dapibus. Pellentesque commodo vehicula erat, vel varius dolor laoreet ac. Vivamus cursus laoreet eleifend. Nulla facilisi. Suspendisse potenti."
   },
   {
-    "name": "Lorem Ipsum 2",
-    "profilePic": "./assets/team/profile-placeholder.png",
-    "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla.",
+    "name": "Kaine Lowery",
+    "profilePic": "./assets/team/Kaine.jpg",
+    "description": "Being surrounded by thousands of plants is my idea of Heaven.",
     "extendedDescription": "Proin interdum sed sem a ullamcorper. Proin tempor, urna non scelerisque aliquam, diam dui vehicula augue, quis posuere quam lorem et ex. Fusce consequat a est posuere dapibus. Pellentesque commodo vehicula erat, vel varius dolor laoreet ac. Vivamus cursus laoreet eleifend. Nulla facilisi. Suspendisse potenti."
   },
   {
-    "name": "Lorem Ipsum 3",
-    "profilePic": "./assets/team/profile-placeholder.png",
-    "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla.",
+    "name": "Carmen Mata",
+    "profilePic": "./assets/team/Carmen.jpg",
+    "description": "Started with a cactus, ended with 20 flower beds, a greenhouse, and passion for gardening.",
     "extendedDescription": "Proin interdum sed sem a ullamcorper. Proin tempor, urna non scelerisque aliquam, diam dui vehicula augue, quis posuere quam lorem et ex. Fusce consequat a est posuere dapibus. Pellentesque commodo vehicula erat, vel varius dolor laoreet ac. Vivamus cursus laoreet eleifend. Nulla facilisi. Suspendisse potenti."
   },
   {
-    "name": "Lorem Ipsum 4",
-    "profilePic": "./assets/team/profile-placeholder.png",
-    "description": "Fusce quam eros, consequat in porttitor quis, laoreet in velit. Aenean nec euismod nulla.",
+    "name": "Arthur Gill",
+    "profilePic": "./assets/team/Arthur.jpg",
+    "description": "Officially a botanist, unofficially a just your average plant enthusiast.",
     "extendedDescription": "Proin interdum sed sem a ullamcorper. Proin tempor, urna non scelerisque aliquam, diam dui vehicula augue, quis posuere quam lorem et ex. Fusce consequat a est posuere dapibus. Pellentesque commodo vehicula erat, vel varius dolor laoreet ac. Vivamus cursus laoreet eleifend. Nulla facilisi. Suspendisse potenti."
   }
 ]

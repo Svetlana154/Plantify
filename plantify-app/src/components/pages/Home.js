@@ -2,20 +2,24 @@ import ContactUs from "../ContactUs";
 import DescriptorBlock from "../DescriptorBlock";
 import Hero from "../Hero";
 import ProductLinkSection from "../ProductLinkSection";
-import RecoveryPasswordModal from "../RecoveryPasswordModal";
 import TeamPreview from "../TeamPreview";
 import Tutorial from "../Tutorial";
+import {useNavigate} from "react-router-dom";
 
 function Home() {
-  var signalRecoveryPasswordModal = false;
+  const navigate = useNavigate();
+
+  const handleGoToProducts = () => {
+    navigate("/OurProducts");
+  }
 
   return (
     <div>
       <Hero />
       <DescriptorBlock />
-      <ProductLinkSection />
+      <ProductLinkSection handleGoToProducts={handleGoToProducts}/>
       <TeamPreview />
-      <Tutorial />
+      <Tutorial handleGoToProducts={handleGoToProducts}/>
       <ContactUs />
     </div>
   );
