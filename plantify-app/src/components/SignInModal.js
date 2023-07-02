@@ -68,7 +68,7 @@ function SignInModal({promptState, promptCloseCallback, promptSwitchToRecoveryMo
                 </Form>
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" className="w-100" onClick={handleSignInModalClose} href="/Profile">
+                <Button variant="secondary" className="w-100" onClick={handleSignInModalClose} href="#/Profile">
                     Sign In
                 </Button>
                 <Container fluid className='log-in-prompt'>

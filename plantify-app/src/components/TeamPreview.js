@@ -22,7 +22,7 @@ function TeamPreview() {
         {cardGroup}
       </CardGroup>
       <Container className="team-learn-more">
-        <a href="/AboutUs">Learn more...</a>
+        <a href="#/AboutUs">Learn more...</a>
       </Container>
     </Container>
   );
