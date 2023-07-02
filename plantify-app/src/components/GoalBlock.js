@@ -9,7 +9,7 @@ function GoalBlock() {
                     Our Purpose
                 </h1>
                 <h2 className="title-white-with-shadow goal-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula nunc lectus, nec egestas augue finibus et. Integer eleifend bibendum elit, in porta risus sodales at. 
+                    Spread our passion for gardening by providing the topmost quality of plants and a large selection of options.
                 </h2>
             </Container>
         </div>
