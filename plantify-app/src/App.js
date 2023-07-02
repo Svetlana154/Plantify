@@ -12,7 +12,7 @@ import SignUp from './components/pages/SignUp';
 import ProductSelected from './components/pages/ProductSelected';
 import Checkout from './components/pages/Checkout';
 import ThankYou from './components/pages/ThankYou';
-import Location from './components/Location';
+import Chatbot from './components/Chatbot';
 
 import "./styles/SignInModal.css";
 import ModalManager from './components/ModalManager';
@@ -51,6 +51,7 @@ function App() {
           </Routes>
           
           <ModalManager modalData={modalData} />
+          <Chatbot />
 
           <Footer />
         </div>

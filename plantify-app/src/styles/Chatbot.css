@@ -1,0 +1,22 @@
+.chatbot-icon-container {
+    box-shadow: 1px 1px 4px #000;
+    border-radius: 50%;
+    width: 80px !important;
+    height: 80px !important;
+    background-color: #FFF;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+.chatbot-icon {
+    margin: 40% auto;
+}
+
+.chatbot-expanded {
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    height: 450px;
+    width: 200px;
+}

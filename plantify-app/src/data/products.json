@@ -17,21 +17,21 @@
         "ref": "790Q3",
         "lifetime": "Perennial",
         "rating": {
-                "star": 3.5,
-                "reviews": [
-                    {
-                        "name": "John Doe",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 5
-                    },
-                    {
-                        "name": "John Doe2",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 3
-                    }
-                ]
-            },
-	"rootType": "Aerial"
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Aerial"
     },
     {
         "name": "Pink Single-Stemmed Cascading Orchid",
@@ -51,21 +51,21 @@
         "ref": "VQ051",
         "lifetime": "Perennial",
         "rating": {
-                "star": 4,
-                "reviews": [
-                    {
-                        "name": "John Doe",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 5
-                    },
-                    {
-                        "name": "John Doe2",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 3
-                    }
-                ]
-            },
-	"rootType": "Aerial"
+            "star": 4,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Aerial"
     },
     {
         "name": "Orange Tiger Lily",
@@ -85,21 +85,21 @@
         "ref": "E433W",
         "lifetime": "Perennial",
         "rating": {
-                "star": 4,
-                "reviews": [
-                    {
-                        "name": "John Doe",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 5
-                    },
-                    {
-                        "name": "John Doe2",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 3
-                    }
-                ]
-            },
-	"rootType": "Fibrous"
+            "star": 4,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
     },
     {
         "name": "White Lily",
@@ -119,21 +119,21 @@
         "ref": "JUASV",
         "lifetime": "Perennial",
         "rating": {
-                "star": 3.5,
-                "reviews": [
-                    {
-                        "name": "John Doe",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 5
-                    },
-                    {
-                        "name": "John Doe2",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 3
-                    }
-                ]
-            },
-	"rootType": "Fibrous"
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
     },
     {
         "name": "Autumn Damask Rose",
@@ -153,21 +153,21 @@
         "ref": "CQF6G",
         "lifetime": "Perennial",
         "rating": {
-                "star": 4.5,
-                "reviews": [
-                    {
-                        "name": "John Doe",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 5
-                    },
-                    {
-                        "name": "John Doe2",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 3
-                    }
-                ]
-            },
-	"rootType": "Fibrous"
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
     },
     {
         "name": "Hybrid Tea Double Delight Rose",
@@ -187,21 +187,21 @@
         "ref": "I1ARP",
         "lifetime": "Perennial",
         "rating": {
-                "star": 4.5,
-                "reviews": [
-                    {
-                        "name": "John Doe",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 5
-                    },
-                    {
-                        "name": "John Doe2",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 3
-                    }
-                ]
-            },
-	"rootType": "Fibrous"
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
     },
     {
         "name": "Earth Angel Peony",
@@ -221,20 +221,20 @@
         "ref": "7BARQ",
         "lifetime": "Perennial",
         "rating": {
-                "star": 5,
-                "reviews": [
-                    {
-                        "name": "John Doe",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 5
-                    },
-                    {
-                        "name": "John Doe2",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 3
-                    }
-                ]
-            },
+            "star": 5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
 	"rootType": "Fibrous"
     },
     {
@@ -255,20 +255,1235 @@
         "ref": "8FGB3",
         "lifetime": "Perennial",
         "rating": {
-                "star": 5,
-                "reviews": [
-                    {
-                        "name": "John Doe",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 5
-                    },
-                    {
-                        "name": "John Doe2",
-                        "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                        "rating": 3
-                    }
-                ]
-            },
+            "star": 5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Seeweed Aloe vera",
+        "image": "./assets/products/Aloe_vera_2.jpg",
+        "species": "Aloe vera",
+        "price": 26.00,
+        "brand": "Knippel Gardens",
+        "size": 2,
+        "colour": ["green"],
+        "rarity": 2,
+        "weight": 300,
+        "zone": [8, 9, 10, 11],
+        "thorns/spikes": true,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "4C3RP",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+        "rootType": "Fibrous"
+    },
+    {
+        "name": "Stone Rose Echeveria Elegans Succulent",
+        "image": "./assets/products/Echeveria_elegans.jpg",
+        "species": "Echeveria elegans",
+        "price": 15.00,
+        "brand": "Burley’s Gardens",
+        "size": 0.3,
+        "colour": ["green"],
+        "rarity": 2,
+        "weight": 300,
+        "zone": [9, 10, 11, 12],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "V2NTU",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.0,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+        "rootType": "Tap root"
+    },
+    {
+        "name": "Baby Pink Echeveria Shaviana Succulent",
+        "image": "./assets/products/Echeveria_shaviana.jpg",
+        "species": "Echeveria shaviana",
+        "price": 26.00,
+        "brand": "Knippel Gardens",
+        "size": 0.4,
+        "colour": ["pink", "purple"],
+        "rarity": 2,
+        "weight": 300,
+        "zone": [9, 10, 11, 12],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "KZSJV",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+        "rootType": "Tap root"
+    },
+    {
+        "name": "Mammillaria Cactus",
+        "image": "./assets/products/Mammillaria.jpg",
+        "species": "Mammillaria",
+        "price": 15.00,
+        "brand": "Burley’s Gardens",
+        "size": 1,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 250,
+        "zone": [6, 7, 8, 9],
+        "thorns/spikes": true,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "I2ZTW",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Tap root"
+    },
+    {
+        "name": "Prickly pear cactus",
+        "image": "./assets/products/Prickly_pear.jpg",
+        "species": "Prickly pear",
+        "price": 199.99,
+        "brand": "Burley’s Gardens",
+        "size": 20,
+        "colour": ["green", "yellow"],
+        "rarity": 2,
+        "weight": 3050,
+        "zone": [6, 7, 8, 9],
+        "thorns/spikes": true,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "CGCA3",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Tap root"
+    },
+
+    {
+        "name": "Aloe vera",
+        "image": "./assets/products/Aloe_vera.jpg",
+        "species": "Aloe vera",
+        "price": 25.00,
+        "brand": "Knippel Gardens",
+        "size": 1,
+        "colour": ["green"],
+        "rarity": 2,
+        "weight": 300,
+        "zone": [8, 9, 10, 11],
+        "thorns/spikes": true,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "KETMN",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Maple Autumn Blaze",
+        "image": "./assets/products/Maple_tree.jpg",
+        "species": "Red maple",
+        "price": 200.00,
+        "brand": "Knippel Garden",
+        "size": 52,
+        "colour": ["red"],
+        "rarity": 1,
+        "weight": 3050,
+        "zone": [5, 6, 7, 8, 9],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "M1PVD",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 2.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
 	"rootType": "Fibrous"
+    },
+    {
+        "name": "Birch River",
+        "image": "./assets/products/Birch_tree.jpg",
+        "species": "Silver birch",
+        "price": 299.00,
+        "brand": "Burley’s Gardens",
+        "size": 34,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 4150,
+        "zone": [3, 4, 5, 6, 7, 8],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "Z1Q90",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },    
+    {
+        "name": "Oak Red",
+        "image": "./assets/products/Oak_tree.jpg",
+        "species": "Red Oak",
+        "price": 649.99,
+        "brand": "Burley’s Gardens",
+        "size": 53,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 4550,
+        "zone": [7, 8, 9, 10],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "XFXK4",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Elm Camperdown",
+        "image": "./assets/products/Elm_tree.jpg",
+        "species": "American elm",
+        "price": 250.00,
+        "brand": "Burley’s Gardens",
+        "size": 18,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 2150,
+        "zone": [4, 5, 6, 7, 8, 9],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "99DM5",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.0,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Serbian Spruce",
+        "image": "./assets/products/Spruce_tree.jpg",
+        "species": "White maple",
+        "price": 249.99,
+        "brand": "Knippel Garden",
+        "size": 46,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 3250,
+        "zone": [3, 4, 5, 6],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "P4CYA",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	"rootType": "Fibrous"
+    },
+    {
+        "name": "Austrian Pine",
+        "image": "./assets/products/Pine_tree.jpg",
+        "species": "Austrian Pine",
+        "price": 299.00,
+        "brand": "Burley’s Gardens",
+        "size": 34,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 5100,
+        "zone": [3, 4, 5, 6, 7, 8],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "SF45N",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },    
+    {
+        "name": "Emerald Cedar",
+        "image": "./assets/products/Cedar_tree.jpg",
+        "species": "Emerald Cedar",
+        "price": 49.99,
+        "brand": "Burley’s Gardens",
+        "size": 12,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 1550,
+        "zone": [3, 4, 5, 6, 7, 8, 9],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "VWVPR",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Horse Chestnut Common",
+        "image": "./assets/products/Chestnut_tree.jpg",
+        "species": "Horse Chestnut",
+        "price": 229.99,
+        "brand": "Knippel Garden",
+        "size": 60,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 6350,
+        "zone": [4, 5, 6, 7, 8],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "DH9Y9",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "American Hazelnut",
+        "image": "./assets/products/Hazelnut_tree.jpg",
+        "species": "American Hazelnut",
+        "price": 99.00,
+        "brand": "Burley’s Gardens",
+        "size": 15,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 4100,
+        "zone": [4, 5, 6, 7, 8, 9],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "QME0C",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Eagle Fern",
+        "image": "./assets/products/Fern.jpg",
+        "species": "Eagle fren",
+        "price": 7.99,
+        "brand": "Knippel Garden",
+        "size": 1.4,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 450,
+        "zone": [4, 5, 6, 7, 8],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "IL533",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Meyerii Asparagus",
+        "image": "./assets/products/Asparagus.jpg",
+        "species": "Asparagus fern",
+        "price": 7.00,
+        "brand": "Burley’s Gardens",
+        "size": 1,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 400,
+        "zone": [4, 5, 6, 7, 8],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "FPHKT",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 2.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "McIntosh Apple Tree",
+        "image": "./assets/products/Apple_tree.jpg",
+        "species": "Apple McIntosh",
+        "price": 177.99,
+        "brand": "Knippel Garden",
+        "size": 14,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 2350,
+        "zone": [4],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "5MLIE",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Fig Tree",
+        "image": "./assets/products/Fig_tree.jpg",
+        "species": "Fig tree",
+        "price": 167.50,
+        "brand": "Burley's Gardens",
+        "size": 15,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 4900,
+        "zone": [8, 9, 10],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "A0ZQI",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Orange Tree",
+        "image": "./assets/products/Orange_tree.jpg",
+        "species": "Orange",
+        "price": 149.99,
+        "brand": "Burley's Gardens",
+        "size": 12,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 1550,
+        "zone": [9, 10, 11],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "Z3THI",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "East Asian Cherry",
+        "image": "./assets/products/Cherry_tree.jpg",
+        "species": "East Asian Cherry",
+        "price": 420.99,
+        "brand": "Burley's Gardens",
+        "size": 19,
+        "colour": ["green", "pink"],
+        "rarity": 3,
+        "weight": 1990,
+        "zone": [4, 5, 6, 7, 8],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "3HYHO",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Lettuce",
+        "image": "./assets/products/Lettuce.jpg",
+        "species": "Lettuce",
+        "price": 7.99,
+        "brand": "Knippel Garden",
+        "size": 0.5,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 50,
+        "zone": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "OVFWK",
+        "lifetime": "Annual",
+        "rating": {
+            "star": 3.0,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Tap root"
+    },
+    {
+        "name": "Cabbage",
+        "image": "./assets/products/Cabbage.jpg",
+        "species": "Cabbage",
+        "price": 6.50,
+        "brand": "Burley’s Gardens",
+        "size": 0.3,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 340,
+        "zone": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "7O8TV",
+        "lifetime": "Annual",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Tap root"
+    },
+    {
+        "name": "Kale",
+        "image": "./assets/products/Kale.jpg",
+        "species": "Kale",
+        "price": 4.99,
+        "brand": "Burley’s Gardens",
+        "size": 0.2,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 450,
+        "zone": [7, 8, 9, 10],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "VRQO1",
+        "lifetime": "Annual",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Tap root"
+    },
+    {
+        "name": "Dill",
+        "image": "./assets/products/Dill.jpg",
+        "species": "Dill",
+        "price": 4.50,
+        "brand": "Burley’s Gardens",
+        "size": 2,
+        "colour": ["green"],
+        "rarity": 3,
+        "weight": 190,
+        "zone": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "M2B10",
+        "lifetime": "Annual",
+        "rating": {
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Tap root"
+    },
+    {
+        "name": "Common Onion",
+        "image": "./assets/products/Onion.jpg",
+        "species": "Onion",
+        "price": 8.00,
+        "brand": "Knippel Garden",
+        "size": 2,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 150,
+        "zone": [5, 6, 7],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "DD56Q",
+        "lifetime": "Biannual",
+        "rating": {
+            "star": 2.0,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Red Habanero Pepper",
+        "image": "./assets/products/Pepper.jpg",
+        "species": "Habanero",
+        "price": 12.50,
+        "brand": "Burley’s Gardens",
+        "size": 1.5,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 365,
+        "zone": [9, 10, 11],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "OMHF2",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Early Pride Cucumber",
+        "image": "./assets/products/Cucumber.jpg",
+        "species": "Early Pride Cucumber",
+        "price": 12.99,
+        "brand": "Burley’s Gardens",
+        "size": 10,
+        "colour": ["green"],
+        "rarity": 1,
+        "weight": 950,
+        "zone": [4, 5, 6, 7, 8, 9, 10, 11, 12],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "VRQO1",
+        "lifetime": "Annual",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Tap root"
+    },
+    {
+        "name": "Roma VF Tomato",
+        "image": "./assets/products/Tomato.jpg",
+        "species": "Roma VF Tomato",
+        "price": 14.50,
+        "brand": "Burley's Gardens",
+        "size": 12,
+        "colour": ["green"],
+        "rarity": 3,
+        "weight": 1190,
+        "zone": [5, 6, 7, 8],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "LOZNU",
+        "lifetime": "Annual",
+        "rating": {
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Chippewa Bluberry",
+        "image": "./assets/products/Blueberry.jpg",
+        "species": "Chippewa blueberry",
+        "price": 22.50,
+        "brand": "Knippel Garden",
+        "size": 3,
+        "colour": ["green", "blue"],
+        "rarity": 1,
+        "weight": 950,
+        "zone": [3],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "2HU58",
+        "lifetime": "Perinnial",
+        "rating": {
+            "star": 4.0,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Raspberry heritage",
+        "image": "./assets/products/Raspberry.jpg",
+        "species": "Raspberry heritage",
+        "price": 33.50,
+        "brand": "Burley’s Gardens",
+        "size": 10,
+        "colour": ["green", "red"],
+        "rarity": 1,
+        "weight": 1135,
+        "zone": [3],
+        "thorns/spikes": true,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "OMHF2",
+        "lifetime": "Perennial",
+        "rating": {
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Strawberry Sapphire",
+        "image": "./assets/products/Strawberry.jpg",
+        "species": "Strawberry 'Sapphire'",
+        "price": 20.99,
+        "brand": "Burley's Gardens",
+        "size": 0.5,
+        "colour": ["green", "red"],
+        "rarity": 1,
+        "weight": 350,
+        "zone": [4, 5, 6, 7, 8, 9],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "P31D5",
+        "lifetime": "Annual",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Black Eyed Angels Delphinium Seeds",
+        "image": "./assets/products/Delphinium seeds.jpg",
+        "species": "Delphinium",
+        "price": 6.00,
+        "brand": "Knippel Garden",
+        "size": 4,
+        "colour": ["white", "black"],
+        "rarity": 4.5,
+        "weight": 550,
+        "zone": [3, 4, 5, 6, 7],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "BNP88",
+        "lifetime": "Perinnial",
+        "rating": {
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Fibrous"
+    },
+    {
+        "name": "Triton Carrot Seeds",
+        "image": "./assets/products/Carrot Seeds.jpg",
+        "species": "Triton Carrot",
+        "price": 1.50,
+        "brand": "Burley’s Gardens",
+        "size": 1,
+        "colour": ["green", "orange"],
+        "rarity": 1,
+        "weight": 235,
+        "zone": [3, 4, 5, 6, 7, 8, 9, 10],
+        "thorns/spikes": false,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "JS6D4",
+        "lifetime": "Annual",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        },
+	    "rootType": "Tap root"
+    },
+    {
+        "name": "Watering Can 1L",
+        "image": "./assets/products/Watering_can.jpg",
+        "price": 6.99,
+        "brand": "SteelWorkers",
+        "isTool": true,
+        "size": 0.5,
+        "colour": ["silver"],
+        "weight": 100,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "GSHVU",
+        "rating": {
+            "star": 4.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        }
+    },
+    {
+        "name": "Shovel",
+        "image": "./assets/products/Shovel.jpg",
+        "price": 22.50,
+        "brand": "Constructors",
+        "isTool": true,
+        "size": 0.5,
+        "colour": ["silver"],
+        "weight": 250,
+        "producer": {
+            "location": "Canada"
+        },
+        "ref": "3SSYA",
+        "rating": {
+            "star": 3.5,
+            "reviews": [
+                {
+                    "name": "John Doe",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 5
+                },
+                {
+                    "name": "John Doe2",
+                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "rating": 3
+                }
+            ]
+        }
     }
 ]
