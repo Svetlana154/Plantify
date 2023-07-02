@@ -1,33 +1,28 @@
 [
     {
         "key": 0,
-        "header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
+        "header": "How long does the delivery time take?",
+        "body": "Delivery times vary based on the origin of the product and the destination address. Typically, shipping within Canada takes 3-5 business days. International shipping can take up to 3 weeks."
     },
     {
         "key": 1,
-        "header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
+        "header": "Can I pick up my purchase in person?",
+        "body": "Yes, your purchase can be both picked up in store (105 St Andrew St, Ottawa, ON, Canada, K1N 5G1) or delivered to your home. Please find more information about our location on the About Us page."
     },
     {
         "key": 2,
-        "header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
+        "header": "Can I pay with PayPal?",
+        "body": "Unfortunately, online purchases can only be completed with credit. If you choose to shop in person, cash payments are also accepted."
     },
     {
         "key": 3,
-        "header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
+        "header": "What is your refund policy?",
+        "body": "If you cancel the order before it is shipped out, we can make a full refund on your purchase. However, after the order is shipped, refunds are no longer available. If you wish to return your purchase, please ship it back to the return address (this cost is not covered by us)."
     },
     {
         "key": 4,
-        "header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
-    },
-    {
-        "key": 5,
-        "header": "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit."
+        "header": "How do I cancel an order?",
+        "body": "Reach out us by either phone, email, or our online message system to cancel your order. Please have your order reference number ready."
     }
 
 

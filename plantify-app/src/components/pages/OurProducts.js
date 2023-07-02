@@ -15,19 +15,17 @@ import { faFilter, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "../../styles/OurProducts.css";
 import ProductCard from "../ProductCard";
 
-function OurProducts({productData}) {
+function OurProducts({productData, filters, search}) {
   
   const [show, setFilterShow] = useState(false);
   const handleFilterClose = () => setFilterShow(false);
   const handleFilterShow = () => setFilterShow(true);
 
-  const applyFilterToProductList = () => {
-    // apply filter option
-    setFilterShow(false);
-  };
-
-  const [searchTerm, setSearchTerm] = useState("");
+  // convergent/divergent search elements
+  const [searchTerm, setSearchTerm] = useState(search);
+  const [filtersApplied, setFiltersApplied] = useState(filters);
   const [productsShown, setProductsShown] = useState(productData);
+
 
   function handleSearchTermChange(event){
     setSearchTerm((searchTerm) => 
@@ -39,9 +37,112 @@ function OurProducts({productData}) {
 
         setProductsShown(newProducts);
 
+        filtersApplied.searchTerm = value;
+        const newFilters = filtersApplied;
+        setFiltersApplied(newFilters);
+
         return value;
       } );
   };
+
+  const applyFilterToProductList = () => {
+    const newFiltersApplied = {}
+
+    const brand = {};
+    brand["Burley's Gardens"] = document.getElementById("filter-brand-1").checked;
+    brand["Knippel Gardens"] = document.getElementById("filter-brand-2").checked;
+    brand["High Country Roses"] = document.getElementById("filter-brand-3").checked;
+    brand["Canada Flowers"] = document.getElementById("filter-brand-4").checked;
+    brand["Other"] = document.getElementById("filter-brand-5").checked;
+    newFiltersApplied.brand = brand;
+
+    const price = {};
+    price["0 9.99"] = document.getElementById("filter-price-1").checked;
+    price["10.00 24.99"] = document.getElementById("filter-price-2").checked;
+    price["25.00 49.99"] = document.getElementById("filter-price-3").checked;
+    price["50.00 74.99"] = document.getElementById("filter-price-4").checked;
+    price["75.00 1000.00"] = document.getElementById("filter-price-5").checked;
+    newFiltersApplied.price = price;
+
+    const size = {};
+    size["0 3"] = document.getElementById("filter-size-1").checked;
+    size["3 7"] = document.getElementById("filter-size-2").checked;
+    size["7 100"] = document.getElementById("filter-size-3").checked;
+    newFiltersApplied.size = size;
+
+    const lifetime = {};
+    lifetime["Annual"] = document.getElementById("filter-lifetime-1").checked;
+    lifetime["Perennial"] = document.getElementById("filter-lifetime-2").checked;
+    lifetime["Both"] = document.getElementById("filter-lifetime-3").checked;
+    newFiltersApplied.lifetime = lifetime;
+
+    const colour = {};
+    colour["Red"] = document.getElementById("filter-colour-1").checked;
+    colour["Orange"] = document.getElementById("filter-colour-2").checked;
+    colour["Yellow"] = document.getElementById("filter-colour-3").checked;
+    colour["Green"] = document.getElementById("filter-colour-4").checked;
+    colour["Pink"] = document.getElementById("filter-colour-5").checked;
+    colour["Purple"] = document.getElementById("filter-colour-6").checked;
+    colour["Blue"] = document.getElementById("filter-colour-7").checked;
+    colour["Other"] = document.getElementById("filter-colour-8").checked;
+    newFiltersApplied.colour = colour;
+
+    const newProducts = productData.filter((product) => (
+      checkIfProductApplies(product, newFiltersApplied)
+    ));
+
+    setFiltersApplied(newFiltersApplied);
+
+    setProductsShown(newProducts);
+    setFilterShow(false);
+  };
+
+  function getPriceInterval(given) {
+    if (given >= 0 && given <= 9.99) return("0 9.99");
+    if (given >= 10.00 && given <= 24.99) return ("10.00 24.99");
+    if (given >= 25.00 && given <= 49.99) return ("25.00 49.99");
+    if (given >= 50.00 && given <= 74.99) return ("50.00 74.99");
+    if (given >= 75.00 && given <= 1000.00) return ("75.00 1000.00");
+    console.log(given);
+  }
+
+  function getSizeInterval(given) {
+    if (given >= 0 && given < 3) return("0 3");
+    if (given >= 3 && given <= 7) return ("3 7");
+    if (given >= 7 && given <= 100) return ("7 100");
+  }
+
+  function checkAllColours(colours, filter){
+    let foundMatch = false;
+
+    colours.forEach(colour => {
+      if ((filter.colour.hasOwnProperty(colour) && (filter.colour[colour] === true)) ||
+      ((filter.colour.hasOwnProperty(colour) === false) && filter.colour["Other"] === true)){
+        foundMatch = true;
+      }
+    });
+
+    return (foundMatch);
+  }
+
+  function checkIfProductApplies (product, newFiltersApplied) {
+    const checkBrandMatch = (newFiltersApplied.brand.hasOwnProperty(product.brand) && (newFiltersApplied.brand[product.brand] === true)) ||
+      ((newFiltersApplied.brand.hasOwnProperty(product.brand) === false) && newFiltersApplied.brand["Other"] === true);
+      
+    const checkPriceMatch = (newFiltersApplied.price[getPriceInterval(product.price)] === true);
+
+    const checkSizeMatch = (newFiltersApplied.size[getSizeInterval(product.size)] === true);
+
+    const isTool = product.category == "tools";
+
+    const checkLifetimeMatch = 
+      ((newFiltersApplied.lifetime["Both"] === true) || 
+        ((newFiltersApplied.lifetime["Both"] === false) && newFiltersApplied.lifetime[product.lifetime] === true));
+    
+    const checkColourMatch = checkAllColours(product.colour, newFiltersApplied);
+
+    return(checkBrandMatch && checkPriceMatch && checkSizeMatch && checkLifetimeMatch && checkColourMatch);
+  }
 
   // Generating product list
   var numberOfResults = 0;
@@ -113,7 +214,7 @@ function OurProducts({productData}) {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Form>
+          <Form onSubmit={applyFilterToProductList}>
             <Accordion variant="dark" alwaysOpen>
               <Accordion.Item eventKey="0" className="filter-option">
                 <Accordion.Header>
@@ -122,16 +223,13 @@ function OurProducts({productData}) {
                 <Accordion.Body>
                   <Row>
                     <Col>
-                      <Form.Check type="checkbox" label="Brand1" />
-                      <Form.Check type="checkbox" label="Brand2" />
-                      <Form.Check type="checkbox" label="Brand3" />
-                      <Form.Check type="checkbox" label="Brand4" />
+                      <Form.Check type="checkbox" label="Burley's Gardens" defaultChecked={filtersApplied.brand["Burley's Gardens"]} id="filter-brand-1"/>
+                      <Form.Check type="checkbox" label="Knippel Gardens" defaultChecked={filtersApplied.brand["Knippel Gardens"]} id="filter-brand-2"/>
+                      <Form.Check type="checkbox" label="High Country Roses" defaultChecked={filtersApplied.brand["High Country Roses"]}  id="filter-brand-3" />
                     </Col>
                     <Col>
-                      <Form.Check type="checkbox" label="Brand1" />
-                      <Form.Check type="checkbox" label="Brand2" />
-                      <Form.Check type="checkbox" label="Brand3" />
-                      <Form.Check type="checkbox" label="Other" />
+                      <Form.Check type="checkbox" label="Canada Flowers" defaultChecked={filtersApplied.brand["Canada Flowers"]} id="filter-brand-4" />
+                      <Form.Check type="checkbox" label="Other" defaultChecked={filtersApplied.brand["Other"]} id="filter-brand-5" /> 
                     </Col>
                   </Row>
                 </Accordion.Body>
@@ -144,13 +242,13 @@ function OurProducts({productData}) {
                 <Accordion.Body>
                   <Row>
                     <Col>
-                      <Form.Check type="checkbox" label="Less than $10.00" />
-                      <Form.Check type="checkbox" label="$10.00 - $24.99" />
-                      <Form.Check type="checkbox" label="$25.00 - $49.99" />
+                      <Form.Check type="checkbox" label="Less than $10.00" defaultChecked={filtersApplied.price["0 9.99"]} id="filter-price-1"/>
+                      <Form.Check type="checkbox" label="$10.00 - $24.99" defaultChecked={filtersApplied.price["10.00 24.99"]} id="filter-price-2" />
+                      <Form.Check type="checkbox" label="$25.00 - $49.99" defaultChecked={filtersApplied.price["25.00 49.99"]} id="filter-price-3" />
                     </Col>
                     <Col>
-                      <Form.Check type="checkbox" label="$50.00 - $74.99" />
-                      <Form.Check type="checkbox" label="$75.00 +"/>
+                      <Form.Check type="checkbox" label="$50.00 - $74.99" defaultChecked={filtersApplied.price["50.00 74.99"]} id="filter-price-4" />
+                      <Form.Check type="checkbox" label="$75.00 +" defaultChecked={filtersApplied.price["75.00 1000.00"]} id="filter-price-5"/>
                     </Col>
                   </Row>
                 </Accordion.Body>
@@ -163,13 +261,13 @@ function OurProducts({productData}) {
                 <Accordion.Body>
                   <Row>
                     <Col>
-                      <Form.Check type="checkbox" label="Small (<5ft)"/>
+                      <Form.Check type="checkbox" label="Small (<3ft)" defaultChecked={filtersApplied.size["0 3"]} id="filter-size-1"/>
                     </Col>
                     <Col>
-                      <Form.Check type="checkbox" label="Medium"/>
+                      <Form.Check type="checkbox" label="Medium" defaultChecked={filtersApplied.size["3 7"]} id="filter-size-2"/>
                     </Col>
                     <Col>
-                      <Form.Check type="checkbox" label="Large (>10ft)"/>
+                      <Form.Check type="checkbox" label="Large (>7ft)" defaultChecked={filtersApplied.size["7 100"]} id="filter-size-3"/>
                     </Col>
                   </Row>
                 </Accordion.Body>
@@ -182,13 +280,13 @@ function OurProducts({productData}) {
                 <Accordion.Body>
                   <Row>
                     <Col>
-                      <Form.Check name="lifetimeGroup" type="radio" label="Annual" />
+                      <Form.Check name="lifetimeGroup" type="radio" label="Annual" defaultChecked={filtersApplied.lifetime["Annual"]} id="filter-lifetime-1"/>
                     </Col>
                     <Col>
-                      <Form.Check name="lifetimeGroup" type="radio" label="Perrenial" />
+                      <Form.Check name="lifetimeGroup" type="radio" label="Perennial" defaultChecked={filtersApplied.lifetime["Perennial"]} id="filter-lifetime-2" />
                     </Col>
                     <Col>
-                      <Form.Check name="lifetimeGroup" type="radio" label="Both"/>
+                      <Form.Check name="lifetimeGroup" type="radio" label="Both" defaultChecked={filtersApplied.lifetime["Both"]} id="filter-lifetime-3"/>
                     </Col>
                   </Row>
                 </Accordion.Body>
@@ -201,16 +299,16 @@ function OurProducts({productData}) {
                 <Accordion.Body>
                   <Row>
                     <Col>
-                      <Form.Check type="checkbox" label="Red" />
-                      <Form.Check type="checkbox" label="Orange" />
-                      <Form.Check type="checkbox" label="Yellow" />
-                      <Form.Check type="checkbox" label="Green" />
+                      <Form.Check type="checkbox" label="Red" defaultChecked={filtersApplied.colour["Red"]} id="filter-colour-1"/>
+                      <Form.Check type="checkbox" label="Orange" defaultChecked={filtersApplied.colour["Orange"]} id="filter-colour-2" />
+                      <Form.Check type="checkbox" label="Yellow" defaultChecked={filtersApplied.colour["Yellow"]} id="filter-colour-3" />
+                      <Form.Check type="checkbox" label="Green" defaultChecked={filtersApplied.colour["Green"]} id="filter-colour-4" />
                     </Col>
                     <Col>
-                      <Form.Check type="checkbox" label="Pink" />
-                      <Form.Check type="checkbox" label="Purple" />
-                      <Form.Check type="checkbox" label="Blue" />
-                      <Form.Check type="checkbox" label="Other" />
+                      <Form.Check type="checkbox" label="Pink" defaultChecked={filtersApplied.colour["Pink"]} id="filter-colour-5" />
+                      <Form.Check type="checkbox" label="Purple" defaultChecked={filtersApplied.colour["Purple"]} id="filter-colour-6" />
+                      <Form.Check type="checkbox" label="Blue" defaultChecked={filtersApplied.colour["Blue"]} id="filter-colour-7" />
+                      <Form.Check type="checkbox" label="Other" defaultChecked={filtersApplied.colour["Other"]} id="filter-colour-8" />
                     </Col>
                   </Row>
                 </Accordion.Body>
@@ -306,7 +404,9 @@ function OurProducts({productData}) {
             </Accordion>
 
             <Container className="filter-cto">
-              <Button variant="dark" onClick={() => {applyFilterToProductList()}}>Apply Filters</Button>
+              <Button variant="dark" type="submit">
+                Apply Filters
+              </Button>
               <div>
                 <a href="">Reset filters</a>
               </div>

@@ -31,6 +31,43 @@ function App() {
     setModalData(allModalData);
   };
 
+  const filters = {
+    brand: {
+      "Burley's Gardens": true,
+      "Knippel Gardens": true,
+      "High Country Roses": true,
+      "Canada Flowers": true,
+      "Other": true
+    },
+    price: {
+      "0 9.99": true,
+      "10.00 24.99": true,
+      "25.00 49.99": true,
+      "50.00 74.99": true,
+      "75.00 1000.00": true
+    },
+    size: {
+      "0 3": true,
+      "3 7": true,
+      "7 100": true
+    },
+    lifetime: {
+      "Annual": false,
+      "Perennial": false,
+      "Both": true
+    },
+    colour: {
+      "Red": true,
+      "Orange": true,
+      "Yellow": true,
+      "Green": true,
+      "Blue": true,
+      "Pink": true,
+      "Purple": true,
+      "Other": true
+    }
+  }
+
   return (
     <div className="App">
       <Router>
@@ -40,7 +77,7 @@ function App() {
           <Routes>
             <Route path='/' element = {<Home />} />
             <Route path='/AboutUs' element = {<AboutUs />} />
-            <Route path='/OurProducts' element = {<OurProducts productData={productData}/>} />
+            <Route path='/OurProducts' element = {<OurProducts productData={productData} filters={filters}/>} />
             <Route path='/FAQ' element = {<FAQ />} />
             <Route path='/Profile' element = {<Profile />} />
             <Route path='/SignUp' element = {<SignUp />} />

@@ -38,7 +38,7 @@ function ProductSelected () {
         }
     }
 
-    const isTool = selectedProduct.isTool;
+    const isTool = selectedProduct.category === "tools";
 
     //generate reviews
     const reviews = [];
