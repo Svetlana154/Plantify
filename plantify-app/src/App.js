@@ -37,16 +37,16 @@ function App() {
           <MainNavbar promptSignIn={promptSignIn}/>
 
           <Routes>
-            <Route path='/' element = {<Home />} />
-            <Route path='/AboutUs' element = {<AboutUs />} />
-            <Route path='/OurProducts' element = {<OurProducts />} />
-            <Route path='/FAQ' element = {<FAQ />} />
-            <Route path='/Profile' element = {<Profile />} />
-            <Route path='/SignUp' element = {<SignUp />} />
-            <Route path='/ProductSelected' element = {<ProductSelected />} />
-            <Route path='/ShoppingCart' element = {<ShoppingCart />} />
-            <Route path='/Checkout' element = {<Checkout />} />
-            <Route path='/ThankYou' element = {<ThankYou />} />
+            <Route path='Plantify/' element = {<Home />} />
+            <Route path='Plantify/AboutUs' element = {<AboutUs />} />
+            <Route path='Plantify/OurProducts' element = {<OurProducts />} />
+            <Route path='Plantify/FAQ' element = {<FAQ />} />
+            <Route path='Plantify/Profile' element = {<Profile />} />
+            <Route path='Plantify/SignUp' element = {<SignUp />} />
+            <Route path='Plantify/ProductSelected' element = {<ProductSelected />} />
+            <Route path='Plantify/ShoppingCart' element = {<ShoppingCart />} />
+            <Route path='Plantify/Checkout' element = {<Checkout />} />
+            <Route path='Plantify/ThankYou' element = {<ThankYou />} />
 
           </Routes>
           
