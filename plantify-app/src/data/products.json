@@ -784,7 +784,7 @@
     },
     {
         "name": "Eagle Fern",
-        "image": "./assets/products/Fern.jpg",
+        "image": "./assets/products/EagleFern.jpg",
         "species": "Eagle fren",
         "price": 7.99,
         "brand": "Knippel Garden",
@@ -818,10 +818,10 @@
     },
     {
         "name": "Meyerii Asparagus",
-        "image": "./assets/products/Asparagus.jpg",
+        "image": "./assets/products/AsparagusFern.jpg",
         "species": "Asparagus fern",
         "price": 7.00,
-        "brand": "Burley’s Gardens",
+        "brand": "Burley's Gardens",
         "size": 1,
         "colour": ["green"],
         "rarity": 1,
@@ -1362,7 +1362,7 @@
     },
     {
         "name": "Black Eyed Angels Delphinium Seeds",
-        "image": "./assets/products/Delphinium seeds.jpg",
+        "image": "./assets/products/DelphiniumSeeds.jpg",
         "species": "Delphinium",
         "price": 6.00,
         "brand": "Knippel Garden",
@@ -1396,10 +1396,10 @@
     },
     {
         "name": "Triton Carrot Seeds",
-        "image": "./assets/products/Carrot Seeds.jpg",
+        "image": "./assets/products/Carrot.jpg",
         "species": "Triton Carrot",
         "price": 1.50,
-        "brand": "Burley’s Gardens",
+        "brand": "Burley's Gardens",
         "size": 1,
         "colour": ["green", "orange"],
         "rarity": 1,

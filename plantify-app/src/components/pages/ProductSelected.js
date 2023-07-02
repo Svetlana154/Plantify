@@ -38,6 +38,8 @@ function ProductSelected () {
         }
     }
 
+    const isTool = selectedProduct.isTool;
+
     //generate reviews
     const reviews = [];
 
@@ -69,7 +71,7 @@ function ProductSelected () {
                     <Container className="product-selected-text-col">
                         <span className="product-ref">{selectedProduct.ref}</span>
                         <h1>{selectedProduct.name}</h1>
-                        <i>Species: {selectedProduct.species}</i>
+                        {(!isTool)? <i>Species: {selectedProduct.species}</i> : <i></i>}                        
                         <Row className="product-star-rating-row">
                             <Col md={10}>
                                 {starRating} {selectedProduct.rating.star}
@@ -108,10 +110,13 @@ function ProductSelected () {
                                 <b>Name: &nbsp;</b>
                                 {selectedProduct.name}
                             </div>
+                            {(!isTool)? 
                             <div>
                                 <b>Species: &nbsp;</b>
                                 {selectedProduct.species}
                             </div>
+                            : <></>
+                            }                            
                             <div>
                                 <b>Brand: &nbsp;</b>
                                 {selectedProduct.brand}
@@ -120,6 +125,8 @@ function ProductSelected () {
                                 <b>Producer: &nbsp;</b>
                                 {selectedProduct.producer.location}
                             </div>
+                            {(!isTool)? 
+                            <>
                             <div>
                                 <b>Rarity: &nbsp;</b>
                                 {selectedProduct.rarity}
@@ -128,6 +135,8 @@ function ProductSelected () {
                                 <b>Lifetime: &nbsp;</b>
                                 {selectedProduct.lifetime}
                             </div>
+                            </>                            
+                            : <></> }
                         </Col>
                         <Col>
                             <div>
@@ -142,18 +151,22 @@ function ProductSelected () {
                                 <b>Color: &nbsp;</b>
                                 {selectedProduct.colour.join(", ")}
                             </div>
-                            <div>
-                                <b>Hardiness Zone: &nbsp;</b>
-                                {selectedProduct.zone.join(", ")}
-                            </div>
-                            <div>
-                                <b>Root type: &nbsp;</b>
-                                {selectedProduct.rootType}
-                            </div>
-                            <div>
-                                <b>Thorns/Spikes: &nbsp;</b>
-                                {(selectedProduct['thorns/spikes'])? "yes" : "no"}
-                            </div>
+                            {(!isTool)? 
+                            <>
+                                <div>
+                                    <b>Hardiness Zone: &nbsp;</b>
+                                    {selectedProduct.zone.join(", ")}
+                                </div>
+                                <div>
+                                    <b>Root type: &nbsp;</b>
+                                    {selectedProduct.rootType}
+                                </div>
+                                <div>
+                                    <b>Thorns/Spikes: &nbsp;</b>
+                                    {(selectedProduct['thorns/spikes'])? "yes" : "no"}
+                                </div>
+                            </>
+                            : <></>}
                         </Col>
                     </Row>
                 </Container>
