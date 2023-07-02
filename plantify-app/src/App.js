@@ -13,7 +13,7 @@ import ProductSelected from './components/pages/ProductSelected';
 import Checkout from './components/pages/Checkout';
 import ThankYou from './components/pages/ThankYou';
 import Chatbot from './components/Chatbot';
-import Row from 'react-bootstrap/esm/Row';
+import productData from "./data/products.json";
 
 import "./styles/SignInModal.css";
 import ModalManager from './components/ModalManager';
@@ -40,7 +40,7 @@ function App() {
           <Routes>
             <Route path='/' element = {<Home />} />
             <Route path='/AboutUs' element = {<AboutUs />} />
-            <Route path='/OurProducts' element = {<OurProducts />} />
+            <Route path='/OurProducts' element = {<OurProducts productData={productData}/>} />
             <Route path='/FAQ' element = {<FAQ />} />
             <Route path='/Profile' element = {<Profile />} />
             <Route path='/SignUp' element = {<SignUp />} />

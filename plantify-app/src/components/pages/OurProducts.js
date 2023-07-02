@@ -12,14 +12,12 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
-import productData from "../../data/products.json";
 import "../../styles/OurProducts.css";
 import ProductCard from "../ProductCard";
 
-function OurProducts() {
+function OurProducts({productData}) {
   
   const [show, setFilterShow] = useState(false);
-
   const handleFilterClose = () => setFilterShow(false);
   const handleFilterShow = () => setFilterShow(true);
 
@@ -28,11 +26,28 @@ function OurProducts() {
     setFilterShow(false);
   };
 
+  const [searchTerm, setSearchTerm] = useState("");
+  const [productsShown, setProductsShown] = useState(productData);
+
+  function handleSearchTermChange(event){
+    setSearchTerm((searchTerm) => 
+      {
+        const value = event.target.value.trim();
+        
+        const newProducts = productData.filter((product) =>
+          product.name.toLowerCase().includes(value.toLowerCase()));
+
+        setProductsShown(newProducts);
+
+        return value;
+      } );
+  };
+
   // Generating product list
   var numberOfResults = 0;
 
   const generatedProductsList = [];
-  productData.forEach(product =>{
+  productsShown.forEach(product =>{
     generatedProductsList.push(
       <Col xs={6} sm={4} md={3}>
         <ProductCard product={product}/>
@@ -50,7 +65,7 @@ function OurProducts() {
       <Container>
         <Form className="products-search-bar">
           <InputGroup>
-              <Form.Control type="text" placeholder="Search" aria-describedby="edit-name"/>
+              <Form.Control type="text" placeholder="Search" aria-describedby="edit-name" value={searchTerm} onChange={handleSearchTermChange}/>
               <InputGroup.Text id="edit-name">
                   <FontAwesomeIcon icon={faMagnifyingGlass} size="lg" />
               </InputGroup.Text>
