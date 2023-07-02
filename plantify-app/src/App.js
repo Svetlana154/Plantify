@@ -13,6 +13,7 @@ import ProductSelected from './components/pages/ProductSelected';
 import Checkout from './components/pages/Checkout';
 import ThankYou from './components/pages/ThankYou';
 import Chatbot from './components/Chatbot';
+import Row from 'react-bootstrap/esm/Row';
 
 import "./styles/SignInModal.css";
 import ModalManager from './components/ModalManager';
