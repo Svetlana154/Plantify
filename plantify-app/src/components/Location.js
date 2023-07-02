@@ -7,7 +7,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 function Location() {
   return (
-    <Container fluid className="location">
+    <Container fluid className="location" id="location">
       <Container className="location-container">
       <h1>Where to find us</h1>
       <Row className="location-content">

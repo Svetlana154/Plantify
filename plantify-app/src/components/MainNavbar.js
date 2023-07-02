@@ -28,7 +28,7 @@ function MainNavbar({promptSignIn}) {
         <span className='top-navbar-item'>
           <FontAwesomeIcon icon={faEarthAmericas} className='top-navbar-item-icon'/>
           <span>
-            EN | LA
+            <b>EN</b> | LA
           </span>
         </span>
       </div>
@@ -62,7 +62,7 @@ function MainNavbar({promptSignIn}) {
               </NavDropdown>
             </Nav>
             <Nav className='ms-auto'>
-                <Nav.Link href="/AboutUs#Location">
+                <Nav.Link href="/AboutUs#location">
                   <FontAwesomeIcon icon={faLocationDot} size='xl'/>
                 </Nav.Link>
                 <Nav.Link href="/ShoppingCart">
