@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Plantify/static/css/main.ff047da4.css",
-    "main.js": "/Plantify/static/js/main.2dad7d2a.js",
+    "main.css": "/Plantify/static/css/main.67f18f6e.css",
+    "main.js": "/Plantify/static/js/main.8b05c674.js",
     "static/js/787.4e877e32.chunk.js": "/Plantify/static/js/787.4e877e32.chunk.js",
     "static/media/plant-drawer-cropped.jpg": "/Plantify/static/media/plant-drawer-cropped.2d72e94b2069deda7e3c.jpg",
     "static/media/office-cropped-square.jpg": "/Plantify/static/media/office-cropped-square.c7a09d372aa1eedb3a14.jpg",
@@ -15,12 +15,12 @@
     "static/media/word-cloud-raleway.png": "/Plantify/static/media/word-cloud-raleway.edeebc3e5dbaf44c1dd1.png",
     "static/media/logo_clean.png": "/Plantify/static/media/logo_clean.573f77b8691e41238acf.png",
     "index.html": "/Plantify/index.html",
-    "main.ff047da4.css.map": "/Plantify/static/css/main.ff047da4.css.map",
-    "main.2dad7d2a.js.map": "/Plantify/static/js/main.2dad7d2a.js.map",
+    "main.67f18f6e.css.map": "/Plantify/static/css/main.67f18f6e.css.map",
+    "main.8b05c674.js.map": "/Plantify/static/js/main.8b05c674.js.map",
     "787.4e877e32.chunk.js.map": "/Plantify/static/js/787.4e877e32.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff047da4.css",
-    "static/js/main.2dad7d2a.js"
+    "static/css/main.67f18f6e.css",
+    "static/js/main.8b05c674.js"
   ]
 }
