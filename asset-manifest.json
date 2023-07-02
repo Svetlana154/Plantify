@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/plantify/static/css/main.0fab2dc9.css",
+    "main.js": "/plantify/static/js/main.3b41780d.js",
+    "static/js/787.4e877e32.chunk.js": "/plantify/static/js/787.4e877e32.chunk.js",
+    "static/media/plant-drawer-cropped.jpg": "/plantify/static/media/plant-drawer-cropped.2d72e94b2069deda7e3c.jpg",
+    "static/media/office-cropped-square.jpg": "/plantify/static/media/office-cropped-square.c7a09d372aa1eedb3a14.jpg",
+    "static/media/flowers-cropped-4-3.jpg": "/plantify/static/media/flowers-cropped-4-3.e2ae53011c870e87e617.jpg",
+    "static/media/greenhouse.jpg": "/plantify/static/media/greenhouse.5949dfb26d14a6724520.jpg",
+    "static/media/plant-corner.jpg": "/plantify/static/media/plant-corner.01648b088f8260a16ba9.jpg",
+    "static/media/plant-display-cropped-square.jpg": "/plantify/static/media/plant-display-cropped-square.0e261a0b7bafa5017183.jpg",
+    "static/media/pots-on-shelves-cropped-4-3.jpg": "/plantify/static/media/pots-on-shelves-cropped-4-3.0754b42e9ba4078d3c1e.jpg",
+    "static/media/table-cropped-widescreen.jpg": "/plantify/static/media/table-cropped-widescreen.b3f9b2e5e454169bbe12.jpg",
+    "static/media/planting-cropped-4-3.jpg": "/plantify/static/media/planting-cropped-4-3.9120587f70803476e311.jpg",
+    "static/media/word-cloud-raleway.png": "/plantify/static/media/word-cloud-raleway.edeebc3e5dbaf44c1dd1.png",
+    "static/media/logo_clean.png": "/plantify/static/media/logo_clean.573f77b8691e41238acf.png",
+    "index.html": "/plantify/index.html",
+    "main.0fab2dc9.css.map": "/plantify/static/css/main.0fab2dc9.css.map",
+    "main.3b41780d.js.map": "/plantify/static/js/main.3b41780d.js.map",
+    "787.4e877e32.chunk.js.map": "/plantify/static/js/787.4e877e32.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0fab2dc9.css",
+    "static/js/main.3b41780d.js"
+  ]
+}
