@@ -37,6 +37,17 @@
   }
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #FFF;
+  background: #ADE1F5;
+}
+
+::selection {
+  color: #FFF;
+  background: #ADE1F5;
+}
+
+
 
 .product-ref {
   color: grey;
