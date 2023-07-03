@@ -25,7 +25,7 @@ function ThankYou() {
                     12341234
                 </span></div>
             <div className="mt-3">
-                Sed a augue vel leo tincidunt accumsan. Etiam ut est gravida, mollis nunc a, lacinia elit. Nunc ac nunc augue. Duis eu malesuada urna, at pulvinar libero. Mauris nunc risus, dapibus eget tincidunt et, malesuada quis orci. In hac habitasse platea dictumst. Sed quis bibendum diam. Aliquam at feugiat metus. Vivamus at elit quam.
+                Thank you for shopping with us! A confirmation email with all of the purchase details has been sent out. If you wish to contact us about your purchase, please call through +1 (343) 543-3456 or email us at customer-service@plantify.com and we'll try to get back to you at our earliest convenience. Happy plantifying!
             </div>
             <div >
                 <Button variant="outline-dark" className="mt-5" onClick={handleBackToHome}>
