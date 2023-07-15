@@ -33,45 +33,45 @@ function MainNavbar({promptSignIn}) {
         </span>
       </div>
       <Navbar expand="lg" className="bg-body-tertiary bottom-navbar">
-          <Navbar.Brand className="navbar-brand" href="#/">
+          <Navbar.Brand className="navbar-brand" href="/">
             <img src={logoClean} alt="Plantify" width="100px"/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#/">Home</Nav.Link>
-              <Nav.Link href="#/AboutUs">About Us</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/AboutUs">About Us</Nav.Link>
               <NavDropdown id="basic-nav-dropdown" title="Our Products">
-                <NavDropdown.Item href="#/OurProducts">Seeds</NavDropdown.Item>
-                <NavDropdown.Item href="#/OurProducts">Succulents</NavDropdown.Item>
-                <NavDropdown.Item href="#/OurProducts">Ferns & Shrubs</NavDropdown.Item>
-                <NavDropdown.Item href="#/OurProducts">Crops</NavDropdown.Item>
-                <NavDropdown.Item href="#/OurProducts">Flowers</NavDropdown.Item>
-                <NavDropdown.Item href="#/OurProducts">Trees</NavDropdown.Item>
-                <NavDropdown.Item href="#/OurProducts">
+                <NavDropdown.Item href="/OurProducts">Seeds</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Succulents</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Ferns & Shrubs</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Crops</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Flowers</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">Trees</NavDropdown.Item>
+                <NavDropdown.Item href="/OurProducts">
                   Tools & Accessories
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="#/OurProducts">
+                <NavDropdown.Item href="/OurProducts">
                   View All
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown id="basic-nav-dropdown" title="Support">
-                <NavDropdown.Item href="#/FAQ">FAQ</NavDropdown.Item>
-                <NavDropdown.Item href="#/#ContactUs">Contact Us</NavDropdown.Item>
+                <NavDropdown.Item href="/FAQ">FAQ</NavDropdown.Item>
+                <NavDropdown.Item href="/#ContactUs">Contact Us</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav className='ms-auto'>
-                <Nav.Link href="#/AboutUs#location">
+                <Nav.Link href="/AboutUs#location">
                   <FontAwesomeIcon icon={faLocationDot} size='xl'/>
                 </Nav.Link>
-                <Nav.Link href="#/ShoppingCart">
+                <Nav.Link href="/ShoppingCart">
                   <FontAwesomeIcon icon={faShoppingCart} size='xl'/>
                 </Nav.Link>
                 <Nav.Link href="" onClick={() => {promptSignIn(true);}}>
                   <FontAwesomeIcon icon={faCircleUser} size='xl'/>
                 </Nav.Link>
-                <Nav.Link href="#/OurProducts">
+                <Nav.Link href="/OurProducts">
                   <FontAwesomeIcon icon={faSearch} size='xl'/>
                 </Nav.Link>
               </Nav>

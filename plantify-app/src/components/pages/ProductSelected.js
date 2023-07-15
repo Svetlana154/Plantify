@@ -57,7 +57,7 @@ function ProductSelected () {
     return (
         <Container fluid className="product-selected">
             <span>&lt;
-                <a href="#/OurProducts">
+                <a href="/OurProducts">
                      Back to Search
                 </a>
             </span>

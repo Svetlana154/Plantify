@@ -75,7 +75,7 @@ function SignUp() {
                     </Container>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" className="w-100" onClick={handleClose} href="#/">
+                    <Button variant="secondary" className="w-100" onClick={handleClose} href="/">
                         Back to Homepage
                     </Button>
                 </Modal.Footer>
