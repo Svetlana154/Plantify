@@ -7,46 +7,67 @@ import Dropdown from "react-bootstrap/esm/Dropdown";
 import InputGroup from 'react-bootstrap/InputGroup';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Accordion from "react-bootstrap/esm/Accordion";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import filtersData from "../../data/filters.json";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 import "../../styles/OurProducts.css";
-import ProductCard from "../ProductCard";
+import ProductsListView from "../ProductsListView";
 
-function OurProducts({productData, filters, search}) {
+function OurProducts({productData, filters, category}) {
   
   const [show, setFilterShow] = useState(false);
-  const handleFilterClose = () => setFilterShow(false);
+  const handleFilterClose = () => {
+    setCategory(category);
+    setFilterShow(false);
+  }
   const handleFilterShow = () => setFilterShow(true);
 
-  // convergent/divergent search elements
-  const [searchTerm, setSearchTerm] = useState(search);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [hardinessZoneLevel, setHardinessZoneLevel] = useState("-");
+
+  const handleHardinesZoneLevelChange = (eventKey, event) => {
+    setHardinessZoneLevel(eventKey);
+  }
+  
+  const [productCategorySelected, setCategory] = useState(category);
+
+  const handleProductCategoryChange = (eventKey, event) => {
+    setCategory(eventKey);
+  }
+
   const [filtersApplied, setFiltersApplied] = useState(filters);
   const [productsShown, setProductsShown] = useState(productData);
-
 
   function handleSearchTermChange(event){
     setSearchTerm((searchTerm) => 
       {
         const value = event.target.value.trim();
-        
-        const newProducts = productData.filter((product) =>
-          product.name.toLowerCase().includes(value.toLowerCase()));
 
-        setProductsShown(newProducts);
-
-        filtersApplied.searchTerm = value;
-        const newFilters = filtersApplied;
-        setFiltersApplied(newFilters);
+        filterProductsBasedOnSearchTerm(value);
 
         return value;
       } );
   };
 
+  const filterProductsBasedOnSearchTerm = (term) => {
+    const newProducts = productData.filter((product) =>
+      product.name.toLowerCase().includes(term.toLowerCase()));
+
+    setProductsShown(newProducts);
+
+    filtersApplied.term = term;
+    const newFilters = filtersApplied;
+    setFiltersApplied(newFilters);
+  }
+
   const applyFilterToProductList = () => {
     const newFiltersApplied = {}
+
+    category = productCategorySelected;
+    newFiltersApplied.category = productCategorySelected;
 
     const brand = {};
     brand["Burley's Gardens"] = document.getElementById("filter-brand-1").checked;
@@ -86,6 +107,22 @@ function OurProducts({productData, filters, search}) {
     colour["Blue"] = document.getElementById("filter-colour-7").checked;
     colour["Other"] = document.getElementById("filter-colour-8").checked;
     newFiltersApplied.colour = colour;
+
+    newFiltersApplied.hardinessZoneLevel = hardinessZoneLevel;
+    
+    const rarity = {};
+    rarity["1"] = document.getElementById("filter-rarity-1").checked;
+    rarity["2"] = document.getElementById("filter-rarity-2").checked;
+    rarity["3"] = document.getElementById("filter-rarity-3").checked;
+    rarity["4"] = document.getElementById("filter-rarity-4").checked;
+    newFiltersApplied.rarity = rarity;
+    
+    const location = {};
+    location["Canada"] = document.getElementById("filter-producer-loc-1").checked;
+    location["US"] = document.getElementById("filter-producer-loc-2").checked;
+    location["Ukraine"] = document.getElementById("filter-producer-loc-3").checked;
+    newFiltersApplied.producer = {}
+    newFiltersApplied.producer.location = location;
 
     const newProducts = productData.filter((product) => (
       checkIfProductApplies(product, newFiltersApplied)
@@ -133,7 +170,7 @@ function OurProducts({productData, filters, search}) {
 
     const checkSizeMatch = (newFiltersApplied.size[getSizeInterval(product.size)] === true);
 
-    const isTool = product.category == "tools";
+    const isTool = product.category === "Tools & Accessories";
 
     const checkLifetimeMatch = 
       ((newFiltersApplied.lifetime["Both"] === true) || 
@@ -141,22 +178,20 @@ function OurProducts({productData, filters, search}) {
     
     const checkColourMatch = checkAllColours(product.colour, newFiltersApplied);
 
-    return(checkBrandMatch && checkPriceMatch && checkSizeMatch && checkLifetimeMatch && checkColourMatch);
+    const checkHardinessZoneLevelMatch = (newFiltersApplied.hardinessZoneLevel !== "-") ? ((!isTool) ? product.zone.includes(Number.parseInt(newFiltersApplied.hardinessZoneLevel)) : false) : true;
+
+    const checkRarity = (!isTool) ? (newFiltersApplied.rarity[product.rarity.toString()]) : true;
+
+    const checkProducerLocation = newFiltersApplied.producer.location[product.producer.location] ;
+
+    const checkCategory = (newFiltersApplied.category !== "-") ? (product.category === newFiltersApplied.category) : true;
+
+    return(checkBrandMatch && checkPriceMatch && checkSizeMatch && checkLifetimeMatch && checkColourMatch && checkRarity && checkHardinessZoneLevelMatch && checkProducerLocation && checkCategory);
   }
 
-  // Generating product list
-  var numberOfResults = 0;
-
-  const generatedProductsList = [];
-  productsShown.forEach(product =>{
-    generatedProductsList.push(
-      <Col xs={6} sm={4} md={3}>
-        <ProductCard product={product}/>
-      </Col>
-    );
-    numberOfResults += 1;
-  });
-
+  const resetFilters = () => {
+    setFiltersApplied(filtersData);
+  }
   
   return (
     <Container fluid className="products">
@@ -196,12 +231,12 @@ function OurProducts({productData, filters, search}) {
           </span>
         </span>
         <span className="text-align-left">
-          Found {numberOfResults} result(s)
+          Found {productsShown.length} result(s)
         </span>
       </Container>
       <Container>
         <Row>
-          {generatedProductsList}
+          <ProductsListView items={productsShown}></ProductsListView>
         </Row>
       </Container>
 
@@ -214,7 +249,33 @@ function OurProducts({productData, filters, search}) {
           </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          <Form onSubmit={applyFilterToProductList}>
+          <Form >
+            <hr/>
+            <Row className="filter-category">
+              <Col md="4">
+              <span> Category: </span>
+              </Col>
+              <Col md="8" className="filter-category-dropdown-col">
+                <Container className="filter-category-dropdown">
+                  <Dropdown onSelect={handleProductCategoryChange}>
+                    <Dropdown.Toggle variant="light" id="dropdown-basic2" className="filter-category-dropdown-toggle">
+                    {productCategorySelected}
+                    </Dropdown.Toggle>
+                    <Dropdown.Menu>
+                      <Dropdown.Item eventKey="-" >-</Dropdown.Item>
+                      <Dropdown.Item eventKey="Seeds">Seeds</Dropdown.Item>
+                      <Dropdown.Item eventKey="Succulents">Succulents</Dropdown.Item>
+                      <Dropdown.Item eventKey="Ferns & Shrubs">Ferns & Shrubs</Dropdown.Item>
+                      <Dropdown.Item eventKey="Crops">Crops</Dropdown.Item>
+                      <Dropdown.Item eventKey="Flowers">Flowers</Dropdown.Item>
+                      <Dropdown.Item eventKey="Trees">Trees</Dropdown.Item>
+                      <Dropdown.Item eventKey="Tools & Accessories">Tools & Accessories</Dropdown.Item>
+                    </Dropdown.Menu>
+                  </Dropdown>
+                </Container>
+              </Col>
+            </Row>
+            <hr/>
             <Accordion variant="dark" alwaysOpen>
               <Accordion.Item eventKey="0" className="filter-option">
                 <Accordion.Header>
@@ -320,43 +381,30 @@ function OurProducts({productData, filters, search}) {
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
-                    <Col className="filter-hardiness-zone-dropdown-container">
+                    <Col className="filter-hardiness-zone-dropdown-container me-2">
                         <span>Zone #</span>
-                        <Dropdown>
-                          <Dropdown.Toggle variant="light" id="dropdown-basic">
-                          -
+                        <Dropdown onSelect={handleHardinesZoneLevelChange}>
+                          <Dropdown.Toggle variant="light" id="dropdown-basic" >
+                          {hardinessZoneLevel}
                           </Dropdown.Toggle>
                           <Dropdown.Menu className="filter-hardiness-zone-menu">
-                            <Dropdown.Item>-</Dropdown.Item>
-                            <Dropdown.Item>0</Dropdown.Item>
-                            <Dropdown.Item>1</Dropdown.Item>
-                            <Dropdown.Item>2</Dropdown.Item>
-                            <Dropdown.Item>3</Dropdown.Item>
-                            <Dropdown.Item>4</Dropdown.Item>
-                            <Dropdown.Item>5</Dropdown.Item>
-                            <Dropdown.Item>6</Dropdown.Item>
-                            <Dropdown.Item>7</Dropdown.Item>
-                            <Dropdown.Item>8</Dropdown.Item>
-                            <Dropdown.Item>9</Dropdown.Item>
-                            <Dropdown.Item>10</Dropdown.Item>
-                            <Dropdown.Item>11</Dropdown.Item>
-                            <Dropdown.Item>12</Dropdown.Item>
-                            <Dropdown.Item>13</Dropdown.Item>
+                            <Dropdown.Item eventKey="-" >-</Dropdown.Item>
+                            <Dropdown.Item eventKey="0">0</Dropdown.Item>
+                            <Dropdown.Item eventKey="1">1</Dropdown.Item>
+                            <Dropdown.Item eventKey="2">2</Dropdown.Item>
+                            <Dropdown.Item eventKey="3">3</Dropdown.Item>
+                            <Dropdown.Item eventKey="4">4</Dropdown.Item>
+                            <Dropdown.Item eventKey="5">5</Dropdown.Item>
+                            <Dropdown.Item eventKey="6">6</Dropdown.Item>
+                            <Dropdown.Item eventKey="7">7</Dropdown.Item>
+                            <Dropdown.Item eventKey="8">8</Dropdown.Item>
+                            <Dropdown.Item eventKey="9">9</Dropdown.Item>
+                            <Dropdown.Item eventKey="10">10</Dropdown.Item>
+                            <Dropdown.Item eventKey="11">11</Dropdown.Item>
+                            <Dropdown.Item eventKey="12">12</Dropdown.Item>
+                            <Dropdown.Item eventKey="13">13</Dropdown.Item>
                           </Dropdown.Menu>
                         </Dropdown>
-                    </Col>
-                    <Col className="filter-hardiness-zone-dropdown-container">
-                          <span>Letter</span>
-                          <Dropdown>
-                            <Dropdown.Toggle variant="light" id="dropdown-basic">
-                            -
-                            </Dropdown.Toggle>
-                            <Dropdown.Menu className="filter-hardiness-zone-menu">
-                              <Dropdown.Item>-</Dropdown.Item>
-                              <Dropdown.Item>A</Dropdown.Item>
-                              <Dropdown.Item>B</Dropdown.Item>
-                            </Dropdown.Menu>
-                          </Dropdown>
                     </Col>
                   </Row>                    
                 </Accordion.Body>
@@ -369,12 +417,12 @@ function OurProducts({productData, filters, search}) {
                 <Accordion.Body>
                   <Row>
                     <Col>
-                      <Form.Check type="checkbox" label="Common" />
-                      <Form.Check type="checkbox" label="Regular" />
+                      <Form.Check type="checkbox" label="Very Common" defaultChecked={filtersApplied.rarity["1"]} id="filter-rarity-1" />
+                      <Form.Check type="checkbox" label="Regular" defaultChecked={filtersApplied.rarity["2"]} id="filter-rarity-2" />
                     </Col>
                     <Col>
-                      <Form.Check type="checkbox" label="Rare"/>  
-                      <Form.Check type="checkbox" label="Super Rare"/>  
+                      <Form.Check type="checkbox" label="Rare" defaultChecked={filtersApplied.rarity["3"]} id="filter-rarity-3" />  
+                      <Form.Check type="checkbox" label="Super Rare" defaultChecked={filtersApplied.rarity["4"]} id="filter-rarity-4" />  
                     </Col>
                   </Row>
                 </Accordion.Body>
@@ -383,20 +431,15 @@ function OurProducts({productData, filters, search}) {
               <Accordion.Item eventKey="7" className="filter-option">
                 <Accordion.Header>
                   <h6>Producer</h6>
-                </Accordion.Header>
+                </Accordion.Header> 
                 <Accordion.Body>
                   <Row>
                     <Col>
-                      <Form.Check type="checkbox" label="Location1"/>
-                      <Form.Check type="checkbox" label="Location2"/>
-                      <Form.Check type="checkbox" label="Location3"/>
-                      <Form.Check type="checkbox" label="Location4"/>
+                      <Form.Check type="checkbox" label="Canada" defaultChecked={filtersApplied.producer.location["Canada"]} id="filter-producer-loc-1"/>
+                      <Form.Check type="checkbox" label="US" defaultChecked={filtersApplied.producer.location["US"]} id="filter-producer-loc-2"/>
                     </Col>
                     <Col>
-                      <Form.Check type="checkbox" label="Location5"/>  
-                      <Form.Check type="checkbox" label="Location6"/>  
-                      <Form.Check type="checkbox" label="Location7"/>
-                      <Form.Check type="checkbox" label="Other"/>
+                      <Form.Check type="checkbox" label="Ukraine" defaultChecked={filtersApplied.producer.location["Ukraine"]} id="filter-producer-loc-3"/>
                     </Col>
                   </Row>
                 </Accordion.Body>
@@ -404,11 +447,11 @@ function OurProducts({productData, filters, search}) {
             </Accordion>
 
             <Container className="filter-cto">
-              <Button variant="dark" type="submit">
+              <Button variant="dark" onClick={applyFilterToProductList}>
                 Apply Filters
               </Button>
               <div>
-                <a href="">Reset filters</a>
+                <a href="" onClick={resetFilters}>Reset filters</a>
               </div>
             </Container>
           </Form>

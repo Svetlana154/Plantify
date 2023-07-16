@@ -14,6 +14,7 @@ import Checkout from './components/pages/Checkout';
 import ThankYou from './components/pages/ThankYou';
 import Chatbot from './components/Chatbot';
 import productData from "./data/products.json";
+import filtersData from "./data/filters.json";
 
 import "./styles/SignInModal.css";
 import ModalManager from './components/ModalManager';
@@ -31,42 +32,8 @@ function App() {
     setModalData(allModalData);
   };
 
-  const filters = {
-    brand: {
-      "Burley's Gardens": true,
-      "Knippel Gardens": true,
-      "High Country Roses": true,
-      "Canada Flowers": true,
-      "Other": true
-    },
-    price: {
-      "0 9.99": true,
-      "10.00 24.99": true,
-      "25.00 49.99": true,
-      "50.00 74.99": true,
-      "75.00 1000.00": true
-    },
-    size: {
-      "0 3": true,
-      "3 7": true,
-      "7 100": true
-    },
-    lifetime: {
-      "Annual": false,
-      "Perennial": false,
-      "Both": true
-    },
-    colour: {
-      "Red": true,
-      "Orange": true,
-      "Yellow": true,
-      "Green": true,
-      "Blue": true,
-      "Pink": true,
-      "Purple": true,
-      "Other": true
-    }
-  }
+  const filters = filtersData;
+  const productCategory = "-";
 
   return (
     <div className="App">
@@ -77,7 +44,7 @@ function App() {
           <Routes>
             <Route path='/' element = {<Home />} />
             <Route path='/AboutUs' element = {<AboutUs />} />
-            <Route path='/OurProducts' element = {<OurProducts productData={productData} filters={filters}/>} />
+            <Route path='/OurProducts' element = {<OurProducts productData={productData} filters={filters} category={productCategory}/>} />
             <Route path='/FAQ' element = {<FAQ />} />
             <Route path='/Profile' element = {<Profile />} />
             <Route path='/SignUp' element = {<SignUp />} />

@@ -23,14 +23,13 @@
 }
 
 .filter-hardiness-zone-menu {
-    max-height: 100px;
+    max-height: 200px;
     overflow-y: scroll;
 }
 
 .filter-hardiness-zone-dropdown-container {
     display: flex;
-    float: left;
-    justify-content: center;
+    float: left; 
     align-items: center;
 }
 
@@ -42,4 +41,25 @@
     text-align: center;
     margin: 20px auto;
     margin-top: 50px;
+}
+
+.filter-category {
+    margin: 10px 5% !important;
+    align-items: center;
+}
+
+.filter-category-dropdown-toggle {
+    text-align: end !important;
+    margin: 0 !important;
+}
+
+.filter-category-dropdown {
+    display: flex;
+    justify-content: end !important;
+}
+
+.filter-category-dropdown-col {
+    justify-content: end !important;
+    align-items: end;
+    padding: 0;
 }
