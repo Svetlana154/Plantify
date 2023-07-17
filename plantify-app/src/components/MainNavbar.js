@@ -6,12 +6,20 @@ import { faPhone, faEarthAmericas, faShoppingCart, faSearch, faLocationDot } fro
 import { faCircleUser, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import "../styles/MainNavbar.css";
 import logoClean from "../images/logo_clean.png";
+import { useEffect } from 'react';
 
 function MainNavbar({promptSignIn}) {
   
   const selectProductCategory = (eventKey, event) => {
     sessionStorage.setItem("productCategoryRequested", eventKey)
   }
+
+  useEffect(()=> {
+    // WIP
+    const shoppingCartIcon = document.getElementById("navbar-shopping-cart");
+    shoppingCartIcon.setAttribute("bounce", true);
+    console.log("notified");
+  }, [])
 
   return (
     <div className='main-navbar'>
@@ -66,7 +74,7 @@ function MainNavbar({promptSignIn}) {
                   <FontAwesomeIcon icon={faLocationDot} size='xl'/>
                 </Nav.Link>
                 <Nav.Link href="/ShoppingCart">
-                  <FontAwesomeIcon icon={faShoppingCart} size='xl'/>
+                  <FontAwesomeIcon icon={faShoppingCart} size='xl' id="navbar-shopping-cart"/>
                 </Nav.Link>
                 <Nav.Link href="" onClick={() => {promptSignIn(true);}}>
                   <FontAwesomeIcon icon={faCircleUser} size='xl'/>

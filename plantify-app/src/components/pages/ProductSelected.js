@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faPlus, faStar as faStarFull} from '@fortawesome/free-solid-svg-icons';
 import {faStar as faStarOutline} from '@fortawesome/free-regular-svg-icons';
 import ReviewCard from "../ReviewCard";
-import { useState } from 'react';
+import { useState, useEffect} from 'react';
 
 import productData from "../../data/products.json";
 import "../../styles/ProductSelected.css";
@@ -49,10 +49,56 @@ function ProductSelected () {
         );
     });
 
+    
+    var cartCounter = localStorage.getItem("cartCounter");
+    
+    const cartItem = {
+        ref: selectedProduct.ref,
+        name: selectedProduct.name,
+        quantity: 1,
+        price: selectedProduct.price
+    }
+
+    useEffect(() => {
+        const {inCart, } = isItemAlreadyInCart(cartCounter, cartItem)
+        if (inCart){
+            document.getElementById("product-add-to-cart-btn").click()
+        }
+    }, [])
+
     //set state for Added to cart alert
     const [alertState, setAlertState] = useState(false);
     const handleAlertClose = () => setAlertState(false);
-    const handleAlertShow = () => setAlertState(true);
+    const handleAlertShow = (event) => {
+        setAlertState(true);
+
+        cartItem.quantity = Number.parseInt(document.getElementById("product-selected-quantity-input").value);
+
+        if (cartCounter == null) {
+            cartCounter = 0;
+        }
+
+        let {inCart, cartItemId} = isItemAlreadyInCart(cartCounter, cartItem);
+        console.log("found in cart: " + inCart);
+
+        if (!inCart) {
+            cartCounter ++;
+            localStorage.setItem("cart-item-"+cartCounter, JSON.stringify(cartItem));
+            localStorage.setItem("cartCounter", cartCounter);
+        }
+
+        event.target.disabled = true
+    }
+
+    function isItemAlreadyInCart(counter, itemToCompareTo) {
+        for (var i = 1; i<=counter; i++) {
+            const checkItem = JSON.parse(localStorage.getItem("cart-item-"+i.toString()));
+            if (checkItem !== null && checkItem.ref === itemToCompareTo.ref) {
+                return {inCart:true, cartItemId:i};
+            }
+        }
+        return {inCart:false, cartItemId:-1};
+    }
 
     return (
         <Container fluid className="product-selected">
@@ -83,7 +129,7 @@ function ProductSelected () {
                         <div className="w-100 product-selected-quantity-row">
                             <span>
                                 Quantity:
-                                <NumericInput min={0} max={10} value={1} className="product-selected-quantity-input"/>
+                                <NumericInput min={0} max={10} value={1} className="product-selected-quantity-input" id="product-selected-quantity-input"/>
                             </span>                            
                         </div>
                         <Row>
@@ -92,8 +138,8 @@ function ProductSelected () {
                             </h1>
                         </Row>
                         <Row className="product-add-to-cart">
-                            <Alert show={alertState} variant="success" onClose={handleAlertClose} dismissible>Added to cart!</Alert>
-                            <Button variant="outline-dark" className="product-add-to-cart-btn" onClick={handleAlertShow}>
+                            <Alert show={alertState} variant="success">Added to cart!</Alert>
+                            <Button variant="outline-dark" className="product-add-to-cart-btn" id="product-add-to-cart-btn" onClick={handleAlertShow}>
                                 <FontAwesomeIcon icon={faPlus} className="me-2"/>
                                 Add to Cart
                             </Button>
