@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
@@ -10,6 +8,11 @@ import "../styles/MainNavbar.css";
 import logoClean from "../images/logo_clean.png";
 
 function MainNavbar({promptSignIn}) {
+  
+  const selectProductCategory = (eventKey, event) => {
+    sessionStorage.setItem("productCategoryRequested", eventKey)
+  }
+
   return (
     <div className='main-navbar'>
       <div className='top-navbar'>
@@ -41,24 +44,24 @@ function MainNavbar({promptSignIn}) {
             <Nav className="me-auto">
               <Nav.Link href="/">Home</Nav.Link>
               <Nav.Link href="/AboutUs">About Us</Nav.Link>
-              <NavDropdown id="basic-nav-dropdown" title="Our Products">
-                <NavDropdown.Item href="/OurProducts">Seeds</NavDropdown.Item>
-                <NavDropdown.Item href="/OurProducts">Succulents</NavDropdown.Item>
-                <NavDropdown.Item href="/OurProducts">Ferns & Shrubs</NavDropdown.Item>
-                <NavDropdown.Item href="/OurProducts">Crops</NavDropdown.Item>
-                <NavDropdown.Item href="/OurProducts">Flowers</NavDropdown.Item>
-                <NavDropdown.Item href="/OurProducts">Trees</NavDropdown.Item>
-                <NavDropdown.Item href="/OurProducts">
+              <NavDropdown id="basic-nav-dropdown" title="Our Products" onSelect={selectProductCategory}>
+                <NavDropdown.Item eventKey="Seeds" href='/OurProducts'>Seeds</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Succulents" href='/OurProducts'> Succulents</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Ferns & Shrubs" href='/OurProducts'>Ferns & Shrubs</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Crops" href='/OurProducts'>Crops</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Flowers" href='/OurProducts'>Flowers</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Trees" href='/OurProducts'>Trees</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Tools & Accessories" href='/OurProducts'>
                   Tools & Accessories
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/OurProducts">
+                <NavDropdown.Item eventKey="-" href='/OurProducts'>
                   View All
                 </NavDropdown.Item>
               </NavDropdown>
               <NavDropdown id="basic-nav-dropdown" title="Support">
                 <NavDropdown.Item href="/FAQ">FAQ</NavDropdown.Item>
-                <NavDropdown.Item href="/#ContactUs">Contact Us</NavDropdown.Item>
+                <NavDropdown.Item href="/ContactUs">Contact Us</NavDropdown.Item>
               </NavDropdown>
             </Nav>
             <Nav className='ms-auto'>

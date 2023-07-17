@@ -9,21 +9,25 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import Accordion from "react-bootstrap/esm/Accordion";
 import { useState, useEffect } from 'react';
 import filtersData from "../../data/filters.json";
+import sadEggs from "../../images/eggs.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFilter, faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 
 import "../../styles/OurProducts.css";
 import ProductsListView from "../ProductsListView";
+import PromptTooltip from "../PromptTooltip";
 
-function OurProducts({productData, filters, category}) {
+function OurProducts({productData, filters}) {
   
   const [show, setFilterShow] = useState(false);
   const handleFilterClose = () => {
-    setCategory(category);
     setFilterShow(false);
   }
-  const handleFilterShow = () => setFilterShow(true);
+  const handleFilterShow = () => {
+    setCategory(filters.category);
+    setFilterShow(true);
+  } 
 
   const [searchTerm, setSearchTerm] = useState("");
   const [hardinessZoneLevel, setHardinessZoneLevel] = useState("-");
@@ -32,14 +36,55 @@ function OurProducts({productData, filters, category}) {
     setHardinessZoneLevel(eventKey);
   }
   
-  const [productCategorySelected, setCategory] = useState(category);
+  const [productCategorySelected, setCategory] = useState(filters.category);
 
   const handleProductCategoryChange = (eventKey, event) => {
     setCategory(eventKey);
   }
 
+  const [sortByState, setSortByState] = useState("Relevance");
+
+  const handleSortByStateChange = (eventKey, event) => {
+    setSortByState(eventKey)
+    if (eventKey === "Price High to Low"){
+      const productsSorted = [...productsShown].sort((a, b) => { 
+        return b.price - a.price;
+      })
+      setProductsShownSortView(productsSorted);
+    }
+    if (eventKey === "Price Low to High"){
+      const productsSorted = [...productsShown].sort((a, b) => { 
+        return a.price - b.price;
+      })
+      setProductsShownSortView(productsSorted);
+    }
+    if (eventKey === "Rating High to Low"){
+      const productsSorted = [...productsShown].sort((a, b) => { 
+        return b.rating.star - a.rating.star;
+      })
+      setProductsShownSortView(productsSorted);
+    }
+    if (eventKey === "Rating Low to High"){
+      const productsSorted = [...productsShown].sort((a, b) => { 
+        return a.rating.star - b.rating.star;
+      })
+      setProductsShownSortView(productsSorted);
+    }
+    if (eventKey === "Relevance"){
+      setProductsShownSortView(productsShown)
+    }
+
+  }
+
+  const resetSortByState = (newProductsShown) => {
+    setProductsShownSortView(newProductsShown)
+    setSortByState("Relevance")
+    setProductsShown(newProductsShown);
+  }
+
   const [filtersApplied, setFiltersApplied] = useState(filters);
   const [productsShown, setProductsShown] = useState(productData);
+  const [productsShownSortView, setProductsShownSortView] = useState(productData);
 
   function handleSearchTermChange(event){
     setSearchTerm((searchTerm) => 
@@ -47,6 +92,7 @@ function OurProducts({productData, filters, category}) {
         const value = event.target.value.trim();
 
         filterProductsBasedOnSearchTerm(value);
+        resetFilters()
 
         return value;
       } );
@@ -56,7 +102,7 @@ function OurProducts({productData, filters, category}) {
     const newProducts = productData.filter((product) =>
       product.name.toLowerCase().includes(term.toLowerCase()));
 
-    setProductsShown(newProducts);
+    resetSortByState(newProducts)
 
     filtersApplied.term = term;
     const newFilters = filtersApplied;
@@ -66,7 +112,6 @@ function OurProducts({productData, filters, category}) {
   const applyFilterToProductList = () => {
     const newFiltersApplied = {}
 
-    category = productCategorySelected;
     newFiltersApplied.category = productCategorySelected;
 
     const brand = {};
@@ -129,8 +174,9 @@ function OurProducts({productData, filters, category}) {
     ));
 
     setFiltersApplied(newFiltersApplied);
+    setSearchTerm("");
+    resetSortByState(newProducts)
 
-    setProductsShown(newProducts);
     setFilterShow(false);
   };
 
@@ -191,7 +237,24 @@ function OurProducts({productData, filters, category}) {
 
   const resetFilters = () => {
     setFiltersApplied(filtersData);
+    setCategory("-");
   }
+
+  useEffect(() => {
+    const anyCategoryRequested = sessionStorage.getItem("productCategoryRequested");
+    if (anyCategoryRequested !== null){
+      const newFilters = filtersApplied;
+      newFilters.category = anyCategoryRequested;
+      setFiltersApplied(newFilters);
+      sessionStorage.removeItem("productCategoryRequested")
+    }
+    const newProducts = productData.filter((product) => (
+      checkIfProductApplies(product, filtersApplied)
+    ));
+
+    setProductsShown(newProducts)
+    setProductsShownSortView(newProducts)
+  }, [, filtersApplied]);
   
   return (
     <Container fluid className="products">
@@ -215,17 +278,17 @@ function OurProducts({productData, filters, category}) {
           <FontAwesomeIcon icon={faFilter} size="lg" className="me-2 clickable" onClick={handleFilterShow}/>
           <span>
             Sort By:
-            <Dropdown className="d-inline mx-2">
+            <Dropdown className="d-inline mx-2" onSelect={handleSortByStateChange}>
               <Dropdown.Toggle id="dropdown-autoclose-true" variant="light">
-                Relevance
+                {sortByState}
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <Dropdown.Item href="#">Relevance</Dropdown.Item>
-                <Dropdown.Item href="#">Price High to Low</Dropdown.Item>
-                <Dropdown.Item href="#">Price Low to High</Dropdown.Item>
-                <Dropdown.Item href="#">Rating High to Low</Dropdown.Item>
-                <Dropdown.Item href="#">Rating Low to High</Dropdown.Item>
+                <Dropdown.Item eventKey={"Relevance"}>Relevance</Dropdown.Item>
+                <Dropdown.Item eventKey={"Price High to Low"}>Price High to Low</Dropdown.Item>
+                <Dropdown.Item eventKey={"Price Low to High"}>Price Low to High</Dropdown.Item>
+                <Dropdown.Item eventKey={"Rating High to Low"}>Rating High to Low</Dropdown.Item>
+                <Dropdown.Item eventKey={"Rating Low to High"}>Rating Low to High</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </span>
@@ -236,7 +299,17 @@ function OurProducts({productData, filters, category}) {
       </Container>
       <Container>
         <Row>
-          <ProductsListView items={productsShown}></ProductsListView>
+          {(productsShown.length === 0)? 
+              <Container className="products-no-results-container">
+                <h2 className="products-no-results-title">No results found...</h2>
+                <span className="products-no-results">
+                  Oops! We don't have anything with those properties right now! Let us know exactly what you're looking for through the <a href="/AboutUs">Contact Us</a> and we can custom order it just for you!
+                </span>
+                <img className="products-no-results-img" src={sadEggs} alt="sad eggs"/>
+              </Container>
+            :
+            <ProductsListView items={productsShownSortView}></ProductsListView>
+          }
         </Row>
       </Container>
 
@@ -253,7 +326,7 @@ function OurProducts({productData, filters, category}) {
             <hr/>
             <Row className="filter-category">
               <Col md="4">
-              <span> Category: </span>
+                <span> Category: </span>
               </Col>
               <Col md="8" className="filter-category-dropdown-col">
                 <Container className="filter-category-dropdown">
@@ -280,6 +353,7 @@ function OurProducts({productData, filters, category}) {
               <Accordion.Item eventKey="0" className="filter-option">
                 <Accordion.Header>
                   <h6>Brand</h6>
+                  <PromptTooltip text={"The brand is the company that produces and distributes the product"} />
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -299,6 +373,7 @@ function OurProducts({productData, filters, category}) {
               <Accordion.Item eventKey="1" className="filter-option">
                 <Accordion.Header>
                   <h6>Price</h6>
+                  <PromptTooltip text={"Filter the products by a specific price range. Select multiple to combine ranges."} />
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -318,6 +393,7 @@ function OurProducts({productData, filters, category}) {
               <Accordion.Item eventKey="2" className="filter-option">
                 <Accordion.Header>
                   <h6>Size</h6>
+                  <PromptTooltip text={"Size of product in feet. FOR SEED ONLY: average size of plant at maturity"} />
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -337,6 +413,7 @@ function OurProducts({productData, filters, category}) {
               <Accordion.Item eventKey="3" className="filter-option">
                 <Accordion.Header>
                   <h6>Lifetime</h6>
+                  <PromptTooltip text={"Plants can be annual, which means they are only good for one year, or perennial, which means they survive for multiple years"} />
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -356,6 +433,7 @@ function OurProducts({productData, filters, category}) {
               <Accordion.Item eventKey="4" className="filter-option">
                 <Accordion.Header>
                   <h6>Colour</h6>
+                  <PromptTooltip text={"The main colours expressed by the product"} />
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -378,6 +456,7 @@ function OurProducts({productData, filters, category}) {
               <Accordion.Item eventKey="5" className="filter-option">
                 <Accordion.Header>
                   <h6>Hardiness Zone</h6>
+                  <PromptTooltip text={"The temperature zone the plant is usually found in. To find out more, visit our Home page."} />
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -413,6 +492,7 @@ function OurProducts({productData, filters, category}) {
               <Accordion.Item eventKey="6" className="filter-option">
                 <Accordion.Header>
                   <h6>Rarity</h6>
+                  <PromptTooltip text={"The rarity of the product comprised of 4 levels"} />
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -431,6 +511,7 @@ function OurProducts({productData, filters, category}) {
               <Accordion.Item eventKey="7" className="filter-option">
                 <Accordion.Header>
                   <h6>Producer</h6>
+                  <PromptTooltip text={"Origin of product"} />
                 </Accordion.Header> 
                 <Accordion.Body>
                   <Row>

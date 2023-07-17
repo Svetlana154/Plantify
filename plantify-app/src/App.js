@@ -32,19 +32,16 @@ function App() {
     setModalData(allModalData);
   };
 
-  const filters = filtersData;
-  const productCategory = "-";
-
   return (
     <div className="App">
       <Router>
         <div>
-          <MainNavbar promptSignIn={promptSignIn}/>
+          <MainNavbar promptSignIn={promptSignIn} />
 
           <Routes>
             <Route path='/' element = {<Home />} />
             <Route path='/AboutUs' element = {<AboutUs />} />
-            <Route path='/OurProducts' element = {<OurProducts productData={productData} filters={filters} category={productCategory}/>} />
+            <Route path='/OurProducts' element = {<OurProducts productData={productData} filters={filtersData}/>} />
             <Route path='/FAQ' element = {<FAQ />} />
             <Route path='/Profile' element = {<Profile />} />
             <Route path='/SignUp' element = {<SignUp />} />
