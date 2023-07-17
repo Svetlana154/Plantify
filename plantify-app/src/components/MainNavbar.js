@@ -19,7 +19,7 @@ function MainNavbar({promptSignIn}) {
     const shoppingCartIcon = document.getElementById("navbar-shopping-cart");
     shoppingCartIcon.setAttribute("bounce", true);
     console.log("notified");
-  }, [])
+  }, [localStorage.getItem("cartCounter")])
 
   return (
     <div className='main-navbar'>

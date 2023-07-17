@@ -16,10 +16,10 @@ function ReviewCard ({review}) {
 
     for (let i=0; i<5; i++){
         if (i < review.rating){
-            starRating.push(<FontAwesomeIcon icon={faStarFull} size="lg"/>);
+            starRating.push(<FontAwesomeIcon icon={faStarFull} size="lg" key={"review-entry-rating-"+i}/>);
         }
         else {
-            starRating.push(<FontAwesomeIcon icon={faStarOutline} size="lg" />);
+            starRating.push(<FontAwesomeIcon icon={faStarOutline} size="lg" key={"review-entry-rating-"+i} />);
         }
     }
 

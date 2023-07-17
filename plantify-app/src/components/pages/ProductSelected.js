@@ -31,26 +31,23 @@ function ProductSelected () {
 
     for (let i=0; i<5; i++){
         if (i < selectedProduct.rating.star){
-            starRating.push(<FontAwesomeIcon icon={faStarFull} size="xl"/>);
+            starRating.push(<FontAwesomeIcon icon={faStarFull} size="xl" key={"rating-"+i}/>);
         }
         else {
-            starRating.push(<FontAwesomeIcon icon={faStarOutline} size="xl" />);
+            starRating.push(<FontAwesomeIcon icon={faStarOutline} size="xl" key={"rating-"+i} />);
         }
     }
 
-    const isTool = selectedProduct.category === "tools";
+    const isTool = selectedProduct.category === "Tools & Accessories";
 
     //generate reviews
     const reviews = [];
 
     selectedProduct.rating.reviews.forEach(review => {
         reviews.push (
-            <ReviewCard review={review} />
+            <ReviewCard review={review} key={"review-entry-"+review.name.replace(/\s/g, '')}/>
         );
     });
-
-    
-    var cartCounter = localStorage.getItem("cartCounter");
     
     const cartItem = {
         ref: selectedProduct.ref,
@@ -60,7 +57,7 @@ function ProductSelected () {
     }
 
     useEffect(() => {
-        const {inCart, } = isItemAlreadyInCart(cartCounter, cartItem)
+        const {inCart, } = isItemAlreadyInCart(cartItem)
         if (inCart){
             document.getElementById("product-add-to-cart-btn").click()
         }
@@ -68,36 +65,33 @@ function ProductSelected () {
 
     //set state for Added to cart alert
     const [alertState, setAlertState] = useState(false);
-    const handleAlertClose = () => setAlertState(false);
-    const handleAlertShow = (event) => {
+    const handleAlertShow = (event, quantityInput) => {
         setAlertState(true);
 
-        cartItem.quantity = Number.parseInt(document.getElementById("product-selected-quantity-input").value);
+        cartItem.quantity = Number.parseInt(document.getElementById(quantityInput).value);
 
-        if (cartCounter == null) {
-            cartCounter = 0;
+        var cartItems = localStorage.getItem("cart-items");
+        if (cartItems === null){
+            cartItems = "[]";
         }
 
-        let {inCart, cartItemId} = isItemAlreadyInCart(cartCounter, cartItem);
-        console.log("found in cart: " + inCart);
-
-        if (!inCart) {
-            cartCounter ++;
-            localStorage.setItem("cart-item-"+cartCounter, JSON.stringify(cartItem));
-            localStorage.setItem("cartCounter", cartCounter);
+        if (!isItemAlreadyInCart(cartItem)) {
+            const newCartItems = JSON.parse(cartItems);
+            newCartItems.push(cartItem);
+            localStorage.setItem("cart-items", JSON.stringify(newCartItems));
         }
 
-        event.target.disabled = true
+        event.target.disabled = true;
     }
 
-    function isItemAlreadyInCart(counter, itemToCompareTo) {
-        for (var i = 1; i<=counter; i++) {
-            const checkItem = JSON.parse(localStorage.getItem("cart-item-"+i.toString()));
-            if (checkItem !== null && checkItem.ref === itemToCompareTo.ref) {
-                return {inCart:true, cartItemId:i};
-            }
-        }
-        return {inCart:false, cartItemId:-1};
+    function isItemAlreadyInCart(itemToCompareTo) {
+        const allItemsInCart = JSON.parse(localStorage.getItem("cart-items"));
+
+        if (allItemsInCart === null) return false;
+
+        allItemsInCart.filter(item => item.ref === itemToCompareTo.ref);
+        
+        return allItemsInCart > 0? true : false;
     }
 
     return (
@@ -129,7 +123,7 @@ function ProductSelected () {
                         <div className="w-100 product-selected-quantity-row">
                             <span>
                                 Quantity:
-                                <NumericInput min={0} max={10} value={1} className="product-selected-quantity-input" id="product-selected-quantity-input"/>
+                                <NumericInput min={0} max={10} value={1} className="product-selected-quantity-input" id={"product-selected-quantity-input-"+selectedProduct.ref}/>
                             </span>                            
                         </div>
                         <Row>
@@ -139,7 +133,7 @@ function ProductSelected () {
                         </Row>
                         <Row className="product-add-to-cart">
                             <Alert show={alertState} variant="success">Added to cart!</Alert>
-                            <Button variant="outline-dark" className="product-add-to-cart-btn" id="product-add-to-cart-btn" onClick={handleAlertShow}>
+                            <Button variant="outline-dark" className="product-add-to-cart-btn" id="product-add-to-cart-btn" onClick={(e) => handleAlertShow(e, "product-selected-quantity-input-"+selectedProduct.ref)}>
                                 <FontAwesomeIcon icon={faPlus} className="me-2"/>
                                 Add to Cart
                             </Button>

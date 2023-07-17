@@ -7,57 +7,9 @@ import NumericInput from "react-numeric-input";
 import { useNavigate } from "react-router-dom";
 
 import "../../styles/ShoppingCart.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function ShoppingCart() {
-    function getItemsForCart() {
-        const numberOfItemsInCart = localStorage.getItem("cartCounter");
-        if (numberOfItemsInCart == null || numberOfItemsInCart === 0) {
-            // document.getElementById("shopping-cart-proceed-btn").setAttribute("disabled", true) //not loaded yet
-            return ([])
-        }
-        else {   
-            const arrayOfItems = [];
-            for (let i = 1; i <= numberOfItemsInCart; i++){
-                const itemDetails = JSON.parse(localStorage.getItem("cart-item-"+i.toString()));
-                itemDetails.id = i;
-                arrayOfItems.push(itemDetails);
-            }
-            return(arrayOfItems);
-        }
-    }
-
-    const [cartItemsState, setCartItemsState] = useState(getItemsForCart())
-
-    //calculate total
-
-    const [totalCostState, setTotalCostState] = useState(() => {
-        var totalGrossCost = 0;
-        cartItemsState.forEach(item => {totalGrossCost += item.price * item.quantity});
-        return totalGrossCost;
-    });
-
-    const handleChangeInCart = () => {
-        var totalGrossCost = 0;
-        cartItemsState.forEach(item => {totalGrossCost += item.price * item.quantity});
-
-        setTotalCostState(totalGrossCost);        
-    };
-
-    const setNewQuantity = (productRef, value) => {
-        const newCartItems = cartItemsState;
-        newCartItems.map(item => {
-            if (item.ref === productRef){
-                item.quantity = value;
-                localStorage.setItem("cart-item-"+item.id, JSON.stringify(item));
-            }
-            return item;
-        })
-
-        setCartItemsState(newCartItems);
-        handleChangeInCart();
-    }
-
 
     //move to checkout
     const navigate = useNavigate();
@@ -70,29 +22,98 @@ function ShoppingCart() {
         });
     }
 
+    function getItemsForCart() {
+        const itemsInCart = localStorage.getItem("cart-items");
+        if (itemsInCart == null || JSON.parse(itemsInCart).length === 0) {
+            return [];
+        }
+        else {   
+            return JSON.parse(itemsInCart);
+        }
+    }
+
+    const [cartItemsState, setCartItemsState] = useState(getItemsForCart())
+
+    const proceedToCheckoutBtn = 
+        <Button variant="dark" className="cart-cto" id="shopping-cart-proceed-btn" onClick={handleCostToCheckout}>
+            Proceed to Checkout
+        </Button>
+    const proceedToCheckoutBtnDisabled = 
+        <Button variant="dark" className="cart-cto" id="shopping-cart-proceed-btn" disabled onClick={handleCostToCheckout}>
+            Proceed to Checkout
+        </Button>
+    
+    const [continueBtn, setContinueBtn] = useState(proceedToCheckoutBtn);
+
+    //calculate total
+
+    const calculateTotal = (itemList) => {
+        let totalGrossCost = 0;
+        itemList.forEach((item) => {
+            totalGrossCost += item.price * item.quantity;
+        })
+        return totalGrossCost;
+    }
+
+    const handleUpdateTotalInCart = (itemsList) => {
+        setTotalCostState(calculateTotal(itemsList));
+    };
+
+    const [totalCostState, setTotalCostState] = useState(calculateTotal(cartItemsState));
+
+    useEffect(() => {
+        console.log("activate effect");
+        handleUpdateTotalInCart(cartItemsState);
+        localStorage.setItem("cart-items", JSON.stringify(cartItemsState));
+        setContinueBtn(cartItemsState.length > 0? proceedToCheckoutBtn : proceedToCheckoutBtnDisabled)
+    }, [cartItemsState])
+
+    const setNewQuantity = (productRef, value) => {
+        const newCartItems = [...cartItemsState];
+        
+        let valueNumber = Number.parseInt(value);
+        if (!valueNumber) valueNumber = 1;
+
+        newCartItems.map(item => {
+            if (item.ref === productRef){
+                item.quantity = valueNumber;
+            }
+            return item;
+        })
+
+        setCartItemsState(newCartItems);
+    }
+
+    const removeCartItem = (itemRef) => {
+        console.log("processing remove");
+        const newCartItems = [...cartItemsState].filter(item => (item.ref !== itemRef));
+        setCartItemsState(newCartItems)
+    }
+
     return (
         <Container className="mt-5 mb-5">
             <h1>Shopping Cart</h1>
             { 
                 (cartItemsState.length > 0) ? 
                     cartItemsState.map((item) =>
-                        <Row className="cart-item-row">
-                            <Col md={8} className="cart-item">
+                        <Row className="cart-item-row" key={"cart-item-row-"+item.ref}>
+                            <Col md={8} className="cart-item g-0">
                                 <h5>{item.name}</h5>&nbsp;
                                 <span className="product-ref">{item.ref}</span>
                             </Col>
-                            <Col md={4} className="cart-item">
+                            <Col md={3} className="cart-item g-0">
                                 <span className="me-4">
                                     Quantity: 
-                                    <NumericInput min={0} max={10} value={item.quantity} onChange={(value) => {setNewQuantity(item.ref, Number(value))}} className="product-selected-quantity-input"/>
+                                    <NumericInput min={1} max={10} value={item.quantity} onChange={(value) => {setNewQuantity(item.ref, value)}} className="product-selected-quantity-input"/>
                                 </span>
                                 <span className="product-price price-each me-2">
                                     {Number(item.price).toFixed(2)}
                                 </span>
+                            </Col>
+                            <Col md={1} className="g-0">
                                 <span className="cart-item-close">
-                                    <CloseButton />
+                                    <CloseButton onClick={()=>{removeCartItem(item.ref)}}/>
                                 </span>
-                                
                             </Col>
                         </Row>
                     )
@@ -103,9 +124,7 @@ function ShoppingCart() {
                 <div>
                     Total: ${Number(totalCostState).toFixed(2)}
                 </div>
-                <Button variant="dark" className="cart-cto" id="shopping-cart-proceed-btn" onClick={handleCostToCheckout}>
-                    Proceed to Checkout
-                </Button>
+                {continueBtn}
             </Row>
             
 
