@@ -59,7 +59,7 @@ function MainNavbar({promptSignIn}) {
                   View All
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/FAQ">Support</Nav.Link>
+              <Nav.Link href="/FAQ">Contact Us</Nav.Link>
             </Nav>
             <Nav className='ms-auto'>
                 <Nav.Link href="/">
