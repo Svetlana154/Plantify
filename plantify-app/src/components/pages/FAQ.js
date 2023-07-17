@@ -7,6 +7,7 @@ import faqData from "../../data/faq.json";
 import {Bar} from "react-chartjs-2";
 import Chart from "chart.js/auto";
 import { CategoryScale } from "chart.js"
+import ContactUs from "../ContactUs";
 
 function FAQ() {
   const accordionItems = [];
@@ -56,34 +57,37 @@ function FAQ() {
   };
 
   return (
-    <Container className="faq">
-      <FontAwesomeIcon icon={faCircleQuestion} size='2xl' className="faq-icon"/>
-      <h1>Frequently Asked Questions</h1>
-      <Accordion variant="dark" className="faq-content" alwaysOpen>
-        {accordionItems}
-        <Accordion.Item eventKey={faqData.length}>
-          <Accordion.Header>What are the most frequently-bought items?</Accordion.Header>
-          <Accordion.Body>
-            <div className="chart-container">
-              <Bar
-                data={chartData}
-                options={{
-                  plugins: {
-                    title: {
-                      display: true,
-                      text: "Most Frequently Brought Items By Category"
-                    },
-                    legend: {
-                      display: false
+    <div className="w-100">
+      <Container className="faq">
+        <FontAwesomeIcon icon={faCircleQuestion} size='2xl' className="faq-icon"/>
+        <h1>Frequently Asked Questions</h1>
+        <Accordion variant="dark" className="faq-content" alwaysOpen>
+          {accordionItems}
+          <Accordion.Item eventKey={faqData.length}>
+            <Accordion.Header>What are the most frequently-bought items?</Accordion.Header>
+            <Accordion.Body>
+              <div className="chart-container">
+                <Bar
+                  data={chartData}
+                  options={{
+                    plugins: {
+                      title: {
+                        display: true,
+                        text: "Most Frequently Brought Items By Category"
+                      },
+                      legend: {
+                        display: false
+                      }
                     }
-                  }
-                }}
-              />
-            </div>
-          </Accordion.Body>
-        </Accordion.Item>
-      </Accordion>
-    </Container>
+                  }}
+                />
+              </div>
+            </Accordion.Body>
+          </Accordion.Item>
+        </Accordion>
+      </Container>
+      <ContactUs />
+    </div>
   );
 }
 

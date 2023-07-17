@@ -8,17 +8,19 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Button from "react-bootstrap/esm/Button";
 import { useState } from "react";
+import Form from "react-bootstrap/esm/Form";
+import eagleView from "../images/eagles-view.jpg";
 
 
 function ContactUs () {
     const [show, setShow] = useState(false);
 
     return (
-        <Container className="contact-us" id="ContactUs">
-            <Row>
-                <Col>
+        <Container fluid className="contact-us-container">
+            <Row className="contact-us" id="ContactUs">
+                <Col md="4">
                     <Container className="contact-us-other">
-                        <h2>Have a question? Contact Us!</h2>
+                        <h2>Have a question? Contact Us</h2>
                     </Container>
                     <Container className="contact-us-other">
                         <FontAwesomeIcon icon={faPhone} className='contact-us-other-icon'/>
@@ -33,15 +35,17 @@ function ContactUs () {
                         </span>
                     </Container>
                 </Col>
-                <Col>
+                <Col md="4">
                     <Container>
-                        <textarea id="client-response" rows="8" cols="80"></textarea>
+                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                        <Form.Control as="textarea" rows={5} />
+                    </Form.Group>
                     </Container>
                     <Container>
                         <Alert show={show} variant="success" onClose={() => setShow(false)} dismissible>
                             Message has been sent successfully!
                         </Alert>
-                        <Button variant="dark" className="float-end" onClick={() => setShow(true)}>
+                        <Button variant="light" className="float-end" onClick={() => setShow(true)}>
                             Send
                         </Button>
                     </Container>

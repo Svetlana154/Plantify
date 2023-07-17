@@ -1,10 +1,10 @@
-import ContactUs from "../ContactUs";
 import DescriptorBlock from "../DescriptorBlock";
 import Hero from "../Hero";
 import ProductLinkSection from "../ProductLinkSection";
 import TeamPreview from "../TeamPreview";
 import Tutorial from "../Tutorial";
 import {useNavigate} from "react-router-dom";
+import Location from "../Location";
 
 function Home() {
   const navigate = useNavigate();
@@ -20,7 +20,7 @@ function Home() {
       <ProductLinkSection handleGoToProducts={handleGoToProducts}/>
       <TeamPreview />
       <Tutorial handleGoToProducts={handleGoToProducts}/>
-      <ContactUs />
+      <Location />
     </div>
   );
 }

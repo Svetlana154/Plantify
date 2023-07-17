@@ -303,7 +303,7 @@ function OurProducts({productData, filters}) {
               <Container className="products-no-results-container">
                 <h2 className="products-no-results-title">No results found...</h2>
                 <span className="products-no-results">
-                  Oops! We don't have anything with those properties right now! Let us know exactly what you're looking for through the <a href="/AboutUs">Contact Us</a> and we can custom order it just for you!
+                  Oops! We don't have anything with those properties right now! Let us know exactly what you're looking for through the <a href="/FAQ">Contact Us</a> and we can custom order it just for you!
                 </span>
                 <img className="products-no-results-img" src={sadEggs} alt="sad eggs"/>
               </Container>

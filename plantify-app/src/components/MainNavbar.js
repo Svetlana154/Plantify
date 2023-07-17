@@ -59,13 +59,10 @@ function MainNavbar({promptSignIn}) {
                   View All
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown id="basic-nav-dropdown" title="Support">
-                <NavDropdown.Item href="/FAQ">FAQ</NavDropdown.Item>
-                <NavDropdown.Item href="/ContactUs">Contact Us</NavDropdown.Item>
-              </NavDropdown>
+              <Nav.Link href="/FAQ">Support</Nav.Link>
             </Nav>
             <Nav className='ms-auto'>
-                <Nav.Link href="/AboutUs#location">
+                <Nav.Link href="/">
                   <FontAwesomeIcon icon={faLocationDot} size='xl'/>
                 </Nav.Link>
                 <Nav.Link href="/ShoppingCart">
