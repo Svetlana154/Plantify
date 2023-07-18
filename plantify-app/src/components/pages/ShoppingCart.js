@@ -17,7 +17,7 @@ function ShoppingCart() {
     const handleCostToCheckout = () => {
         navigate('/Checkout', {
             state: {
-                grossCost: totalCostState
+                grossCost: calculateTotal(cartItemsState)
             }
         });
     }

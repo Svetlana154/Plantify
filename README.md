@@ -8,3 +8,4 @@ To do:
 # References
 - https://plantagreenhouses.com/blogs/planting-zones/ontario
 - http://www.planthardiness.gc.ca/?m=1
+- https://www.cnet.com/personal-finance/credit-cards/advice/anatomy-of-a-credit-card/

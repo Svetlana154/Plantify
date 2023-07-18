@@ -9,7 +9,6 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Button from "react-bootstrap/esm/Button";
 import { useState } from "react";
 import Form from "react-bootstrap/esm/Form";
-import eagleView from "../images/eagles-view.jpg";
 
 
 function ContactUs () {

@@ -12,3 +12,14 @@
 .checkout-important-cost {
     font-size: xx-large;
 }
+
+.checkout-credict-card-image {
+    position: relative;
+    top: -75px;
+    width: 80%;
+}
+
+.checkout-title-line {
+    width: 40%;
+    margin: 20px auto;
+}
