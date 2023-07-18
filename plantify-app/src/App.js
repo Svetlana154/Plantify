@@ -13,6 +13,7 @@ import ProductSelected from './components/pages/ProductSelected';
 import Checkout from './components/pages/Checkout';
 import ThankYou from './components/pages/ThankYou';
 import Chatbot from './components/Chatbot';
+import PageNotFound from './components/pages/PageNotFound';
 import productData from "./data/products.json";
 import filtersData from "./data/filters.json";
 
@@ -49,6 +50,7 @@ function App() {
             <Route path='/ShoppingCart' element = {<ShoppingCart />} />
             <Route path='/Checkout' element = {<Checkout />} />
             <Route path='/ThankYou' element = {<ThankYou />} />
+            <Route path='*' element = {<PageNotFound />} />
 
           </Routes>
           
