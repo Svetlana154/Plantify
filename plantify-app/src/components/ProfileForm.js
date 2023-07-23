@@ -104,7 +104,7 @@ function ProfileForm () {
                 </Form.Group>
             </Row>
 
-            <Container className="form-change-password">
+            {/* <Container className="form-change-password">
                 <Row className="mb-3">
                     <h3 className="mt-3 mb-4">Change Password </h3>
         
@@ -123,7 +123,7 @@ function ProfileForm () {
                     <Form.Control type="password" placeholder="Enter the new password again" />
                     </Form.Group>
                 </Row>
-            </Container>
+            </Container> */}
             
 
             <h3 className="mt-5 mb-4">Shipping Address </h3>

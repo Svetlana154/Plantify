@@ -12,7 +12,28 @@ import Form from "react-bootstrap/esm/Form";
 
 
 function ContactUs () {
-    const [show, setShow] = useState(false);
+    const success = 
+    <Alert variant="success" onClose={() => setDisplayAlert(<></>)} dismissible>
+        Message has been sent successfully!
+    </Alert>
+
+    const error = 
+    <Alert variant="danger" onClose={() => setDisplayAlert(<></>)} dismissible>
+        No message detected! Please enter a message before hitting send.
+    </Alert>
+
+    const [displayAlert, setDisplayAlert] = useState(<></>);
+
+    const processContactUsForm = (event) => {
+        const formInput = document.getElementById("contact-us-input");
+        if (!formInput.value || formInput.value.trim().length <= 0) {
+            setDisplayAlert(error)
+        }
+        else {
+            setDisplayAlert(success)
+            document.getElementById("contact-us-input").value = "";
+        }
+    }
 
     return (
         <Container fluid className="contact-us-container">
@@ -36,15 +57,13 @@ function ContactUs () {
                 </Col>
                 <Col md="4">
                     <Container>
-                    <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                        <Form.Control as="textarea" rows={5} />
-                    </Form.Group>
+                        <Form.Group className="mb-3">
+                            <Form.Control as="textarea" rows={5} id="contact-us-input"/>
+                        </Form.Group>
                     </Container>
                     <Container>
-                        <Alert show={show} variant="success" onClose={() => setShow(false)} dismissible>
-                            Message has been sent successfully!
-                        </Alert>
-                        <Button variant="light" className="float-end" onClick={() => setShow(true)}>
+                        {displayAlert}
+                        <Button variant="light" className="float-end" onClick={processContactUsForm}>
                             Send
                         </Button>
                     </Container>

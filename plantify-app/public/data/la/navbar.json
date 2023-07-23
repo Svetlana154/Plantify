@@ -13,6 +13,7 @@
     "Contact Us": "Nobis Loquere",
     "Tooltips": {
         "Location": "Locus",
-        "ShoppingCart": "Shopping Cart"
+        "ShoppingCart": "My Shopping Cart",
+        "Profile": "My Profile"
     }
 }

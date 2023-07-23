@@ -13,7 +13,8 @@
     "Contact Us": "Contact Us",
     "Tooltips": {
         "Location": "Location",
-        "ShoppingCart": "Shopping Cart"
+        "ShoppingCart": "My Shopping Cart",
+        "Profile": "My Profile"
     },
     "Email": ""
 }

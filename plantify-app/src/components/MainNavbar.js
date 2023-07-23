@@ -13,6 +13,8 @@ import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { HashLink, NavHashLink } from 'react-router-hash-link';
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 const langs = {
   English: {title: 'English'},
@@ -114,9 +116,11 @@ function MainNavbar({promptSignIn}) {
             </Nav>
             <Nav className='ms-auto'>
                 <IconTooltip item={
-                    <Nav.Link href="/" aria-description="Link to location of physical store">
-                      <FontAwesomeIcon icon={faLocationDot} size='xl'/>
-                    </Nav.Link>
+                      <Nav.Link aria-description="Link to location of physical store">
+                        <NavHashLink to="/#location" style={{ textDecoration: 'none' }}>
+                          <FontAwesomeIcon icon={faLocationDot} size='xl' style={{color: '#575757'}}/>
+                        </NavHashLink>
+                      </Nav.Link>
                   }
                   text={(navbarData.Tooltips)? navbarData.Tooltips.Location: ""}
                   placement="bottom"
@@ -129,9 +133,15 @@ function MainNavbar({promptSignIn}) {
                   text={(navbarData.Tooltips)? navbarData.Tooltips.ShoppingCart : ""}
                   placement="bottom"
                 />
-                <Nav.Link href="" onClick={() => {(localStorage.getItem("activeAccount")) ? navigate("/Profile") : promptSignIn(true);}} aria-description="Link to profile">
-                  <FontAwesomeIcon icon={faCircleUser} size='xl'/>
-                </Nav.Link>
+                
+                <IconTooltip item={
+                    <Nav.Link href="" onClick={() => {(localStorage.getItem("activeAccount")) ? navigate("/Profile") : promptSignIn(true);}} aria-description="Link to profile">
+                      <FontAwesomeIcon icon={faCircleUser} size='xl'/>
+                    </Nav.Link>
+                  }
+                  text={(navbarData.Tooltips)? navbarData.Tooltips.Profile: ""}
+                    placement="bottom"
+                />
               </Nav>
           </Navbar.Collapse>
       </Navbar>

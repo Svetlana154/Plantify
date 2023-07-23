@@ -7,7 +7,7 @@ import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 function Location() {
   return (
-    <Container fluid className="location" id="location">
+    <Container fluid className="location">
       <Container className="location-container">
         <h1>Where to find us</h1>
         <Row className="location-content">
@@ -45,6 +45,7 @@ function Location() {
             <iframe className="location-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.768977540772!2d-75.69503841807929!3d45.43224534794876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04e32c0ecbb1%3A0xa2295fd8cad0cf5e!2s105%20St%20Andrew%20St%2C%20Ottawa%2C%20ON%20K1N%205G1!5e0!3m2!1sen!2sca!4v1688050923886!5m2!1sen!2sca" allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
           </Col>
         </Row>
+        <div id="location"></div>
       </Container>
     </Container>  
   );

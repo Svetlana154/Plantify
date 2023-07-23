@@ -18,9 +18,9 @@ function ThankYou() {
     const referenceValue = Math.floor(Math.random() * (100000000 - 10000000 + 1) + 10000000);
 
     return (
-        <Container className="mt-5 mb-5">
+        <Container className="mt-5 mb-5 thank-you-container">
             <FontAwesomeIcon icon={faCircleCheck} size="2xl" className="mb-3"/>
-            <h2>Purchase Complete!</h2>
+            <h2 style={{fontFamily:"Caveat", fontSize:"3em"}}>Purchase Complete!</h2>
             <div className="thank-you-reference">
                 <span>Reference </span>
                 <span className="product-ref thank-you-reference">
