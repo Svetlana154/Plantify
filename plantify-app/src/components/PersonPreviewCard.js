@@ -4,7 +4,7 @@ import "../styles/PersonPreviewCard.css";
 function PersonPreviewCard({profilePic, name, description}) {
   return(
     <Card className="person-preview-card">
-      <img src={profilePic} alt="hi"/>
+      <img src={profilePic} alt={name}/>
       <div className="person-preview-card-name">
         {name}
       </div>

@@ -20,13 +20,13 @@ function Team({title, data}) {
     });   
 
   return (
-    <Container className="team">
-      <Row>
+    <Container className="team" aria-description='This section describes the team members of Plantify.'>
+      {/* <Row> */}
         <h1>{title}</h1>
         <CardGroup className="team-preview-content">
           {cardGroup}
         </CardGroup>
-      </Row>
+      {/* </Row> */}
     </Container>
   );
 }

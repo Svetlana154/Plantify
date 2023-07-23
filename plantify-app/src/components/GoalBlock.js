@@ -3,7 +3,7 @@ import Container from "react-bootstrap/esm/Container"
 
 function GoalBlock({title, description}) {
     return(
-        <div className="goal-block">
+        <section className="goal-block" aria-description='This section described the goals and aspirations of Platify'>
             <Container>
                 <h1 className="title-white-with-shadow goal-title">
                     {title}
@@ -12,7 +12,7 @@ function GoalBlock({title, description}) {
                     {description}
                 </h2>
             </Container>
-        </div>
+        </section>
     );
 }
 

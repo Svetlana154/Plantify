@@ -54,7 +54,7 @@ function Chatbot () {
 
     return (
         <>
-            <Container className="chatbot-icon-container" onClick={handleChatbotExpandedShow}>
+            <Container className="chatbot-icon-container" onClick={handleChatbotExpandedShow} aria-description="This is a collapsed chatbot icon. Click to expand.">
                 <FontAwesomeIcon icon={faComments} size="2xl" className="chatbot-icon"/>
             </Container>
 

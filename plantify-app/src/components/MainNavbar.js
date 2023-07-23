@@ -56,23 +56,23 @@ function MainNavbar({promptSignIn}) {
   }, [lang]);
 
   return (
-    <div className='main-navbar'>
+    <div className='main-navbar' aria-description='This is the navigation bar of the website. It presents several links to help organize all of the content.'>
       <div className='top-navbar'>
         <span className='top-navbar-item'>
           <FontAwesomeIcon icon={faPhone} className='top-navbar-item-icon'/>
-          <span>
+          <span aria-description='Phone number:'>
             +1 (343) 543-3456
           </span>
         </span>
         <span className='top-navbar-item'>
           <FontAwesomeIcon icon={faEnvelope} className='top-navbar-item-icon'/>
-          <span>
+          <span aria-description='Email:'>
             {t("Email")}
           </span>
         </span>
         <span className='top-navbar-item'>
-          <FontAwesomeIcon icon={faEarthAmericas} className='top-navbar-item-icon'/>
-            <span>
+          <FontAwesomeIcon icon={faEarthAmericas} className='top-navbar-item-icon' />
+            <span aria-description='Change language: '>
               {Object.keys(langs).map((lang) => (
                 <span key={lang}>
                   <span style={{ margin:"2px", cursor:"pointer", fontWeight: i18n.resolvedLanguage === lang ? 'bold' : 'normal' }} onClick={() => changeLang(lang) }>
@@ -111,7 +111,7 @@ function MainNavbar({promptSignIn}) {
             </Nav>
             <Nav className='ms-auto'>
                 <IconTooltip item={
-                    <Nav.Link href="/">
+                    <Nav.Link href="/" aria-description="Link to location of physical store">
                       <FontAwesomeIcon icon={faLocationDot} size='xl'/>
                     </Nav.Link>
                   }
@@ -119,14 +119,14 @@ function MainNavbar({promptSignIn}) {
                   placement="bottom"
                 />
                 <IconTooltip item={
-                    <Nav.Link href="/ShoppingCart">
+                    <Nav.Link href="/ShoppingCart" aria-description="Link to shopping cart">
                       <FontAwesomeIcon icon={faShoppingCart} size='xl' id="navbar-shopping-cart"/>
                     </Nav.Link>
                   }
                   text={(navbarData.Tooltips)? navbarData.Tooltips.ShoppingCart : ""}
                   placement="bottom"
                 />
-                <Nav.Link href="" onClick={() => {promptSignIn(true);}}>
+                <Nav.Link href="" onClick={() => {promptSignIn(true);}} aria-description="Link to profile">
                   <FontAwesomeIcon icon={faCircleUser} size='xl'/>
                 </Nav.Link>
               </Nav>

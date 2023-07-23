@@ -47,7 +47,7 @@ function AboutUs() {
 
   
   return (
-    <div>
+    <div aria-description='This page provides information about the company. It has 2 main sections: the purpose and meet the team.'>
       <GoalBlock title={aboutUsData.PurposeTitle} description={aboutUsData.PurposeDescription}/>
       <Team title={aboutUsData.TeamTitle} data={teamData}/>
       <ServicesCarousel />
