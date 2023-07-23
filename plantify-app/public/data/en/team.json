@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Lula Morse",
+    "profilePic": "../../assets/team/Lula.jpg",
+    "description": "A loving mom, a strict professor, and now a passionate horticulturist as well."
+  },
+  {
+    "name": "Kaine Lowery",
+    "profilePic": "../../assets/team/Kaine.jpg",
+    "description": "Being surrounded by thousands of plants is my idea of Heaven."
+  },
+  {
+    "name": "Carmen Mata",
+    "profilePic": "../../assets/team/Carmen.jpg",
+    "description": "Started with a cactus, ended with 20 flower beds, a greenhouse, and passion for gardening."
+  },
+  {
+    "name": "Arthur Gill",
+    "profilePic": "../../assets/team/Arthur.jpg",
+    "description": "Officially a botanist, unofficially a just your average plant enthusiast."
+  }
+]

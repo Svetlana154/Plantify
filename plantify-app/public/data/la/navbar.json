@@ -1,0 +1,18 @@
+{
+    "Home": "Home",
+    "AboutUs": "De Nobis",
+    "Our Products": "Nostra Products",
+    "Seeds": "Seminibus",
+    "Succulents": "Succulenta",
+    "Ferns & Shrubs": "Ferns & Arbusculae",
+    "Crops": "Segetes",
+    "Flowers": "Flores",
+    "Trees": "Arbores",
+    "Tools & Accessories": "Tools & Accessories",
+    "View All": "Vide omnes",
+    "Contact Us": "Nobis Loquere",
+    "Tooltips": {
+        "Location": "Locus",
+        "ShoppingCart": "Shopping Cart"
+    }
+}

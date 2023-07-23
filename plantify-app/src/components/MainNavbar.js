@@ -6,7 +6,17 @@ import { faPhone, faEarthAmericas, faShoppingCart, faSearch, faLocationDot } fro
 import { faCircleUser, faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import "../styles/MainNavbar.css";
 import logoClean from "../images/logo_clean.png";
-import { useEffect } from 'react';
+import IconTooltip from './IconTooltip';
+import LangContext from '../LangContext'
+import { useContext, useEffect } from 'react';
+import i18n from '../i18n';
+import { useTranslation } from 'react-i18next';
+import { useState } from 'react';
+
+const langs = {
+  English: {title: 'English'},
+  Latin: {title: 'Latinus'}
+}
 
 function MainNavbar({promptSignIn}) {
   
@@ -14,12 +24,36 @@ function MainNavbar({promptSignIn}) {
     sessionStorage.setItem("productCategoryRequested", eventKey)
   }
 
-  useEffect(()=> {
-    // WIP
-    const shoppingCartIcon = document.getElementById("navbar-shopping-cart");
-    shoppingCartIcon.setAttribute("bounce", true);
-    console.log("notified");
-  }, [localStorage.getItem("cartCounter")])
+  const {t} = useTranslation();
+
+  const { lang } = useContext(LangContext);
+
+  function changeLang (l) {
+    if (lang !== l) {
+      i18n.changeLanguage(l);
+    }
+  }
+
+  const [navbarData, setNavbarData] = useState({});
+
+  useEffect(() => {
+    let isSubscribed = true;
+    console.log("fetching: "+ t('Navbar'));
+
+    const fetchData = async () => {
+      const data = await fetch(t('Navbar'));
+      const json = await data.json();
+      if (isSubscribed) {
+        setNavbarData(json);
+      }
+    }
+
+    fetchData()
+      .catch(console.error);
+
+    return () => isSubscribed = false;
+
+  }, [lang]);
 
   return (
     <div className='main-navbar'>
@@ -33,14 +67,20 @@ function MainNavbar({promptSignIn}) {
         <span className='top-navbar-item'>
           <FontAwesomeIcon icon={faEnvelope} className='top-navbar-item-icon'/>
           <span>
-            customer-service@plantify.com
+            {t("Email")}
           </span>
         </span>
         <span className='top-navbar-item'>
           <FontAwesomeIcon icon={faEarthAmericas} className='top-navbar-item-icon'/>
-          <span>
-            <b>EN</b> | LA
-          </span>
+            <span>
+              {Object.keys(langs).map((lang) => (
+                <span key={lang}>
+                  <span style={{ margin:"2px", cursor:"pointer", fontWeight: i18n.resolvedLanguage === lang ? 'bold' : 'normal' }} onClick={() => changeLang(lang) }>
+                    {langs[lang].title}
+                  </span> |
+                </span>                
+              ))}
+            </span>
         </span>
       </div>
       <Navbar expand="lg" className="bg-body-tertiary bottom-navbar">
@@ -50,37 +90,44 @@ function MainNavbar({promptSignIn}) {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/AboutUs">About Us</Nav.Link>
-              <NavDropdown id="basic-nav-dropdown" title="Our Products" onSelect={selectProductCategory}>
-                <NavDropdown.Item eventKey="Seeds" href='/OurProducts'>Seeds</NavDropdown.Item>
-                <NavDropdown.Item eventKey="Succulents" href='/OurProducts'> Succulents</NavDropdown.Item>
-                <NavDropdown.Item eventKey="Ferns & Shrubs" href='/OurProducts'>Ferns & Shrubs</NavDropdown.Item>
-                <NavDropdown.Item eventKey="Crops" href='/OurProducts'>Crops</NavDropdown.Item>
-                <NavDropdown.Item eventKey="Flowers" href='/OurProducts'>Flowers</NavDropdown.Item>
-                <NavDropdown.Item eventKey="Trees" href='/OurProducts'>Trees</NavDropdown.Item>
+              <Nav.Link href="/">{navbarData["Home"]}</Nav.Link>
+              <Nav.Link href="/AboutUs">{navbarData["AboutUs"]}</Nav.Link>
+              <NavDropdown id="basic-nav-dropdown" title={navbarData["Our Products"]} onSelect={selectProductCategory}>
+                <NavDropdown.Item eventKey="Seeds" href='/OurProducts'>{navbarData["Seeds"]}</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Succulents" href='/OurProducts'>{navbarData["Succulents"]}</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Ferns & Shrubs" href='/OurProducts'>{navbarData["Ferns & Shrubs"]}</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Crops" href='/OurProducts'>{navbarData["Crops"]}</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Flowers" href='/OurProducts'>{navbarData["Flowers"]}</NavDropdown.Item>
+                <NavDropdown.Item eventKey="Trees" href='/OurProducts'>{navbarData["Trees"]}</NavDropdown.Item>
                 <NavDropdown.Item eventKey="Tools & Accessories" href='/OurProducts'>
-                  Tools & Accessories
+                  {navbarData["Tools & Accessories"]}
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item eventKey="-" href='/OurProducts'>
-                  View All
+                  {navbarData["View All"]}
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/FAQ">Contact Us</Nav.Link>
+              <Nav.Link href="/FAQ">{navbarData["Contact Us"]}</Nav.Link>
             </Nav>
             <Nav className='ms-auto'>
-                <Nav.Link href="/">
-                  <FontAwesomeIcon icon={faLocationDot} size='xl'/>
-                </Nav.Link>
-                <Nav.Link href="/ShoppingCart">
-                  <FontAwesomeIcon icon={faShoppingCart} size='xl' id="navbar-shopping-cart"/>
-                </Nav.Link>
+                <IconTooltip item={
+                    <Nav.Link href="/">
+                      <FontAwesomeIcon icon={faLocationDot} size='xl'/>
+                    </Nav.Link>
+                  }
+                  text={(navbarData.Tooltips)? navbarData.Tooltips.Location: ""}
+                  placement="bottom"
+                />
+                <IconTooltip item={
+                    <Nav.Link href="/ShoppingCart">
+                      <FontAwesomeIcon icon={faShoppingCart} size='xl' id="navbar-shopping-cart"/>
+                    </Nav.Link>
+                  }
+                  text={(navbarData.Tooltips)? navbarData.Tooltips.ShoppingCart : ""}
+                  placement="bottom"
+                />
                 <Nav.Link href="" onClick={() => {promptSignIn(true);}}>
                   <FontAwesomeIcon icon={faCircleUser} size='xl'/>
-                </Nav.Link>
-                <Nav.Link href="/OurProducts">
-                  <FontAwesomeIcon icon={faSearch} size='xl'/>
                 </Nav.Link>
               </Nav>
           </Navbar.Collapse>

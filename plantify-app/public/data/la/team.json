@@ -1,0 +1,22 @@
+[
+    {
+      "name": "Lula Morse",
+      "profilePic": "./assets/team/Lula.jpg",
+      "description": "Mater amantis, professoris severi, et nunc tam iracundus horticulturist."
+    },
+    {
+      "name": "Kaine Lowery",
+      "profilePic": "./assets/team/Kaine.jpg",
+      "description": "Millibus plantis circumdatus idea coeli est."
+    },
+    {
+      "name": "Carmen Mata",
+      "profilePic": "./assets/team/Carmen.jpg",
+      "description": "Incipiens a cactus, finivit cum 20 flore stratis, conservatorium, studium topiarii."
+    },
+    {
+      "name": "Arthurus Gill",
+      "profilePic": "./assets/team/Arthur.jpg",
+      "description": "Publice botanicus, unofficialiter iustus tuus mediocris planta enthusiasta."
+    }
+]

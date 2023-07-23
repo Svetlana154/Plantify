@@ -16,7 +16,8 @@ import Chatbot from './components/Chatbot';
 import PageNotFound from './components/pages/PageNotFound';
 import productData from "./data/products.json";
 import filtersData from "./data/filters.json";
-
+import i18n from './i18n';
+import LangContext from './LangContext';
 import "./styles/SignInModal.css";
 import ModalManager from './components/ModalManager';
 import ShoppingCart from './components/pages/ShoppingCart';
@@ -33,33 +34,39 @@ function App() {
     setModalData(allModalData);
   };
 
+  const [lang, setLocale] = useState(i18n.language);
+  i18n.on('languageChanged', () => setLocale(i18n.language));
+
   return (
     <div className="App">
-      <Router>
-        <div>
-          <MainNavbar promptSignIn={promptSignIn} />
+      <LangContext.Provider value={{lang, setLocale}}>
+        <Router>
+          <div>
+            <MainNavbar promptSignIn={promptSignIn} />
 
-          <Routes>
-            <Route path='/' element = {<Home />} />
-            <Route path='/AboutUs' element = {<AboutUs />} />
-            <Route path='/OurProducts' element = {<OurProducts productData={productData} filters={filtersData}/>} />
-            <Route path='/FAQ' element = {<FAQ />} />
-            <Route path='/Profile' element = {<Profile />} />
-            <Route path='/SignUp' element = {<SignUp />} />
-            <Route path='/ProductSelected' element = {<ProductSelected />} />
-            <Route path='/ShoppingCart' element = {<ShoppingCart />} />
-            <Route path='/Checkout' element = {<Checkout />} />
-            <Route path='/ThankYou' element = {<ThankYou />} />
-            <Route path='*' element = {<PageNotFound />} />
+            <Routes>
+              <Route path='/' element = {<Home />} />
+              <Route path='/AboutUs' element = {<AboutUs />} />
+              <Route path='/OurProducts' element = {<OurProducts productData={productData} filters={filtersData}/>} />
+              <Route path='/FAQ' element = {<FAQ />} />
+              <Route path='/Profile' element = {<Profile />} />
+              <Route path='/SignUp' element = {<SignUp />} />
+              <Route path='/ProductSelected' element = {<ProductSelected />} />
+              <Route path='/ShoppingCart' element = {<ShoppingCart />} />
+              <Route path='/Checkout' element = {<Checkout />} />
+              <Route path='/ThankYou' element = {<ThankYou />} />
+              <Route path='*' element = {<PageNotFound />} />
 
-          </Routes>
-          
-          <ModalManager modalData={modalData} />
-          <Chatbot />
+            </Routes>
+            
+            <ModalManager modalData={modalData} />
+            <Chatbot />
 
-          <Footer />
-        </div>
-      </Router>
+            <Footer />
+          </div>
+        </Router>
+
+      </LangContext.Provider>
     </div>
   );
 }

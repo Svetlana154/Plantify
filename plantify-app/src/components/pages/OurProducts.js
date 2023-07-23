@@ -353,7 +353,8 @@ function OurProducts({productData, filters}) {
               <Accordion.Item eventKey="0" className="filter-option">
                 <Accordion.Header>
                   <h6>Brand</h6>
-                  <PromptTooltip text={"The brand is the company that produces and distributes the product"} />
+                  <PromptTooltip text={"The brand is the company that produces and distributes the product"}
+                    placement={"right"}/>
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -373,7 +374,8 @@ function OurProducts({productData, filters}) {
               <Accordion.Item eventKey="1" className="filter-option">
                 <Accordion.Header>
                   <h6>Price</h6>
-                  <PromptTooltip text={"Filter the products by a specific price range. Select multiple to combine ranges."} />
+                  <PromptTooltip text={"Filter the products by a specific price range. Select multiple to combine ranges."}
+                    placement={"right"} />
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -393,7 +395,8 @@ function OurProducts({productData, filters}) {
               <Accordion.Item eventKey="2" className="filter-option">
                 <Accordion.Header>
                   <h6>Size</h6>
-                  <PromptTooltip text={"Size of product in feet. FOR SEED ONLY: average size of plant at maturity"} />
+                  <PromptTooltip text={"Size of product in feet. FOR SEED ONLY: average size of plant at maturity"} 
+                    placement={"right"}/>
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -413,7 +416,8 @@ function OurProducts({productData, filters}) {
               <Accordion.Item eventKey="3" className="filter-option">
                 <Accordion.Header>
                   <h6>Lifetime</h6>
-                  <PromptTooltip text={"Plants can be annual, which means they are only good for one year, or perennial, which means they survive for multiple years"} />
+                  <PromptTooltip text={"Plants can be annual, which means they are only good for one year, or perennial, which means they survive for multiple years"} 
+                    placement={"right"}/>
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -433,7 +437,8 @@ function OurProducts({productData, filters}) {
               <Accordion.Item eventKey="4" className="filter-option">
                 <Accordion.Header>
                   <h6>Colour</h6>
-                  <PromptTooltip text={"The main colours expressed by the product"} />
+                  <PromptTooltip text={"The main colours expressed by the product"} 
+                    placement={"right"}/>
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -456,7 +461,8 @@ function OurProducts({productData, filters}) {
               <Accordion.Item eventKey="5" className="filter-option">
                 <Accordion.Header>
                   <h6>Hardiness Zone</h6>
-                  <PromptTooltip text={"The temperature zone the plant is usually found in. To find out more, visit our Home page."} />
+                  <PromptTooltip text={"The temperature zone the plant is usually found in. To find out more, visit our Home page."} 
+                    placement={"right"}/>
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -492,7 +498,8 @@ function OurProducts({productData, filters}) {
               <Accordion.Item eventKey="6" className="filter-option">
                 <Accordion.Header>
                   <h6>Rarity</h6>
-                  <PromptTooltip text={"The rarity of the product comprised of 4 levels"} />
+                  <PromptTooltip text={"The rarity of the product comprised of 4 levels"} 
+                    placement={"right"}/>
                 </Accordion.Header>
                 <Accordion.Body>
                   <Row>
@@ -511,7 +518,8 @@ function OurProducts({productData, filters}) {
               <Accordion.Item eventKey="7" className="filter-option">
                 <Accordion.Header>
                   <h6>Producer</h6>
-                  <PromptTooltip text={"Origin of product"} />
+                  <PromptTooltip text={"Origin of product"}
+                    placement={"right"}/>
                 </Accordion.Header> 
                 <Accordion.Body>
                   <Row>

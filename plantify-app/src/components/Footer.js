@@ -6,8 +6,11 @@ import Container from "react-bootstrap/esm/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
 import { Facebook, Instagram, Twitter } from "react-bootstrap-icons";
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+  const {t} = useTranslation();
+
   return (
     <>  
       <Container fluid className="footer">
@@ -16,7 +19,7 @@ function Footer() {
             <img src={logoCleanWhite} alt="Plantify" width="200px"/>
             <div className="footer-logo-text">
               <i>
-                &copy; Plantify 2023. All rights reserved. [Completed for SEG 3125]
+                &copy; {t("Footer")}
               </i>
             </div>
           </Col>
@@ -33,7 +36,7 @@ function Footer() {
               <Container className="footer-socials">
                   <FontAwesomeIcon icon={faEnvelope} className="me-2"/>
                   <span>
-                      customer-service@plantify.com
+                    {t("Email")}
                   </span>
               </Container>
               <Container className="mt-4 mb-5 footer-socials">

@@ -138,7 +138,8 @@ function Checkout() {
                         <Row className="mb-3">
                             <Col md={2}>
                                 Type: 
-                                <PromptTooltip text={"The default packaging option is 'Regular'. The Premium packaging option includes higher-quality wrapping paper - perfect for gifts."} />
+                                <PromptTooltip text={"The default packaging option is 'Regular'. The Premium packaging option includes higher-quality wrapping paper - perfect for gifts."} 
+                                    placement={"right"}/>
                             </Col>
                             <Form.Group as={Col} controlId="validationPackagingOptionRegular">
                                 <Form.Check 
@@ -185,7 +186,8 @@ function Checkout() {
                         <Container className="checkout-cost-calculator">
                             <div>
                                 Cost of items
-                                <PromptTooltip text={"The raw price of the products."} />
+                                <PromptTooltip text={"The raw price of the products."}  
+                                    placement={"top"}/>
                             </div>
                             <span className="product-price checkout-important-cost">
                                 {Number(grossCost).toFixed(2)}
@@ -193,7 +195,8 @@ function Checkout() {
                             <Row className="mt-4">
                                 <div>
                                     + packaging fees
-                                    <PromptTooltip text={"Any extra costs associated with wrapping the products."} />
+                                    <PromptTooltip text={"Any extra costs associated with wrapping the products."}  
+                                    placement={"top"}/>
                                 </div>
                                 <div className="product-price">
                                     {Number(packagingCost).toFixed(2)}
@@ -202,7 +205,8 @@ function Checkout() {
                             <Row className="mt-4">
                                 <div>
                                     + shipping fees
-                                    <PromptTooltip text={"Any extra costs associated with trasporting the products to the desired location."} />
+                                    <PromptTooltip text={"Any extra costs associated with trasporting the products to the desired location."}  
+                                    placement={"top"}/>
                                 </div>
                                 <div className="product-price">
                                     {Number(shippingCost).toFixed(2)}
@@ -211,7 +215,8 @@ function Checkout() {
                             <Row className="mt-4">
                                 <div>
                                     + tax fees
-                                    <PromptTooltip text={"13% HST tax applied on the purchase, as per the law."} />
+                                    <PromptTooltip text={"13% HST tax applied on the purchase, as per the law."}  
+                                        placement={"top"}/>
                                 </div>
                                 <div className="product-price">
                                     {Number(taxCost).toFixed(2)}
@@ -239,7 +244,8 @@ function Checkout() {
                             <Form.Group as={Col} controlId="validationCreditCardNumber">
                                 <Form.Label>
                                     Credict Card Number
-                                    <PromptTooltip text={"The full credit card number as specified on the card. Please do not add any spaces or punctuation marks in between the numbers."} />
+                                    <PromptTooltip text={"The full credit card number as specified on the card. Please do not add any spaces or punctuation marks in between the numbers."}  
+                                        placement={"right"}/>
                                 </Form.Label>
                                 <Form.Control 
                                     type="text"
@@ -255,7 +261,8 @@ function Checkout() {
                             <Form.Group as={Col} className="mb-3" controlId="validationCreditCardExpiryDate">
                                 <Form.Label>
                                     Expiration Date
-                                    <PromptTooltip text={"The expiration date specified on the credit card. The date must be in the future (in 2024 and later) and presented in the following format: YYYY/MM."} />
+                                    <PromptTooltip text={"The expiration date specified on the credit card. The date must be in the future (in 2024 and later) and presented in the following format: YYYY/MM."}  
+                                        placement={"right"} />
                                 </Form.Label>
                                 <Form.Control 
                                     type="text"
@@ -267,7 +274,8 @@ function Checkout() {
                             <Form.Group as={Col} md={5} className="mb-3" controlId="validationCreditCardSecurityCode">
                                 <Form.Label>
                                     Verification Code (CVC/CVV)
-                                    <PromptTooltip text={"The verification (security) code found on the back of the credit card. It must be 3 or 4 digits long."} />
+                                    <PromptTooltip text={"The verification (security) code found on the back of the credit card. It must be 3 or 4 digits long."}  
+                                        placement={"right"}/>
                                 </Form.Label>
                                 <Form.Control
                                     type="text"
