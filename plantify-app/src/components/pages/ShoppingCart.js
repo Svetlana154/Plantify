@@ -98,7 +98,7 @@ function ShoppingCart({promptSignIn}) {
     }
 
     return (
-        <Container className="mt-5 mb-5">
+        <Container className="mt-5 mb-5 shopping-cart-container">
             <h1>Shopping Cart</h1>
             { 
                 (cartItemsState.length > 0) ? 
