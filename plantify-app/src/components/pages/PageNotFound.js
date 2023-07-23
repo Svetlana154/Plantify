@@ -6,7 +6,7 @@ import catWalking from "../../images/cat-walking.jpg";
 function PageNotFound() {
   return (
     <div className="mt-5 text-center mb-5">
-      <Row>
+      <Row className="w-100 mx-0">
         <h1>Sorry!<br/>It seems the page you are looking for does not exist...</h1>
         <div>
           Don't worry! We have sent Captain Kittens on the job - he will find exactly what you're looking for it no time!
@@ -15,7 +15,7 @@ function PageNotFound() {
         </div>
       </Row>
       
-      <div style={{display: "flex", float:"left", width:"100%", margin:"10px", textAlign:"center", justifyContent:"center"}} className="mt-4 mb-4">
+      <div className="my-4 mx-10 w-100" style={{display: "flex", float:"left", textAlign:"center", justifyContent:"center"}}>
           <Button href="/" variant="outline-success" className="me-2">Go Back to Homepage</Button>
           <Button href="/OurProducts" variant="success" className="ms-2">Check Out Products</Button>
       </div>

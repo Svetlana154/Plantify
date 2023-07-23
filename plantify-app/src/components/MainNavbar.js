@@ -12,6 +12,7 @@ import { useContext, useEffect } from 'react';
 import i18n from '../i18n';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const langs = {
   English: {title: 'English'},
@@ -19,6 +20,8 @@ const langs = {
 }
 
 function MainNavbar({promptSignIn}) {
+
+  const navigate = useNavigate();
   
   const selectProductCategory = (eventKey, event) => {
     sessionStorage.setItem("productCategoryRequested", eventKey)
@@ -126,7 +129,7 @@ function MainNavbar({promptSignIn}) {
                   text={(navbarData.Tooltips)? navbarData.Tooltips.ShoppingCart : ""}
                   placement="bottom"
                 />
-                <Nav.Link href="" onClick={() => {promptSignIn(true);}} aria-description="Link to profile">
+                <Nav.Link href="" onClick={() => {(localStorage.getItem("activeAccount")) ? navigate("/Profile") : promptSignIn(true);}} aria-description="Link to profile">
                   <FontAwesomeIcon icon={faCircleUser} size='xl'/>
                 </Nav.Link>
               </Nav>
