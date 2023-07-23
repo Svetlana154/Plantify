@@ -27,6 +27,9 @@ function Checkout() {
     const [packagingCost, setPackagingCost] = useState(0);
     const [shippingCost, setShippingCost] = useState(20);
 
+    const activeEmail = localStorage.getItem("activeAccount");
+    const preloadDetails = JSON.parse(localStorage.getItem("allPersonas"))[activeEmail];
+
     const handleProceedtoThankYou = (event) => {
         const form = document.getElementById("checkout-form");
         if (form.checkValidity() === false) {
@@ -86,6 +89,7 @@ function Checkout() {
                                     <Form.Control 
                                         type="text" 
                                         placeholder="1234 Main st."
+                                        defaultValue={preloadDetails["address street"]}
                                         required
                                         />
                                     <Form.Control.Feedback type='invalid'>No street address found! Please enter a valid apt & street address.</Form.Control.Feedback>
@@ -97,6 +101,7 @@ function Checkout() {
                                     <Form.Control 
                                         type="text"
                                         placeholder="Ontario"
+                                        defaultValue={preloadDetails["address province"]}
                                         required
                                         />
                                     <Form.Control.Feedback type='invalid'>No state/province found! Please enter a valid state or province.</Form.Control.Feedback>
@@ -107,6 +112,7 @@ function Checkout() {
                                     <Form.Control 
                                         type="text"
                                         placeholder="Canada"
+                                        defaultValue={preloadDetails["address country"]}
                                         required
                                         />
                                     <Form.Control.Feedback type='invalid'>No country entered! Please enter the name of a country.</Form.Control.Feedback>
@@ -118,6 +124,7 @@ function Checkout() {
                                     <Form.Control 
                                         type="text"
                                         placeholder="A1B2C3"
+                                        defaultValue={preloadDetails["address postal code"]}
                                         required
                                         />
                                     <Form.Control.Feedback type='invalid'>No postal code entered! Please enter the postal code for the address.</Form.Control.Feedback>

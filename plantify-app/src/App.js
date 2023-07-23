@@ -31,7 +31,7 @@ function App() {
 
   const promptSignIn = () => {
     allModalData.modalState = 1;
-    setModalData(allModalData);
+    setModalData({...allModalData});
   };
 
   const [lang, setLocale] = useState(i18n.language);
@@ -52,7 +52,7 @@ function App() {
               <Route path='/Profile' element = {<Profile />} />
               <Route path='/SignUp' element = {<SignUp />} />
               <Route path='/ProductSelected' element = {<ProductSelected />} />
-              <Route path='/ShoppingCart' element = {<ShoppingCart />} />
+              <Route path='/ShoppingCart' element = {<ShoppingCart promptSignIn={promptSignIn}/>} />
               <Route path='/Checkout' element = {<Checkout />} />
               <Route path='/ThankYou' element = {<ThankYou />} />
               <Route path='*' element = {<PageNotFound />} />

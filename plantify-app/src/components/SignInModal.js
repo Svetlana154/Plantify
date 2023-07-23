@@ -26,7 +26,6 @@ function SignInModal({promptState, promptCloseCallback, promptSwitchToRecoveryMo
         else {
             if (checkEmailAndPasswordMatch()) {
                 setValidated("valid");
-                navigate('/Profile');
                 promptCloseCallback()
             }
             else {

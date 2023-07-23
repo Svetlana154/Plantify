@@ -9,17 +9,24 @@ import { useNavigate } from "react-router-dom";
 import "../../styles/ShoppingCart.css";
 import { useEffect, useState } from "react";
 
-function ShoppingCart() {
+function ShoppingCart({promptSignIn}) {
 
     //move to checkout
     const navigate = useNavigate();
 
     const handleCostToCheckout = () => {
-        navigate('/Checkout', {
-            state: {
-                grossCost: calculateTotal(cartItemsState)
-            }
-        });
+        if (localStorage.getItem("activeAccount")) {
+            navigate('/Checkout', {
+                state: {
+                    grossCost: calculateTotal(cartItemsState)
+                }
+            });
+        }
+        else {
+            const prompt = () => {promptSignIn(true)};
+            prompt();
+        }
+        
     }
 
     function getItemsForCart() {
