@@ -33,7 +33,6 @@ function Chatbot () {
 
     const handleMessageSent = () => {
         const userInput = document.getElementById("chatbot-user-input").value.trim();
-        console.log("got user input: " + userInput); 
 
         if (userInput) {
             document.getElementById("chatbot-user-input").value = "";
@@ -46,8 +45,6 @@ function Chatbot () {
                 </Row> ]
                 ).concat([chatbotMessage]);
 
-            console.log("update data: "+ data.length);
-            console.log("... to: "+ messageLog.length);
             setData(messageLog);
         }
     }

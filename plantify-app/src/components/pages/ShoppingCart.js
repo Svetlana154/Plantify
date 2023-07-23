@@ -69,9 +69,7 @@ function ShoppingCart({promptSignIn}) {
     const [totalCostState, setTotalCostState] = useState(calculateTotal(cartItemsState));
 
     useEffect(() => {
-        console.log("activate effect");
         handleUpdateTotalInCart(cartItemsState);
-        localStorage.setItem("cart-items", JSON.stringify(cartItemsState));
         setContinueBtn(cartItemsState.length > 0? proceedToCheckoutBtn : proceedToCheckoutBtnDisabled)
     }, [cartItemsState])
 
@@ -92,7 +90,6 @@ function ShoppingCart({promptSignIn}) {
     }
 
     const removeCartItem = (itemRef) => {
-        console.log("processing remove");
         const newCartItems = [...cartItemsState].filter(item => (item.ref !== itemRef));
         setCartItemsState(newCartItems)
     }
@@ -104,11 +101,11 @@ function ShoppingCart({promptSignIn}) {
                 (cartItemsState.length > 0) ? 
                     cartItemsState.map((item) =>
                         <Row className="cart-item-row" key={"cart-item-row-"+item.ref}>
-                            <Col md={8} className="cart-item g-0">
+                            <Col md={7} className="cart-item g-0">
                                 <h5>{item.name}</h5>&nbsp;
                                 <span className="product-ref">{item.ref}</span>
                             </Col>
-                            <Col md={3} className="cart-item g-0">
+                            <Col md={4} className="cart-item g-0">
                                 <span className="me-4">
                                     Quantity: 
                                     <NumericInput min={1} max={10} value={item.quantity} onChange={(value) => {setNewQuantity(item.ref, value)}} className="product-selected-quantity-input"/>

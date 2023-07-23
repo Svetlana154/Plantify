@@ -21,7 +21,6 @@ function ProductCard({product}) {
     const navigate = useNavigate();
 
     const handleProductSelected = () => {
-        console.log("hear click");
         navigate('/ProductSelected', {
         state: {
             productRef: product.ref

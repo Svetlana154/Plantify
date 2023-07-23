@@ -69,9 +69,7 @@ function ProfileForm () {
 
     const handleActivateInputDisabled = (inputFieldName) => {
         const newInputDisabled = inputDisabled;
-        console.log("disabling name input: " + newInputDisabled[inputFieldName])
         newInputDisabled[inputFieldName] = false;
-        console.log("disabling name input: " + newInputDisabled[inputFieldName])
         setInputDisabled({...newInputDisabled});
     }
 

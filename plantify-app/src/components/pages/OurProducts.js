@@ -186,7 +186,6 @@ function OurProducts({productData, filters}) {
     if (given >= 25.00 && given <= 49.99) return ("25.00 49.99");
     if (given >= 50.00 && given <= 74.99) return ("50.00 74.99");
     if (given >= 75.00 && given <= 1000.00) return ("75.00 1000.00");
-    console.log(given);
   }
 
   function getSizeInterval(given) {

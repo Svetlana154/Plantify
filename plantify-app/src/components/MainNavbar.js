@@ -43,7 +43,6 @@ function MainNavbar({promptSignIn}) {
 
   useEffect(() => {
     let isSubscribed = true;
-    console.log("fetching: "+ t('Navbar'));
 
     const fetchData = async () => {
       const data = await fetch(t('Navbar'));

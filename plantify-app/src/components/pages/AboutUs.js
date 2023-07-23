@@ -12,7 +12,6 @@ function AboutUs() {
 
   useEffect(() => {
     let isSubscribed = true;
-    console.log("fetching: "+ t('AboutUs'));
 
     const fetchData = async () => {
       const data = await fetch(t('AboutUs'));

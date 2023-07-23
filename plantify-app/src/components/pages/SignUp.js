@@ -39,16 +39,13 @@ function SignUp() {
             doNotAllowContinue(event)
         }
         else {
-            console.log("checking if email already in use");
             const allPersonas = localStorage.getItem("allPersonas")
             if (allPersonas && JSON.parse(allPersonas)[signUpEmail]){
-                console.log("email already in use!");
                 setSignUpEmail("");
                 setShowEmailInUse(true)
                 doNotAllowContinue(event)
             }
             else {
-                console.log("email not in use!");
                 setShowEmailInUse(false)
                 const newPerson = {}
                 newPerson.name = signUpName;
@@ -58,13 +55,11 @@ function SignUp() {
                 newPerson["address province"] = "";
                 newPerson["address postal code"] = "";
                 if (allPersonas){
-                    console.log("existing parent entry");
                     const newAllPersonas = JSON.parse(allPersonas);
                     newAllPersonas[signUpEmail] = newPerson;
                     localStorage.setItem("allPersonas", JSON.stringify(newAllPersonas));
                 }
                 else {
-                    console.log("new parent entry");
                     const startPersonas = {}
                     startPersonas[signUpEmail] = newPerson;
                     localStorage.setItem("allPersonas", JSON.stringify(startPersonas))

@@ -22,13 +22,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -57,12 +57,12 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
                     "rating": 3
                 }
             ]
@@ -92,12 +92,12 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
                     "rating": 3
                 }
             ]
@@ -127,13 +127,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -162,13 +162,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 3.5
                 }
             ]
         },
@@ -197,13 +197,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 4
                 }
             ]
         },
@@ -232,13 +232,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "WOW! Such a pretty plant!! I'm so glad I decided to buy it!!!",
+                    "rating": 5
                 }
             ]
         },
@@ -267,13 +267,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "WOW! Such a pretty plant!! I'm so glad I decided to buy it!!!",
+                    "rating": 5
                 }
             ]
         },
@@ -302,13 +302,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -337,13 +337,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 1
                 }
             ]
         },
@@ -372,13 +372,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "WOW! Such a pretty plant!! I'm so glad I decided to buy it!!!",
+                    "rating": 5
                 }
             ]
         },
@@ -407,13 +407,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -442,13 +442,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -478,13 +478,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -513,13 +513,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was honestly a very beautiful plant. However, I personally was not the biggest fan. Hopefully I get better luck with my plant next time.",
+                    "rating": 3.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 1.5
                 }
             ]
         },
@@ -548,13 +548,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -583,13 +583,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -618,13 +618,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2
                 }
             ]
         },
@@ -653,13 +653,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -688,13 +688,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -723,13 +723,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -758,13 +758,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -793,13 +793,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. It honestly took my breath away when it bloomed.",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 4
                 }
             ]
         },
@@ -828,13 +828,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. I'm absolutely in love!!!!",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -863,13 +863,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was honestly a very beautiful plant. However, I personally was not the biggest fan. Hopefully I get better luck with my plant next time.",
+                    "rating": 3.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 1.5
                 }
             ]
         },
@@ -898,13 +898,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. I'm absolutely in love!!!!",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 4
                 }
             ]
         },
@@ -933,13 +933,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This was the most beautiful plant that I've ever seen. I'm absolutely in love!!!!",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -968,13 +968,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. I'm absolutely in love!!!!",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
+                    "rating": 5
                 }
             ]
         },
@@ -1003,13 +1003,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "This was the most beautiful plant that I've ever seen. I'm absolutely in love!!!!",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 4
                 }
             ]
         },
@@ -1038,13 +1038,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
+                    "rating": 4
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2
                 }
             ]
         },
@@ -1073,13 +1073,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -1108,13 +1108,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -1143,13 +1143,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 4
                 }
             ]
         },
@@ -1178,13 +1178,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "This is honestly a very great plant. However, I personally was not the biggest fan. Hopefully I get better luck with my plant next time.",
+                    "rating": 3
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 1
                 }
             ]
         },
@@ -1213,13 +1213,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 4
                 }
             ]
         },
@@ -1248,13 +1248,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -1283,13 +1283,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 4
                 }
             ]
         },
@@ -1318,12 +1318,12 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
                     "rating": 3
                 }
             ]
@@ -1353,13 +1353,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 4
                 }
             ]
         },
@@ -1388,13 +1388,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, the plant looks nothing like the picture, so I'm a quite disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -1423,13 +1423,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, once the plant grows, it looks nothing like the picture, so I'm a bit disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 4
                 }
             ]
         },
@@ -1458,13 +1458,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "Loved this purchase! This is such a great plant. And soo easy to care for!! Which is quite the boon for a beginner :)",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Not the biggest fan if I'm being honest. In reality, once the plant grows, it looks nothing like the picture, so I'm a bit disapppointed. But one man's trash is another man's treasure and all that.",
+                    "rating": 2.5
                 }
             ]
         },
@@ -1488,13 +1488,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
+                    "comment": "Loved this purchase! It was extremely useful and has lasted for quite a while now!",
                     "rating": 5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "Pretty great quality from Plantify. I would definitely recomend!",
+                    "rating": 4
                 }
             ]
         }
@@ -1517,13 +1517,13 @@
             "reviews": [
                 {
                     "name": "John Doe",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 5
+                    "comment": "Loved this purchase! It was extremely useful and has lasted for quite a while now!",
+                    "rating": 4.5
                 },
                 {
-                    "name": "John Doe2",
-                    "comment": "Curabitur magna velit, pretium eu sapien ut, malesuada maximus augue. Aenean fermentum, leo facilisis dictum laoreet, odio orci maximus nisi, eu interdum magna enim ut nibh.",
-                    "rating": 3
+                    "name": "Tony Smith",
+                    "comment": "This is a pretty OK shovel. But no better than the stuff you can by at a regular store...",
+                    "rating": 2.5
                 }
             ]
         }

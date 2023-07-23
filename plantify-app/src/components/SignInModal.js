@@ -40,7 +40,6 @@ function SignInModal({promptState, promptCloseCallback, promptSwitchToRecoveryMo
         const keepSignedIn = document.getElementById("sign-in-keep-signed-in").checked;
 
         const person = JSON.parse(localStorage.getItem("allPersonas"));
-        console.log("found in ls: "+ person)
         
         if ((person) && (person[signInEmail]) && person[signInEmail].password === signInPassword) {
             localStorage.setItem("activeAccount", signInEmail)

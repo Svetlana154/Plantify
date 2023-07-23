@@ -57,7 +57,7 @@ function ProductSelected () {
     }
 
     useEffect(() => {
-        const {inCart, } = isItemAlreadyInCart(cartItem)
+        const inCart = isItemAlreadyInCart(cartItem)
         if (inCart){
             document.getElementById("product-add-to-cart-btn").click()
         }
@@ -89,9 +89,9 @@ function ProductSelected () {
 
         if (allItemsInCart === null) return false;
 
-        allItemsInCart.filter(item => item.ref === itemToCompareTo.ref);
+        const filteredAllItemsInCart = allItemsInCart.filter(item => item.ref === itemToCompareTo.ref);
         
-        return allItemsInCart > 0? true : false;
+        return filteredAllItemsInCart.length > 0? true : false;
     }
 
     return (
