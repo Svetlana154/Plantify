@@ -4,7 +4,8 @@ import Col from "react-bootstrap/esm/Col";
 import logoCleanWhite from "../images/logo_clean_white.png";
 import Container from "react-bootstrap/esm/Container";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { Facebook, Instagram, Twitter } from "react-bootstrap-icons";
 import { useTranslation } from 'react-i18next';
 
